@@ -1,0 +1,10 @@
+[user]
+	email = woshiluo.luo@outlook.com
+	signingkey = 4FAC67BF9110B7FCD938BC5E1DC09ECE68494CA9
+	name = Woshiluo Luo
+[core]
+	filemode = false
+[commit]
+	gpgsign = true
+[tag]
+	forcesignannotated = true

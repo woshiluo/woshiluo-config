@@ -1,0 +1,15 @@
+# Rime dictionary
+# encoding: utf-8
+#
+
+---
+name: aurora_pinyin.extended
+version: "2020.04.30"
+sort: by_weight
+use_preset_vocabulary: true
+
+import_tables:
+  - aurora_pinyin
+  - aurora_pinyin.useful
+  - aurora_pinyin.sougou
+  - aurora_pinyin.wiki

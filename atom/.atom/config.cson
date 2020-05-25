@@ -1,0 +1,42 @@
+"*":
+  "atom-clock":
+    dateFormat: "YYYY.MM.DD dddd HH:MM:ss   "
+    refreshInterval: 1
+  "atom-drawio":
+    showExportButtons: true
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      predefinedColor: "Blue"
+    tabs:
+      compactTabs: true
+      stretchedTabs: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  core:
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "spell-check"
+      "vim-mode-plus-ex-mode"
+      "atom-file-icons"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    atomicSoftTabs: false
+    fontFamily: "Fira Code"
+    invisibles: {}
+    showInvisibles: true
+    softTabs: false
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "6da2c9a7-1d60-48a5-be83-ddd5a62a8ed2"
+  "vim-mode-plus": {}
+  welcome:
+    showOnStartup: false

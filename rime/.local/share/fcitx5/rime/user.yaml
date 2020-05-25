@@ -1,0 +1,14 @@
+var:
+  last_build_time: 1590386175
+  option:
+    emoji_suggestion: false
+    full_shape: false
+    simplification: true
+  previously_selected_schema: double_pinyin_flypy
+  schema_access_time:
+    aurora_pinyin: 1589558781
+    double_pinyin_flypy: 1589558782
+    kaomoji: 1587185569
+    luna_pinyin: 1588032558
+    luna_pinyin_simp: 1587127703
+    meow_emoji: 1587909327

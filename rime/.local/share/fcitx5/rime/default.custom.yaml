@@ -1,0 +1,23 @@
+patch:
+  ascii_composer:
+    good_old_caps_lock: true
+  "key_binder/bindings":
+    - {accept: Tab, send: Right, when: composing}
+    - {accept: "Shift+Tab", send: Page_Up, when: composing}
+    - {accept: minus, send: Page_Up, when: paging}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+  "menu/page_size": 8
+  schema_list:
+    - {schema: double_pinyin_flypy}
+    - {schema: aurora_pinyin}
+    - {schema: meow_emoji}
+  "switcher/hotkeys":
+    - "Control+grave"
+  "switcher/save_options":
+    - full_shape
+    - ascii_punct
+    - simplification
+    - zh_hans
+    - emoji_suggestion
