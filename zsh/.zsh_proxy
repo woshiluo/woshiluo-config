@@ -28,7 +28,7 @@ function proxy_off() {
 	unset http_proxy;
 	unset https_proxy;
 	unset ftp_proxy;
-	unset http_proxy;
+	unset rsync_proxy;
 	unset all_proxy;
 	log 1 "Done!"
 }
@@ -37,6 +37,10 @@ function proxy_on() {
 	log 1 "Proxy on"
 	log 0 "Set all_proxy $proxy_address:$proxy_port";
 	export all_proxy="http://$proxy_address:$proxy_port";
+	export http_proxy=$all_proxy;
+	export https_proxy=$all_proxy;
+	export ftp_proxy=$all_proxy;
+	export rsync_proxy=$all_proxy;
 	log 1 "Done";
 }
 

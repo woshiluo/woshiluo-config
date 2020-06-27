@@ -4,7 +4,16 @@ alias find="fd"
 alias telegram-desktop="LANG=C telegram-desktop"
 alias icat="kitty +kitten icat"
 alias zinit='http_proxy="http://127.0.0.1:8118" https_proxy="http://127.0.0.1:8118" zinit'
-alias prtg='source ~/.zsh_proxy'
+
+## Proxy
+alias ptg='source ~/.zsh_proxy'
+alias pon='source ~/.zsh_proxy on'
+alias poff='source ~/.zsh_proxy off'
+
+## nali-cli
+alias dig="nali-dig"
+alias ping="nali-ping"
+alias traceroute="nali-traceroute"
 
 # GPG SSH
 unset SSH_AGENT_PID
