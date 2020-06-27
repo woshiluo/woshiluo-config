@@ -38,7 +38,7 @@ nmap <F9> :NERDTreeToggle<CR>
 nmap <F10> :!gedit %<CR>
 nmap <F12> :call Compile()<CR>
 
-let g:compile_options='-lm -std=c++20 -fsanitize=address -fanalyzer -Wall -Wextra -Dwoshiluo'
+let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo'
 func! Debug()
 	if expand( '%:e' ) == 'cpp' 
 		exec '!ccache g++ %<.cpp -o %<.run -g ' . g:compile_options . '&& gdb ./%<.run'
@@ -50,6 +50,8 @@ func! Compile()
 		exec '!firefox %:p'
 	elseif expand( '%:e' ) == 'tex' 
 		exec '!(optirun xelatex % ) && echo "50\%..." && (optirun xelatex %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
+	elseif expand( '%:e' ) == 'rs'
+		exec '!cargo run'
 	else
 		exec '!ccache g++ %<.cpp -o %<.run -O2 ' . g:compile_options . ' && time ./%<.run'
 	endif
@@ -71,21 +73,64 @@ endfunc
 "----------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 
+" Startify
 Plug 'chxuan/vimplus-startify'                 " 启动界面
+
+" Nerdtree
 Plug 'scrooloose/nerdtree'                     " 目录树
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " 目录树美化
+" Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " 目录树美化
+
+" Airline
 Plug 'vim-airline/vim-airline'                 " 状态栏美化
 Plug 'vim-airline/vim-airline-themes'          " 状态栏美化主题
+
+" Rust
+Plug 'majutsushi/tagbar'
+Plug 'rust-lang/rust.vim'
+
+" Vue
+Plug 'posva/vim-vue'
+
+" Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } } " Markdown Preview
 Plug 'godlygeek/tabular' "The dep which is next one
 Plug 'plasticboy/vim-markdown' "Markdown syntax support
-Plug 'Chiel92/vim-autoformat' "Autoformat 
+
+" Enhance
+" Plug 'Chiel92/vim-autoformat' "Autoformat 
 Plug 'junegunn/vim-easy-align' "Align = or <space>
 Plug 'tpope/vim-fugitive' " Git support
+
+" Script
 Plug 'lilydjwg/fcitx.vim'
 call plug#end()
 
 let g:python3_host_prog='~/.local/bin'
+
+"----------------------------------------------------------------
+" Vim - Nerdtree Syntax Highlight Configure
+"----------------------------------------------------------------
+
+" let g:WebDevIconsDefaultFolderSymbolColor = s:beige " sets the color for folders that did not match any rule
+" let g:WebDevIconsDefaultFileSymbolColor = s:blue " sets the color for files that did not match any rule
+
+"----------------------------------------------------------------
+" Vim - Tagbar Configure
+"----------------------------------------------------------------
+
+nmap <F8> :TagbarToggle<CR>
+
+"----------------------------------------------------------------
+" Vim - Vue Configure
+"----------------------------------------------------------------
+
+autocmd FileType vue syntax sync fromstart
+
+"----------------------------------------------------------------
+" Vim - Rust Configure
+"----------------------------------------------------------------
+
+let g:rustfmt_autosave = 1
 
 "----------------------------------------------------------------
 " Vim - EasyAlign Configure
@@ -160,7 +205,7 @@ let g:airline#extensions#whitespace#symbol = '!'
 
 " 自动退出
 if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
+	let g:airline_symbols = {}
 endif
 
 "----------------------------------------------------------

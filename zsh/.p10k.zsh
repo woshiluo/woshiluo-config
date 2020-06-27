@@ -1479,7 +1479,7 @@
   }
 
   function prompt_aqours() {
-    p10k segment -f 208 -i '*' -t 'Jump up HIGH!!'
+    p10k segment -f 208 -i '*' -t 'Jump up HIGH!! o<(*≧▽≦)>ツ'
   }
 
   # User-defined prompt segments may optionally provide an instant_prompt_* function. Its job

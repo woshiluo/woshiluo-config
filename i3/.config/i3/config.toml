@@ -16,7 +16,6 @@ icons = "awesome"
 block = "music"
 #player = "clementine"
 max_width = 10
-on_collapsed_click = "clementine"
 buttons = ["play", "next"]
 
 [[block]]

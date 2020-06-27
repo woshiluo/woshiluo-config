@@ -82,6 +82,7 @@ set $refresh_i3status killall -SIGUSR1 i3status
 # Bind sym Configure
 # ------------------------------
 
+## XF86
 # Audio
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
@@ -93,6 +94,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 # Print Screen
 bindsym Print exec --no-startup-id "~/.config/i3/monitorshot2.sh"
 bindsym --release Shift+Print exec --no-startup-id "maim -s /home/woshiluo/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+# Media player controls
+bindsym XF86AudioPlay exec "~/.config/i3/play-pause.sh"
+bindsym XF86AudioPause exec "~/.config/i3/play-pause.sh"
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # Terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -152,7 +158,6 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -226,4 +231,3 @@ bar {
 		urgent_workspace #2f343a #900000 #ffffff
 	}
 }
-

@@ -1,0 +1,57 @@
+#!/bin/zsh
+# Author: woshiluo<woshiluo.luo [at] outlook.com>
+# Website: https://woshiluo.com
+# LICENSE: AGPL 3.0+
+
+default_address="127.0.0.1"
+default_port=8118
+default_log_level=2
+
+proxy_address=$default_address;
+if [ -v 2 ]; then 
+	proxy_port=$2;
+else
+	proxy_port=$default_port;
+fi
+if [ ! -v log_level ]; then
+	log_level=$default_log_level;
+fi
+
+function log() {
+	if [ $1 -ge $log_level ] ;then
+		echo "[$1]: $2";
+	fi
+}
+
+function proxy_off() {
+	log 1 "Proxy off";
+	unset http_proxy;
+	unset https_proxy;
+	unset ftp_proxy;
+	unset http_proxy;
+	unset all_proxy;
+	log 1 "Done!"
+}
+
+function proxy_on() {
+	log 1 "Proxy on"
+	log 0 "Set all_proxy $proxy_address:$proxy_port";
+	export all_proxy="http://$proxy_address:$proxy_port";
+	log 1 "Done";
+}
+
+if [ -v 1 ]; then
+	if [ $1 = "on" ]; then 
+		proxy_on
+	else
+		proxy_off
+	fi
+else
+	if [ -v all_proxy ]; then
+		proxy_off
+	else
+		proxy_on
+	fi
+fi
+
+unset log_level;

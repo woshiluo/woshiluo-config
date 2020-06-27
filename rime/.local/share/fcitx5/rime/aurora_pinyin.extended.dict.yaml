@@ -12,4 +12,5 @@ import_tables:
   - aurora_pinyin
   - aurora_pinyin.useful
   - aurora_pinyin.sougou
-  - aurora_pinyin.wiki
+  - zhwiki
+  - moegirl
