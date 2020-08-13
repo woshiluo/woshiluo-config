@@ -1,3 +1,13 @@
+# 作为嵌入式终端时禁用 tmux
+# https://www.reddit.com/r/tmux/comments/a2e5mn/tmux_on_dolphin_inbuilt_terminal/
+# 上面的方法由于 alacritty 0.4.0 的释出而失效
+if [[ "$TMUX" == "" && $- == *i* ]]; then
+    if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(dolphin|emacs|kate)" ]]; then
+        exec tmux new -A -s woshiluo
+		return 
+    fi
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -16,6 +26,7 @@ zmodload zdharma/zplugin
 # Load Zinit
 source ~/.zshenv
 source "$HOME/.zinit/bin/zinit.zsh"
+setopt no_share_history
 
 autoload -Uz compinit
 autoload -Uz _zinit
@@ -59,18 +70,5 @@ zinit light-mode for \
     zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
 
-# -------------------
-# Kitty Complete
-# -------------------
 compinit
-# kitty + complete setup zsh | /dev/stdin
-_kitty() {
-    local src
-    # Send all words up to the word the cursor is currently on
-    src=$(printf "%s
-" "${(@)words[1,$CURRENT]}" | kitty +complete zsh)
-    if [[ $? == 0 ]]; then
-        eval ${src}
-    fi
-}
-compdef _kitty kitty
+### End of Zinit's installer chunk

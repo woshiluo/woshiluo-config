@@ -219,7 +219,7 @@ bar {
 	tray_padding 4
 	separator_symbol "|"
     position top
-	tray_output none
+	tray_output primary
 	font pango: Fira Code, FontAwesome, Noto Color Emjoi, Glow Sans SC 11
 	colors {
 		separator #666666

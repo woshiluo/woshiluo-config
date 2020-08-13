@@ -4,7 +4,12 @@
 	name = Woshiluo Luo
 [core]
 	filemode = false
+	gitProxy = /home/woshiluo/.git-proxy
 [commit]
 	gpgsign = true
 [tag]
 	forcesignannotated = true
+[https]
+	proxy = http://127.0.0.1:8118/
+[http]
+	proxy = http://127.0.0.1:8118/
