@@ -1,0 +1,7 @@
+set mbox_type=Maildir
+set folder=~/.mail/maildir/
+set spoolfile=+Inbox
+mailboxes =Inbox =All =Chats
+
+set realname="Real Name"
+set from=example@example.com

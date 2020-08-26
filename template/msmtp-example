@@ -1,0 +1,12 @@
+account          default
+host             smtp.office365.com
+port             587
+tls              on
+tls_starttls     on
+tls_trust_file   /etc/ssl/certs/ca-certificates.crt
+tls_certcheck    on
+auth             on
+user			 example@outlook.com
+passwordeval	 "gpg -d ~/.config/mutt/password_outlook.gpg"
+from             example@outlook.com
+logfile          ~/.config/msmtp/msmtp.log

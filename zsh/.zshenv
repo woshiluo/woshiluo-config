@@ -6,6 +6,7 @@ alias grep="rg"
 alias telegram-desktop="LANG=C telegram-desktop"
 # alias icat="kitty +kitten icat"
 alias zinit='http_proxy="http://127.0.0.1:8118" https_proxy="http://127.0.0.1:8118" zinit'
+alias mutt='neomutt'
 
 ## Proxy
 alias ptg='source ~/.zsh_proxy'

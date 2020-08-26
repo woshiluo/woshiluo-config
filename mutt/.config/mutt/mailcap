@@ -1,0 +1,7 @@
+# text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -collapse_br_tags -dump %s; nametemplate=%s.html; copiousoutput
+# text/html; lynx %s; nametemplate=%s.html
+#text/html; w3m -I %{charset} -T text/html; copiousoutput;
+#text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -dump %s; nametemplate=%s.html; copiousoutput
+text/html; iconv -f %{charset} -t utf-8 %s >/tmp/convert_code.html && lynx -assume_charset=utf-8 -display_charset=utf-8 -dump '/tmp/convert_code.html'; copiousoutput
+
+application/*; mkdir -p ~/.cache/mutt \; cp %s ~/.cache/mutt \; xdg-open ~/.cache/mutt/$(basename %s) &

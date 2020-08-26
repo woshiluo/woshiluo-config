@@ -1,0 +1,31 @@
+source "~/.config/mutt/colors"
+source "~/.config/mutt/bindings"
+source "~/.config/mutt/view"
+
+source "~/.config/mutt/woshiluo"
+macro index <f2> '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/woshiluo<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/outlook<enter><change-folder>!<enter>'
+
+# See all mail headers in editor, cache headers and bodies
+set edit_headers=yes
+set rfc2047_parameters=yes
+set header_cache = "~/.cache/mutt/headers"
+set message_cachedir = "~/.cache/mutt/bodies"
+
+###########################
+#                CONNECTION
+###########################
+
+#Keeping below options from live imap connection settings in case they help with sending email via smtp
+set ssl_starttls=yes
+set ssl_force_tls=yes
+unset imap_passive
+set mail_check=20
+# Above change for for isync, more frequent checks ftw
+set timeout=10
+set net_inc=5
+set imap_keepalive = 300
+
+set sendmail="proxychains /usr/bin/msmtp"
+set use_from=yes
+set envelope_from=yes

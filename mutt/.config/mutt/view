@@ -1,0 +1,2 @@
+set mailcap_path = ~/.config/mutt/mailcap
+auto_view text/html

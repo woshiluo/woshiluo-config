@@ -1,0 +1,25 @@
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: JetBrains Mono
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Fira Code
+    # Style can be specified to pick a specific face.
+    # style: Bold
+  size: 9
+
+  italic:
+    family: Fira Code
+  offset:
+    x: 1
+    y: 1
+colors:
+  primary:
+    background: '#000000'
+
+background_opacity: 0.7

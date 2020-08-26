@@ -101,7 +101,7 @@ func! Compile()
 	if expand( '%:e' ) == 'html'
 		exec '!firefox %:p'
 	elseif expand( '%:e' ) == 'tex' 
-		exec '!(optirun xelatex % ) && echo "50\%..." && (optirun xelatex %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
+		exec '!(xelatex % ) && echo "50\%..." && (xelatex %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
 	elseif expand( '%:e' ) == 'rs'
 		exec '!cargo run'
 	else
@@ -279,7 +279,7 @@ func! Compile()
 	if expand( '%:e' ) == 'html'
 		exec '!firefox %:p'
 	elseif expand( '%:e' ) == 'tex' 
-		exec '!(optirun xelatex % ) && echo "50\%..." && (optirun xelatex %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
+		exec '!(xelatex % ) && echo "50\%..." && (xelatex %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
 	elseif expand( '%:e' ) == 'rs'
 		exec '!cargo run'
 	else

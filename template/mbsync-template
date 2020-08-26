@@ -1,0 +1,54 @@
+IMAPAccount example@example.com
+Host mail.example.com
+User example
+PassCmd "gpg -d ~/.config/mutt/password_example.gpg"
+UseIMAPS yes
+# CertificateFile ~/.mutt/.mutt_known_hosts
+
+IMAPStore example-remote
+Account example@example.site
+
+MaildirStore example-local
+# The trailing "/" is important
+Path ~/.mail/example/
+Inbox ~/.mail/example/Inbox
+
+Channel example-default
+Master :example-remote:"Inbox"
+Slave :example-local:Inbox
+#Patterns INBOX
+
+Channel example-sent
+Master :example-remote:"Sent"
+slave  :example-local:Sent
+
+Channel example-chats
+Master :example-remote:"Chats"
+slave  :example-local:Chats
+
+Channel example-trash
+Master :example-remote:"Trash"
+slave  :example-local:Trash
+
+Channel example-archive
+Master :example-remote:"Archive"
+slave  :example-local:All
+
+Channel example-junk
+Master :example-remote:"Junk E-mail"
+slave  :example-local:Junk
+
+# Automatically create missing mailboxes, both locally and on the server
+Create Both
+# Automatically delete messages on either side if they are found deleted on the other.
+Expunge Both
+# Save the synchronization state files in the relevant directory
+SyncState *
+
+Group example
+Channel example-default
+Channel example-chats
+Channel example-trash
+Channel example-archive
+Channel example-sent
+Channel example-junk

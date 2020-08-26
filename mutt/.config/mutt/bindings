@@ -1,0 +1,17 @@
+bind index,pager B sidebar-toggle-visible
+bind pager G bottom
+bind index G last-entry
+bind index g  noop
+bind index gg first-entry
+
+# Sidebar Navigation
+bind index,pager <down> sidebar-next
+bind index,pager <up> sidebar-prev
+bind index,pager <right> sidebar-open
+
+macro index S ":set confirmappend=no delete=yes\n\
+<tag-prefix><save-message>=All\n<sync-mailbox>\
+:set confirmappend=yes delete=ask-yes\n"
+
+macro attach 'V' "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.html<enter>\
+<shell-escape>firefox ~/.cache/mutt/mail.html<enter>"
