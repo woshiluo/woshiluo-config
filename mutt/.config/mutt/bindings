@@ -3,6 +3,7 @@ bind pager G bottom
 bind index G last-entry
 bind index g  noop
 bind index gg first-entry
+bind index D purge-message
 
 # Sidebar Navigation
 bind index,pager <down> sidebar-next

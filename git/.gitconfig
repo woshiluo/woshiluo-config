@@ -9,7 +9,5 @@
 	gpgsign = true
 [tag]
 	forcesignannotated = true
-[https]
-	proxy = http://127.0.0.1:8118/
-[http]
-	proxy = http://127.0.0.1:8118/
+[color]
+	ui = auto
