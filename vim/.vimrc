@@ -37,10 +37,11 @@ Plug 'posva/vim-vue'
 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" Plug 'gabrielelana/vim-markdown'
 " The next's dep
-Plug 'godlygeek/tabular' 
+" Plug 'godlygeek/tabular' 
 " Markdown syntax support
-Plug 'plasticboy/vim-markdown' 
+" Plug 'plasticboy/vim-markdown' 
 
 """  Enhance
 " Autoformat 
