@@ -1,7 +1,8 @@
 mode=drun,run
 insensitive=true
-prompt=
+prompt=Run sth.
 width=1024
 height=190
+line=30
 term=alacritty
 hide_scroll=true
