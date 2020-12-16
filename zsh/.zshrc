@@ -1,9 +1,9 @@
 # 作为嵌入式终端时禁用 tmux
 # https://www.reddit.com/r/tmux/comments/a2e5mn/tmux_on_dolphin_inbuilt_terminal/
 # 上面的方法由于 alacritty 0.4.0 的释出而失效
-if [[ "$TMUX" == "" && $- == *i* ]]; then
+if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
     if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(dolphin|emacs|kate)" ]]; then
-        exec tmux new -A -s woshiluo
+        exec screen -x autoscreen
 		return 
     fi
 fi

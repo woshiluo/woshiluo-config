@@ -4,7 +4,7 @@
 call plug#begin('~/.vim/plugged')
 
 """ Startify
-Plug 'chxuan/vimplus-startify'                 
+" Plug 'chxuan/vimplus-startify'                 
 
 """ Nerdtree
 " 目录树
@@ -30,24 +30,28 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'majutsushi/tagbar'
 Plug 'rust-lang/rust.vim'
 
+" Auto complete
+if expand( '%:e' ) != 'cpp'
+	Plug 'lifepillar/vim-mucomplete'
+	Plug 'autozimu/LanguageClient-neovim', {
+				\ 'branch': 'next',
+				\ 'do': 'bash install.sh',
+				\ }
+endif
+
 " Vue
 Plug 'posva/vim-vue'
 
 " Markdown 
-
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-" Plug 'gabrielelana/vim-markdown'
-" The next's dep
-" Plug 'godlygeek/tabular' 
-" Markdown syntax support
-" Plug 'plasticboy/vim-markdown' 
 
 """  Enhance
 " Autoformat 
 " Plug 'Chiel92/vim-autoformat' 
 " Align = or <space>
-Plug 'junegunn/vim-easy-align' 
+" Plug 'junegunn/vim-easy-align' 
+
 " Git support
 Plug 'tpope/vim-fugitive' 
 
@@ -55,7 +59,7 @@ Plug 'tpope/vim-fugitive'
 " Plug 'lilydjwg/fcitx.vim'
 call plug#end() 
 
-let g:python3_host_prog='~/.local/bin'
+" let g:python3_host_prog='~/.local/bin'
 
 "----------------------------------------------------------- 
 " Based Configure  
@@ -72,6 +76,11 @@ set t_Co=256
 
 " set background=dark
 " colorscheme material-theme
+
+augroup resCur
+	autocmd!
+	autocmd BufReadPost * call setpos(".", getpos("'\""))
+augroup END
 
 autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
 
@@ -113,8 +122,8 @@ nmap <C-P> :bp<CR>
 " User Function Configure 
 "----------------------------------------------------------
 
-" let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo -fsanitize=address'
-let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo'
+let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo -fsanitize=address'
+" let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo'
 func! Debug()
 	if expand( '%:e' ) == 'cpp' 
 		exec '!g++ %<.cpp -o %<.run -g ' . g:compile_options . '&& gdb ./%<.run'
@@ -171,13 +180,38 @@ autocmd FileType vue syntax sync fromstart
 let g:rustfmt_autosave = 1
 
 "----------------------------------------------------------------
+" LanguageClient-neovim Configure
+"----------------------------------------------------------------
+
+" let g:LanguageClient_serverCommands = {
+" \ 'rust': ['rust-analyzer'],
+" \ }
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['rustup', 'run', 'stable', 'rls'],
+    \ }
+" let g:LanguageClient_loggingLevel = 'INFO'
+" let g:LanguageClient_loggingFile =  expand('~/.local/share/nvim/LanguageClient.log')
+" let g:LanguageClient_serverStderr = expand('~/.local/share/nvim/LanguageServer.log')
+
+"----------------------------------------------------------------
+" Vim - Mucomplete Configure
+"----------------------------------------------------------------
+
+" set completeopt+=noselect
+set completeopt+=menuone,noselect
+set shortmess+=c   " Shut off completion messages
+set belloff+=ctrlg " If Vim beeps during completion
+let g:mucomplete#enable_auto_at_startup = 1
+"let g:mucomplete#minimum_prefix_length = 3
+
+"----------------------------------------------------------------
 " Vim - EasyAlign Configure
 "----------------------------------------------------------------
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+" xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+" nmap ga <Plug>(EasyAlign)
 
 "----------------------------------------------------------------
 " Vim - Markdown Configure

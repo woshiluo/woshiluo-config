@@ -3,10 +3,12 @@ alias ls="lsd"
 alias find="fd"
 alias cat="bat"
 alias grep="rg"
+alias htop="htop -t"
 alias telegram-desktop="XDA_SESSION_TYPE=wayland LANG=C telegram-desktop"
 # alias icat="kitty +kitten icat"
 alias zinit='http_proxy="http://127.0.0.1:8118" https_proxy="http://127.0.0.1:8118" zinit'
 alias mutt='neomutt'
+
 
 ## Proxy
 alias ptg='source ~/.zsh_proxy'
@@ -29,6 +31,8 @@ fi
 
 # export GPG_TTY=$(tty)
 # gpg-connect-agent updatestartuptty /bye >/dev/null
+
+export TERM=xterm-256color
 
 # Rust 
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
