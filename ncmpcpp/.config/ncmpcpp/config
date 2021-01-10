@@ -28,8 +28,7 @@ progressbar_look                      = "▃▃▃"
 # 音乐可视化配置:
 visualizer_output_name                = "FIFO"
 visualizer_in_stereo                  = "no"
-visualizer_fifo_path                  = "/tmp/mpd.fifo"
-visualizer_sync_interval              = "10"
+visualizer_data_source                  = "/tmp/mpd.fifo"
 visualizer_type                       = "spectrum"
 visualizer_look                       = "▋▋"
 

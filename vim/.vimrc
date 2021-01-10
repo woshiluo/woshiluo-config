@@ -183,9 +183,11 @@ let g:rustfmt_autosave = 1
 " LanguageClient-neovim Configure
 "----------------------------------------------------------------
 
+" let g:LanguageClient_diagnosticsEnable = 0
 " let g:LanguageClient_serverCommands = {
 " \ 'rust': ['rust-analyzer'],
 " \ }
+" set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ }

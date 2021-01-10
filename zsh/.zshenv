@@ -8,6 +8,7 @@ alias telegram-desktop="XDA_SESSION_TYPE=wayland LANG=C telegram-desktop"
 # alias icat="kitty +kitten icat"
 alias zinit='http_proxy="http://127.0.0.1:8118" https_proxy="http://127.0.0.1:8118" zinit'
 alias mutt='neomutt'
+alias fzf='sk'
 
 
 ## Proxy
@@ -32,7 +33,7 @@ fi
 # export GPG_TTY=$(tty)
 # gpg-connect-agent updatestartuptty /bye >/dev/null
 
-export TERM=xterm-256color
+# export TERM=xterm-256color
 
 # Rust 
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup

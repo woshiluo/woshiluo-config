@@ -1,9 +1,7 @@
-# 作为嵌入式终端时禁用 tmux
-# https://www.reddit.com/r/tmux/comments/a2e5mn/tmux_on_dolphin_inbuilt_terminal/
-# 上面的方法由于 alacritty 0.4.0 的释出而失效
 if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
     if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(dolphin|emacs|kate)" ]]; then
-        exec screen -x autoscreen
+		export USE_SCREEN=1 
+		screen -x autoscreen
 		return 
     fi
 fi
@@ -22,7 +20,6 @@ zmodload zdharma/zplugin
 # -------------------
 # Init
 # -------------------
-# Load env
 # Load Zinit
 source ~/.zshenv
 source "$HOME/.zinit/bin/zinit.zsh"
