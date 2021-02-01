@@ -39,3 +39,5 @@ fi
 export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 export L_TIME=C
+
+export PATH=$PATH:~/.yarn/bin

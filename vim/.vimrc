@@ -122,7 +122,7 @@ nmap <C-P> :bp<CR>
 " User Function Configure 
 "----------------------------------------------------------
 
-let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo -fsanitize=address'
+let g:compile_options='-lm -std=c++20 -Wall -Wextra -Wshadow -Dwoshiluo -fsanitize=address'
 " let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo'
 func! Debug()
 	if expand( '%:e' ) == 'cpp' 

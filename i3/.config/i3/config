@@ -215,7 +215,7 @@ bindsym $mod+r mode "resize"
 # i3bar Configure
 # ------------------------------
 bar {
-	status_command i3status-rs ~/.config/i3/config.toml
+	status_command i3status-rs ~/.config/i3status-rust/config.toml
 	tray_padding 4
 	separator_symbol "|"
     position top

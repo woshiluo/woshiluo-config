@@ -27,6 +27,9 @@ setopt no_share_history
 
 autoload -Uz compinit
 autoload -Uz _zinit
+autoload -U select-word-style
+
+select-word-style bash
 
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
@@ -59,7 +62,7 @@ zinit light zsh-users/zsh-autosuggestions
 # OMZ plugins
 zinit light-mode for \
 	OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh \
-	OMZ::plugins/sudo/sudo.plugin.zsh
+	OMZ::plugins/sudo/sudo.plugin.zsh \
 
 # Zinit plugins
 zinit light-mode for \
