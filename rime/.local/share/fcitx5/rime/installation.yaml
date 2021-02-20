@@ -1,8 +1,8 @@
 distribution_code_name: "fcitx-rime"
 distribution_name: Rime
-distribution_version: 5.0.3
+distribution_version: 5.0.4
 install_time: "Mon Apr 13 14:37:28 2020"
 installation_id: "woshiluo-laptop"
-rime_version: 1.7.0
+rime_version: 1.7.3
 sync_dir: "/home/woshiluo/Documents/RimeSync"
-update_time: "Mon Jan 25 14:51:41 2021"
+update_time: "Sat Feb 20 17:16:36 2021"

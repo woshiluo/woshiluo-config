@@ -33,10 +33,11 @@ Plug 'rust-lang/rust.vim'
 " Auto complete
 if expand( '%:e' ) != 'cpp'
 	Plug 'lifepillar/vim-mucomplete'
-	Plug 'autozimu/LanguageClient-neovim', {
-				\ 'branch': 'next',
-				\ 'do': 'bash install.sh',
-				\ }
+	Plug 'dense-analysis/ale'
+"	Plug 'autozimu/LanguageClient-neovim', {
+"				\ 'branch': 'next',
+"				\ 'do': 'bash install.sh',
+"				\ }
 endif
 
 " Vue
@@ -180,6 +181,14 @@ autocmd FileType vue syntax sync fromstart
 let g:rustfmt_autosave = 1
 
 "----------------------------------------------------------------
+" Vim - ale Configure
+"----------------------------------------------------------------
+
+let g:ale_linters = {'rust': ['analyzer']}
+let g:airline#extensions#ale#enabled = 1
+set omnifunc=ale#completion#OmniFunc
+
+"----------------------------------------------------------------
 " LanguageClient-neovim Configure
 "----------------------------------------------------------------
 
@@ -188,9 +197,9 @@ let g:rustfmt_autosave = 1
 " \ 'rust': ['rust-analyzer'],
 " \ }
 " set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
-let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rustup', 'run', 'stable', 'rls'],
-    \ }
+" let g:LanguageClient_serverCommands = {
+"     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
+"     \ }
 " let g:LanguageClient_loggingLevel = 'INFO'
 " let g:LanguageClient_loggingFile =  expand('~/.local/share/nvim/LanguageClient.log')
 " let g:LanguageClient_serverStderr = expand('~/.local/share/nvim/LanguageServer.log')
