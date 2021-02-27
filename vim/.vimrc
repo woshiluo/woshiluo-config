@@ -9,18 +9,12 @@ call plug#begin('~/.vim/plugged')
 """ Nerdtree
 " 目录树
 Plug 'scrooloose/nerdtree'                     
-" 目录树美化
-" Plug 'tiagofumo/vim-nerdtree-syntax-highlight' 
-" The up's dep
-" Plug 'ryanoasis/vim-devicons'
 
 " Airline
 " 状态栏美化
 Plug 'vim-airline/vim-airline'                 
 " 状态栏美化主题
 Plug 'vim-airline/vim-airline-themes'          
-
-" Plug 'arcticicestudio/nord-vim'
 
 " Plug 'jdkanani/vim-material-theme'
 
@@ -46,6 +40,9 @@ Plug 'posva/vim-vue'
 " Markdown 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
+" SQL 
+Plug 'vim-scripts/dbext.vim'
 
 """  Enhance
 " Autoformat 

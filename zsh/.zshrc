@@ -17,11 +17,15 @@ fi
 module_path+=( "/home/woshiluo/.zinit/bin/zmodules/Src" )
 zmodload zdharma/zplugin
 
+# Load File
+source ~/.config/zsh/rsync.zsh
+source ~/.config/zsh/proxy.zsh
+source ~/.zshenv
+
 # -------------------
 # Init
 # -------------------
 # Load Zinit
-source ~/.zshenv
 source "$HOME/.zinit/bin/zinit.zsh"
 setopt no_share_history
 
@@ -72,3 +76,6 @@ zinit light-mode for \
 
 compinit
 ### End of Zinit's installer chunk
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/mcli mcli

@@ -12,9 +12,9 @@ alias fzf='sk'
 
 
 ## Proxy
-alias ptg='source ~/.zsh_proxy'
-alias pon='source ~/.zsh_proxy on'
-alias poff='source ~/.zsh_proxy off'
+# alias ptg='source ~/.zsh_proxy'
+# alias pon='source ~/.zsh_proxy on'
+# alias poff='source ~/.zsh_proxy off'
 
 ## nali-cli
 alias dig="nali-dig"
