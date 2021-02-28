@@ -14,6 +14,6 @@ MPV 的配置基本上无脑抄的 <https://bbs.vcb-s.com/thread-2730-1-1.html> 
 
 Aria2 的配置文件改自 <https://github.com/fsaimon/aria2.conf>
 
-Rime 的配置文件部分参考了 <https://github.com/wongdean/rime-settings>
+Rime 的词库部分来自[ Sogou 词库 ](https://pinyin.sogou.com/dict/)和[ thunlp/THUOCL ](https://github.com/thunlp/THUOCL)，其中将 THUOCL 转换至 Rime 的词库格式使用了[ fkxxyz/rime-cloverpinyin ](https://github.com/fkxxyz/rime-cloverpinyin)
 
 剩下的使用[ CC 0 ](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)授权
