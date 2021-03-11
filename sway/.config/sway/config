@@ -70,10 +70,10 @@ output * bg ~/Pictures/Wallpaper/71849322_p0.jpg fill
 # output eDP-1 disable
 # output HDMI-A-1 disable
 
-input "type:keyboard" {
-	xkb_layout us
-	xkb_variant ,nodeadkeys
-}
+# input "type:keyboard" {
+# 	xkb_layout us
+# 	xkb_variant ,nodeadkeys
+# }
 
 input "type:touchpad" {
     tap enabled

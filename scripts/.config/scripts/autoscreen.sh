@@ -1,5 +1,7 @@
 #/bin/bash
 
+sleep 10
+
 while true; do
 	if [ $( swaymsg -r -t get_outputs | jq -r ".[]" --indent 0 | wc -l ) -ge 2 ]; then
 		echo "More outputs"

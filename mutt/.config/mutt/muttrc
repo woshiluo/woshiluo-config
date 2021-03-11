@@ -1,6 +1,7 @@
 source "~/.config/mutt/colors"
 source "~/.config/mutt/bindings"
 source "~/.config/mutt/view"
+source "~/.config/mutt/gpg.rc"
 
 source "~/.config/mutt/woshiluo"
 macro index <f2> '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/woshiluo<enter><change-folder>!<enter>'
@@ -11,6 +12,12 @@ set edit_headers=yes
 set rfc2047_parameters=yes
 set header_cache = "~/.cache/mutt/headers"
 set message_cachedir = "~/.cache/mutt/bodies"
+
+set crypt_autosign=yes
+set crypt_opportunistic_encrypt=yes
+set crypt_replysign=yes
+set	crypt_replysignencrypted=yes
+
 
 ###########################
 #                CONNECTION

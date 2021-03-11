@@ -1,7 +1,10 @@
 set mbox_type=Maildir
 set folder=~/.mail/maildir/
 set spoolfile=+Inbox
-mailboxes =Inbox =All =Chats
+mailboxes =Inbox =Sent =Archive
 
 set realname="Real Name"
 set from=example@example.com
+
+set pgp_default_key="0x00000000"
+set pgp_sign_as="0x00000000"

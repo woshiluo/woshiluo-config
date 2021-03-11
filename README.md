@@ -6,6 +6,10 @@ Woshiluo 的自用配置集合~
 
 `pkglist.txt` 是目前电脑的包，参见[ ArchWiki - Pacman ](https://wiki.archlinux.org/index.php/Pacman)
 
+## Tips
+
+使用 `stow --adopt` 可以快速将原有配置复制过来
+
 ## 协议
 
 如果文件有声明其协议，则使用其所声明的协议

@@ -20,6 +20,7 @@ zmodload zdharma/zplugin
 # Load File
 source ~/.config/zsh/rsync.zsh
 source ~/.config/zsh/proxy.zsh
+source ~/.config/zsh/backup.zsh
 source ~/.zshenv
 
 # -------------------
