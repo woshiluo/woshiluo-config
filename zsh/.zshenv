@@ -4,7 +4,6 @@ alias find="fd"
 alias cat="bat"
 alias grep="rg"
 alias htop="htop -t"
-alias zinit='http_proxy="http://127.0.0.1:8118" https_proxy="http://127.0.0.1:8118" zinit'
 alias mutt='neomutt'
 alias fzf='sk'
 

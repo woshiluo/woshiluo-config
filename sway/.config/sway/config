@@ -41,7 +41,7 @@ set $menu wofi -m -I --conf ~/.config/wofi/config
 # exec --no-startup-id /usr/lib/kdeconnectd
 # mpDris2
 # exec --no-startup-id mpDris2
-exec echo 1
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Gtk Setting
 exec_always {

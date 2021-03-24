@@ -1,0 +1,69 @@
+theme = "solarized-dark"
+icons = "awesome"
+
+# [[block]]
+# block = "disk_space"
+# path = "/"
+# alias = "/"
+# info_type = "available"
+# unit = "GB"
+# interval = 20
+# warning = 20.0
+# alert = 10.0
+
+[[block]]
+block = "custom"
+cycle = ["bash -c 'data=`curl 127.0.0.1:8080/0/0`; echo \"$(echo $data | jq -r .data.hitokoto)--「$(echo $data | jq -r .data.from)」\"'"]
+interval = 30
+
+[block]]
+block = "music"
+max_width = 10
+buttons = ["play", "next"]
+
+[[block]]
+block = "maildir"
+interval = 60
+inboxes = ["/home/woshiluo/.mail/woshiluo/Inbox", "/home/woshiluo/.mail/outlook/Inbox"]
+threshold_warning = 1
+threshold_critical = 10
+display_type = "new"
+
+[[block]]
+block = "net"
+ssid = false
+graph_up = false
+interval = 1
+use_bits = false
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mug}GiB/{MTg}GiB {Mup}%"
+# format_mem = "{Mup}%"
+
+[[block]]
+block = "cpu"
+interval = 1
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+
+[[block]]
+block = "time"
+interval = 1
+format = "%a %Y/%m/%d %T"
+
