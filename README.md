@@ -15,7 +15,7 @@ pacman -Qqet > pkglist.txt
 pacman -S --needed - < pkglist.txt
 ```
 
-使用 `stow --adopt` 可以快速将原有配置复制过来
+使用 `stow --adopt` 可以快速将原有配置复制过来  
 使用 `stow --no-folding` 可以让 Stow 在创建链接不直接链接文件夹，而是链接文件
 
 ## 协议
