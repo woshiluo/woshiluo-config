@@ -54,7 +54,7 @@ Plug 'vim-scripts/dbext.vim'
 Plug 'tpope/vim-fugitive' 
 
 " Script
-" Plug 'lilydjwg/fcitx.vim'
+Plug 'lilydjwg/fcitx.vim'
 call plug#end() 
 
 " let g:python3_host_prog='~/.local/bin'

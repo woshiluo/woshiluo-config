@@ -77,8 +77,8 @@ output * bg ~/Pictures/Wallpaper/71849322_p0.jpg fill
 
 input "type:touchpad" {
     tap enabled
-    natural_scroll disabled
-    dwt enabled
+    natural_scroll disable
+    dwt disable
     pointer_accel 0.5
 }
 

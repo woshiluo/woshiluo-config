@@ -11,12 +11,12 @@ icons = "awesome"
 # warning = 20.0
 # alert = 10.0
 
-[[block]]
-block = "custom"
-cycle = ["bash -c 'data=`curl 127.0.0.1:8080/0/0`; echo \"$(echo $data | jq -r .data.hitokoto)--「$(echo $data | jq -r .data.from)」\"'"]
-interval = 30
+# [[block]]
+# block = "custom"
+# cycle = ["bash -c 'data=`curl 127.0.0.1:8080/0/0`; echo \"$(echo $data | jq -r .data.hitokoto)--「$(echo $data | jq -r .data.from)」\"'"]
+# interval = 30
 
-[block]]
+[[block]]
 block = "music"
 max_width = 10
 buttons = ["play", "next"]
@@ -30,17 +30,29 @@ threshold_critical = 10
 display_type = "new"
 
 [[block]]
+block = "custom"
+command = 'echo "树林里分出了两条路，而我，选择了人迹稀少的那条，那决定了一切的不同。 "'
+
+[[block]]
 block = "net"
-ssid = false
-graph_up = false
-interval = 1
-use_bits = false
+format = "{speed_up;K*B} {speed_down;K*B}"
+format_alt = "{ssid} {signal_strength}"
+interval = 5
+hide_missing = true
+hide_inactive = true
 
 [[block]]
 block = "memory"
+format_mem = "{mem_used}/{mem_total}({mem_used_percents})"
+format_swap = "{swap_used} | {swap_total}({swap_used_percents})"
 display_type = "memory"
-format_mem = "{Mug}GiB/{MTg}GiB {Mup}%"
-# format_mem = "{Mup}%"
+icons = true
+clickable = true
+interval = 5
+warning_mem = 80
+warning_swap = 80
+critical_mem = 95
+critical_swap = 95
 
 [[block]]
 block = "cpu"
@@ -60,10 +72,9 @@ block = "sound"
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage}% {time}"
+format = "{percentage} {time}"
 
 [[block]]
 block = "time"
 interval = 1
 format = "%a %Y/%m/%d %T"
-

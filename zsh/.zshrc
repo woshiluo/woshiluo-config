@@ -78,5 +78,4 @@ zinit light-mode for \
 compinit
 ### End of Zinit's installer chunk
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/mcli mcli
+eval "$(zoxide init zsh)"
