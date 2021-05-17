@@ -1,0 +1,18 @@
+escape ^Bb
+utf8 on
+
+altscreen on
+defbce on
+term screen-256color
+
+startup_message off
+
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g} ][%= %{= kw}%?%-Lw%?%{r}| %{W}%n*%f%t%?(%u)%?%{r} |%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W} %c:%s %{g}]'
+
+# altscreen on
+maptimeout 100
+
+scrollback 16384
+defscrollback 16384
