@@ -75,6 +75,9 @@ set t_Co=256
 " set background=dark
 " colorscheme material-theme
 
+" For fcitx.vim
+set ttimeoutlen=100
+
 augroup resCur
 	autocmd!
 	autocmd BufReadPost * call setpos(".", getpos("'\""))
