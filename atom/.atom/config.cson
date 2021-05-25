@@ -38,6 +38,7 @@
     tabType: "hard"
   "exception-reporting":
     userId: "6da2c9a7-1d60-48a5-be83-ddd5a62a8ed2"
+  minimap: {}
   "vim-mode-plus": {}
   welcome:
     showOnStartup: false

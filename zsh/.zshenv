@@ -42,8 +42,9 @@ fi
 # export TERM=xterm-256color
 
 # Rust 
-export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+export RUSTUP_DIST_SERVER=https://opentuna.cn/rustup
 
 export L_TIME=C
 
 export PATH=$PATH:~/.yarn/bin:~/.local/bin:~/.cargo/bin
+export GOPATH=$HOME/.go

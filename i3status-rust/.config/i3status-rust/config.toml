@@ -2,16 +2,6 @@ theme = "solarized-dark"
 icons = "awesome"
 
 # [[block]]
-# block = "disk_space"
-# path = "/"
-# alias = "/"
-# info_type = "available"
-# unit = "GB"
-# interval = 20
-# warning = 20.0
-# alert = 10.0
-
-# [[block]]
 # block = "custom"
 # cycle = ["bash -c 'data=`curl 127.0.0.1:8080/0/0`; echo \"$(echo $data | jq -r .data.hitokoto)--「$(echo $data | jq -r .data.from)」\"'"]
 # interval = 30
@@ -37,14 +27,14 @@ command = 'echo "树林里分出了两条路，而我，选择了人迹稀少的
 block = "net"
 format = "{speed_up;K*B} {speed_down;K*B}"
 format_alt = "{ssid} {signal_strength}"
-interval = 5
+interval = 1
 hide_missing = true
 hide_inactive = true
 
 [[block]]
 block = "memory"
-format_mem = "{mem_used}/{mem_total}({mem_used_percents})"
-format_swap = "{swap_used} | {swap_total}({swap_used_percents})"
+format_mem = "{mem_used:4*B}/{mem_total:4*B}"
+format_swap = "{swap_used:4*B}/{swap_total:4*B}"
 display_type = "memory"
 icons = true
 clickable = true
@@ -57,6 +47,7 @@ critical_swap = 95
 [[block]]
 block = "cpu"
 interval = 1
+format = "{utilization:02} {frequency}"
 
 [[block]]
 block = "load"
