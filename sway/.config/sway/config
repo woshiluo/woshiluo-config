@@ -69,6 +69,9 @@ output * bg ~/Pictures/Wallpaper/71849322_p0.jpg fill
 # output eDP-1 position 0 0 resolution 1920x1080 
 # output eDP-1 disable
 # output HDMI-A-1 disable
+output HDMI-A-1 mode 1920x1080@75Hz
+# output HDMI-A-1 adaptive_sync on
+# max_render_time 1
 
 # input "type:keyboard" {
 # 	xkb_layout us
@@ -113,6 +116,7 @@ for_window [app_id="floating"] floating enable
     bindsym $mod+d exec $menu
 
 	bindsym $mod+Shift+s exec $script_path/swaylock.sh
+	bindsym $mod+Shift+Tab exec "systemd-dmenu list | wofi --show dmenu | systemd-dmenu set"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -284,7 +288,7 @@ bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
 	status_command i3status-rs
-	font pango: Fira Code, FontAwesome, Noto Color Emjoi, Glow Sans SC 10
+	font pango: Fira Code, Symbols Nerd Fonts, FontAwesome, Noto Color Emjoi, Glow Sans SC 10
 	tray_bindsym button2 nop
 	tray_bindsym button3 nop
 	icon_theme Papirus

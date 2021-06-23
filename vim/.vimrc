@@ -8,7 +8,12 @@ call plug#begin('~/.vim/plugged')
 
 """ Nerdtree
 " 目录树
-Plug 'scrooloose/nerdtree'                     
+Plug 'scrooloose/nerdtree'
+
+
+""" Template
+" 模版
+Plug 'aperezdc/vim-template'
 
 " Airline
 " 状态栏美化
@@ -28,10 +33,6 @@ Plug 'rust-lang/rust.vim'
 if expand( '%:e' ) != 'cpp'
 	Plug 'lifepillar/vim-mucomplete'
 	Plug 'dense-analysis/ale'
-"	Plug 'autozimu/LanguageClient-neovim', {
-"				\ 'branch': 'next',
-"				\ 'do': 'bash install.sh',
-"				\ }
 endif
 
 " Vue
@@ -127,7 +128,7 @@ let g:compile_options='-lm -std=c++20 -Wall -Wextra -Wshadow -Dwoshiluo -fsaniti
 " let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo'
 func! Debug()
 	if expand( '%:e' ) == 'cpp' 
-		exec '!g++ %<.cpp -o %<.run -g ' . g:compile_options . '&& gdb ./%<.run'
+		exec '!g++ %<.cpp -o %<.run -g -DDEBUG ' . g:compile_options . '&& gdb ./%<.run'
 	endif
 endfunc
 
@@ -135,7 +136,7 @@ func! Compile()
 	if expand( '%:e' ) == 'html'
 		exec '!firefox %:p'
 	elseif expand( '%:e' ) == 'tex' 
-		exec '!(xelatex % ) && echo "50\%..." && (xelatex %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
+		exec '!(tectonic % ) && echo "50\%..." && (tectonic %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
 	elseif expand( '%:e' ) == 'rs'
 		exec '!cargo run'
 	else
@@ -228,6 +229,12 @@ let g:mucomplete#enable_auto_at_startup = 1
 " Vim - Markdown Configure
 "----------------------------------------------------------------
 let g:vim_markdown_folding_disabled = 1
+
+"----------------------------------------------------------------
+" Vim - Template Configure
+"----------------------------------------------------------------
+let g:templates_directory = ['/home/woshiluo/Templates',]
+let g:license = "GNU AGPLv3+"
 
 "----------------------------------------------------------------
 " Vim - Airline Configure

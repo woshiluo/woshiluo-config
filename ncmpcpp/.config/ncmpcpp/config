@@ -26,10 +26,10 @@ statusbar_visibility                  = "yes"
 progressbar_look                      = "▃▃▃"
 
 # 音乐可视化配置:
-visualizer_output_name                = "FIFO"
-visualizer_in_stereo                  = "no"
-visualizer_data_source                  = "/tmp/mpd.fifo"
-visualizer_type                       = "spectrum"
+visualizer_data_source                = /tmp/mpd.fifo
+visualizer_output_name                = Visualizer feed
+visualizer_in_stereo                  = yes
+visualizer_type                       = spectrum
 visualizer_look                       = "▋▋"
 
 # 颜色:
