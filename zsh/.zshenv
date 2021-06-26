@@ -46,5 +46,5 @@ export RUSTUP_DIST_SERVER=https://opentuna.cn/rustup
 
 export L_TIME=C
 
-export PATH=$PATH:~/.yarn/bin:~/.local/bin:~/.cargo/bin
+export PATH=$PATH:~/.yarn/bin:~/.local/bin:~/.cargo/bin:~/.config/scripts
 export GOPATH=$HOME/.go

@@ -235,6 +235,8 @@ let g:vim_markdown_folding_disabled = 1
 "----------------------------------------------------------------
 let g:templates_directory = ['/home/woshiluo/Templates',]
 let g:license = "GNU AGPLv3+"
+let g:user = "Woshiluo Luo"
+let g:email = "woshiluo.luo@outlook.com"
 
 "----------------------------------------------------------------
 " Vim - Airline Configure

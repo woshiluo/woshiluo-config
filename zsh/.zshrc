@@ -3,7 +3,7 @@ if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
 		export USE_SCREEN=1 
 		screen -x autoscreen
 		return 
-    fi
+	fi
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
