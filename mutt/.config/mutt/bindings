@@ -15,4 +15,4 @@ macro index S ":set confirmappend=no delete=yes\n\
 :set confirmappend=yes delete=ask-yes\n"
 
 macro attach 'V' "<pipe-entry>iconv -c --to-code=UTF8 > ~/.cache/mutt/mail.html<enter>\
-<shell-escape>firefox ~/.cache/mutt/mail.html<enter>"
+<shell-escape>xdg-open ~/.cache/mutt/mail.html<enter>"

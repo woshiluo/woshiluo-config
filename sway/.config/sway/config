@@ -69,7 +69,7 @@ output * bg ~/Pictures/Wallpaper/71849322_p0.jpg fill
 # output eDP-1 position 0 0 resolution 1920x1080 
 # output eDP-1 disable
 # output HDMI-A-1 disable
-output HDMI-A-1 mode 1920x1080@75Hz
+# output HDMI-A-1 mode 1920x1080@75Hz
 # output HDMI-A-1 adaptive_sync on
 # max_render_time 1
 
