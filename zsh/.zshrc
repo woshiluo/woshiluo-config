@@ -1,14 +1,13 @@
+# Check screen
 if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
-    if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(dolphin|emacs|kate)" ]]; then
+    if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(emacs|vim)" ]]; then
 		export USE_SCREEN=1 
 		screen -x autoscreen
 		return 
 	fi
 fi
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Enable Powerlevel10k instant prompt. 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -17,57 +16,65 @@ fi
 module_path+=( "/home/woshiluo/.zinit/bin/zmodules/Src" )
 zmodload zdharma/zplugin
 
-# Load File
+# ---------
+# Configure
+# ---------
+setopt no_share_history
+
+autoload -U select-word-style
+select-word-style bash
+
+# Load script
 source ~/.config/zsh/rsync.zsh
 source ~/.config/zsh/proxy.zsh
 source ~/.config/zsh/backup.zsh
 source ~/.zshenv
 
-# -------------------
+# ---------
 # Init
-# -------------------
+# ---------
+
 # Load Zinit
 source "$HOME/.zinit/bin/zinit.zsh"
-setopt no_share_history
-
-autoload -Uz compinit
 autoload -Uz _zinit
-autoload -U select-word-style
-
-select-word-style bash
-
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# -------------------
+# ---------
 # Zinit Configure
-# -------------------
+# ---------
 
 # p10k
-zinit ice depth=1; 
-zinit atload'!source ~/.p10k.zsh' lucid nocd light-mode for \
-    romkatv/powerlevel10k
+zinit ice depth=1
+zinit atload"source ~/.p10k.zsh" lucid nocd light-mode for \
+	romkatv/powerlevel10k
 
 # OMZ Lib
-zinit light-mode for \
+zinit lucid nocd light-mode for \
 	OMZ::lib/history.zsh \
 	OMZ::lib/key-bindings.zsh \
+
+zinit wait lucid light-mode for \
 	OMZ::lib/directories.zsh 
 
-# Compltions & fzf Configure
-zinit ice blockf
-zinit atload'!source ~/.fzf.zsh' lucid nocd light-mode for \
-	zsh-users/zsh-completions \
-	Aloxaf/fzf-tab \
-	zdharma/fast-syntax-highlighting
-
-# Autosuggestions
-zinit light zsh-users/zsh-autosuggestions
-# bindkey ',' autosuggest-accept
+# Compltions & Fzf Configure
+zinit wait lucid light-mode for \
+	atinit"zicompinit; zicdreplay" \
+		zdharma/fast-syntax-highlighting \
+	atload"_zsh_autosuggest_start" \
+		zsh-users/zsh-autosuggestions \
+	blockf atpull'zinit creinstall -q .' \
+		zsh-users/zsh-completions \
+	atload"source ~/.fzf.zsh" \
+		Aloxaf/fzf-tab \
 
 # OMZ plugins
-zinit light-mode for \
+zinit wait lucid light-mode for \
 	OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh \
 	OMZ::plugins/sudo/sudo.plugin.zsh \
+
+# Skim history search
+zinit wait lucid light-mode for \
+	'https://github.com/lotabout/skim/blob/master/shell/key-bindings.zsh'
 
 # Zinit plugins
 zinit light-mode for \
@@ -75,7 +82,8 @@ zinit light-mode for \
     zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
 
-compinit
+# Zoxide
+zinit wait lucid light-mode for \
+	atinit'eval "$(zoxide init zsh)"' \
+		zdharma/null
 ### End of Zinit's installer chunk
-
-eval "$(zoxide init zsh)"
