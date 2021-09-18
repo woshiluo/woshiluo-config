@@ -41,13 +41,13 @@ set $menu wofi -m -I --conf ~/.config/wofi/config
 # exec --no-startup-id /usr/lib/kdeconnectd
 # mpDris2
 # exec --no-startup-id mpDris2
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Gtk Setting
 exec_always {
 	gsettings set $gnome-schema gtk-theme 'vimix-light-laptop-doder'
 	gsettings set $gnome-schema icon-theme 'Papirus'
-	gsettings set $gnome-schema cursor-theme 'vimix-cursors'
+	gsettings set $gnome-schema cursor-theme 'Vimix-cursors'
 }
 
 # ------------------------------
@@ -115,7 +115,7 @@ for_window [app_id="floating"] floating enable
     # Start your launcher
     bindsym $mod+d exec $menu
 
-	bindsym $mod+Shift+s exec $script_path/swaylock.sh
+	bindsym $mod+Shift+s exec $script_path/swaylock.sh 1
 	bindsym $mod+Shift+Tab exec "systemd-dmenu list | wofi --show dmenu | systemd-dmenu set"
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -261,10 +261,10 @@ bindsym $mod+r mode "resize"
 	bindsym --release Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
 	bindsym --release Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
 	# Media player controls
-	bindsym XF86AudioPlay exec $script_path/play-pause.sh
-	bindsym XF86AudioPause exec $script_path/play-pause.sh
-	bindsym XF86AudioNext exec playerctl next
-	bindsym XF86AudioPrev exec playerctl previous
+	bindsym --locked XF86AudioPlay exec playerctl play-pause
+	bindsym --locked XF86AudioPause exec playerctl play-pause
+	bindsym --locked XF86AudioNext exec playerctl next
+	bindsym --locked XF86AudioPrev exec playerctl previous
 
 
 

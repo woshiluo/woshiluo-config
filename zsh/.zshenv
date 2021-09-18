@@ -15,7 +15,7 @@ alias traceroute="nali-traceroute"
 # Colorful
 alias ip="ip -color"
 alias diff="diff --color=auto"
-alias grep='grep --color=auto'
+alias grep='rg --color=auto'
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'

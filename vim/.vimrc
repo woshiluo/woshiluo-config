@@ -97,6 +97,7 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 "设置为双字宽显示
 set ambiwidth=double
+set mouse-=a
 
 "set fdm=indent " 代码折叠
 set fdm=marker
@@ -190,22 +191,6 @@ let g:airline#extensions#ale#enabled = 1
 set omnifunc=ale#completion#OmniFunc
 
 "----------------------------------------------------------------
-" LanguageClient-neovim Configure
-"----------------------------------------------------------------
-
-" let g:LanguageClient_diagnosticsEnable = 0
-" let g:LanguageClient_serverCommands = {
-" \ 'rust': ['rust-analyzer'],
-" \ }
-" set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
-" let g:LanguageClient_serverCommands = {
-"     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
-"     \ }
-" let g:LanguageClient_loggingLevel = 'INFO'
-" let g:LanguageClient_loggingFile =  expand('~/.local/share/nvim/LanguageClient.log')
-" let g:LanguageClient_serverStderr = expand('~/.local/share/nvim/LanguageServer.log')
-
-"----------------------------------------------------------------
 " Vim - Mucomplete Configure
 "----------------------------------------------------------------
 
@@ -215,15 +200,6 @@ set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
 "let g:mucomplete#minimum_prefix_length = 3
-
-"----------------------------------------------------------------
-" Vim - EasyAlign Configure
-"----------------------------------------------------------------
-
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-" xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-" nmap ga <Plug>(EasyAlign)
 
 "----------------------------------------------------------------
 " Vim - Markdown Configure
