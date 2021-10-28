@@ -29,6 +29,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'majutsushi/tagbar'
 Plug 'rust-lang/rust.vim'
 
+" Latex
+Plug 'lervag/vimtex'
+
 " Auto complete
 if expand( '%:e' ) != 'cpp'
 	Plug 'lifepillar/vim-mucomplete'

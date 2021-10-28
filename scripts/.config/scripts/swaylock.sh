@@ -13,7 +13,7 @@ if [ $1 -eq 1 ]; then
 		timeout 5 'swaymsg "output * dpms off"' \
 		resume 'swaymsg "output * dpms on"' &
 
-	swaylock -f -i $wallpaper 
+	swaylock -i $wallpaper 
 
 	kill %%
 else

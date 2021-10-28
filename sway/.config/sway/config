@@ -3,10 +3,12 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+#
 
 # ------------------------------
 # Variables
 # ------------------------------
+
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -30,7 +32,7 @@ font pango:Fira Code, Glow Sans SC 10
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # set $menu wofi -d --show run,drun | xargs swaymsg exec --
-set $menu wofi -m -I --conf ~/.config/wofi/config
+set $menu rofi -show run,drun
 
 # Currently use systemd to start
 # Input
@@ -70,13 +72,13 @@ output * bg ~/Pictures/Wallpaper/71849322_p0.jpg fill
 # output eDP-1 disable
 # output HDMI-A-1 disable
 # output HDMI-A-1 mode 1920x1080@75Hz
-# output HDMI-A-1 adaptive_sync on
-# max_render_time 1
+output * adaptive_sync on
+output * max_render_time 1
 
-# input "type:keyboard" {
-# 	xkb_layout us
-# 	xkb_variant ,nodeadkeys
-# }
+input "type:keyboard" {
+	xkb_layout us
+	xkb_variant ,nodeadkeys
+}
 
 input "type:touchpad" {
     tap enabled
@@ -115,7 +117,7 @@ for_window [app_id="floating"] floating enable
     # Start your launcher
     bindsym $mod+d exec $menu
 
-	bindsym $mod+Shift+s exec $script_path/swaylock.sh 1
+	bindsym $mod+Shift+s exec "$script_path/swaylock.sh 1"
 	bindsym $mod+Shift+Tab exec "systemd-dmenu list | wofi --show dmenu | systemd-dmenu set"
 
     # Drag floating windows by holding down $mod and left mouse button.

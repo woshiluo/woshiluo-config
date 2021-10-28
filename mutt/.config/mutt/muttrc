@@ -6,6 +6,7 @@ source "~/.config/mutt/gpg.rc"
 source "~/.config/mutt/woshiluo"
 macro index <f2> '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/woshiluo<enter><change-folder>!<enter>'
 macro index <f3> '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/outlook<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><refresh><enter-command>source ~/.config/mutt/qq<enter><change-folder>!<enter>'
 
 # See all mail headers in editor, cache headers and bodies
 set edit_headers=yes
