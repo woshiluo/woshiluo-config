@@ -1,0 +1,19 @@
+zmodule romkatv/powerlevel10k -u degit
+
+zmodule zsh-users/zsh-completions
+zmodule completion
+
+zmodule ohmyzsh/ohmyzsh -s lib/history.zsh
+zmodule ohmyzsh/ohmyzsh -s lib/key-bindings.zsh
+
+zmodule zdharma-continuum/fast-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
+zmodule Aloxaf/fzf-tab
+
+zmodule ohmyzsh/ohmyzsh -s lib/directories.zsh
+zmodule ohmyzsh/ohmyzsh -s plugins/colored-man-pages/colored-man-pages.plugin.zsh
+zmodule ohmyzsh/ohmyzsh -s plugins/sudo/sudo.plugin.zsh
+
+zmodule lotabout/skim -s shell/key-bindings.zsh
+
+eval "$(zoxide init zsh)"

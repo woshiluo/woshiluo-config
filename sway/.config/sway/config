@@ -32,7 +32,7 @@ font pango:Fira Code, Glow Sans SC 10
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # set $menu wofi -d --show run,drun | xargs swaymsg exec --
-set $menu rofi -show run,drun
+set $menu rofi -show combi
 
 # Currently use systemd to start
 # Input

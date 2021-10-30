@@ -1,5 +1,4 @@
-# # Check screen
-
+# Check screen
 if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
     if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(emacs|vim)" ]] && [[ ! $TERM == "xterm-256color" ]]; then
 		export USE_SCREEN=1 
@@ -8,14 +7,12 @@ if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
 	fi
 fi
 
-# Enable Powerlevel10k instant prompt. 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-# Zmod Complie
-module_path+=( "/home/woshiluo/.zinit/bin/zmodules/Src" )
-zmodload zdharma/zplugin
 
 # ---------
 # Configure
@@ -35,56 +32,15 @@ source ~/.zshenv
 # Init
 # ---------
 
-# Load Zinit
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+# ------------------
+# Initialize modules
+# ------------------
 
-# ---------
-# Zinit Configure
-# ---------
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+  # Update static initialization script if it does not exist or it's outdated, before sourcing it
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+source ${ZIM_HOME}/init.zsh
 
-# p10k
-zinit ice depth=1
-zinit atload"source ~/.p10k.zsh" lucid nocd light-mode for \
-	romkatv/powerlevel10k
-
-# OMZ Lib
-zinit lucid nocd light-mode for \
-	OMZ::lib/history.zsh \
-	OMZ::lib/key-bindings.zsh \
-
-zinit wait lucid light-mode for \
-	OMZ::lib/directories.zsh 
-
-# Compltions & Fzf Configure
-zinit wait lucid light-mode for \
-	atinit"zicompinit; zicdreplay" \
-		zdharma/fast-syntax-highlighting \
-	atload"_zsh_autosuggest_start" \
-		zsh-users/zsh-autosuggestions \
-	blockf atpull'zinit creinstall -q .' \
-		zsh-users/zsh-completions \
-	atload"source ~/.fzf.zsh" \
-		Aloxaf/fzf-tab \
-
-# OMZ plugins
-zinit wait lucid light-mode for \
-	OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh \
-	OMZ::plugins/sudo/sudo.plugin.zsh \
-
-# Skim history search
-zinit wait lucid light-mode for \
-	'https://github.com/lotabout/skim/blob/master/shell/key-bindings.zsh'
-
-# Zinit plugins
-zinit light-mode for \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
-
-# Zoxide
-zinit wait lucid light-mode for \
-	atinit'eval "$(zoxide init zsh)"' \
-		zdharma/null
-### End of Zinit's installer chunk
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
