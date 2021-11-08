@@ -32,7 +32,7 @@ font pango:Fira Code, Glow Sans SC 10
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # set $menu wofi -d --show run,drun | xargs swaymsg exec --
-set $menu rofi -show combi
+set $menu j4-dmenu-desktop --dmenu='bemenu -i --nb "#3f3f3f" --nf "#dcdccc" --fn "pango:DejaVu Sans Mono 12"' --term='termite'
 
 # Currently use systemd to start
 # Input
@@ -118,7 +118,7 @@ for_window [app_id="floating"] floating enable
     bindsym $mod+d exec $menu
 
 	bindsym $mod+Shift+s exec "$script_path/swaylock.sh 1"
-	bindsym $mod+Shift+Tab exec "systemd-dmenu list | wofi --show dmenu | systemd-dmenu set"
+	bindsym $mod+Shift+Tab exec "systemd-dmenu list | bemenu | systemd-dmenu set"
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -250,23 +250,26 @@ bindsym $mod+r mode "resize"
 #
 # XF86 containers:
 #
-	# Audio
-	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-	bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-	bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-	bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-	bindsym XF86MonBrightnessUp exec brightnessctl s +5% # increase screen brightness
-	bindsym XF86MonBrightnessDown exec brightnessctl s 5%- # decrease screen brightness
-	# Print Screen
-	bindsym Print exec --no-startup-id "grimshot save screen - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-	bindsym --release Shift+Print exec --no-startup-id "grimshot save area - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-	bindsym --release Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-	bindsym --release Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-	# Media player controls
-	bindsym --locked XF86AudioPlay exec playerctl play-pause
-	bindsym --locked XF86AudioPause exec playerctl play-pause
-	bindsym --locked XF86AudioNext exec playerctl next
-	bindsym --locked XF86AudioPrev exec playerctl previous
+
+# Audio
+bindsym --locked XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym --locked XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym --locked XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym --locked XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86MonBrightnessUp exec brightnessctl s +5% # increase screen brightness
+bindsym XF86MonBrightnessDown exec brightnessctl s 5%- # decrease screen brightness
+# Print Screen
+bindsym Print exec --no-startup-id "grimshot save screen - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym --release Shift+Print exec --no-startup-id "grimshot save area - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym --release Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym --release Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+# Media player controls
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked XF86AudioPause exec playerctl play-pause
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked XF86AudioPrev exec playerctl previous
+
+bindsym Ctrl+semicolon exec clipman pick -t bemenu
 
 
 
