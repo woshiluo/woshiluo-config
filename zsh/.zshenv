@@ -36,7 +36,7 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[1;32m'
 
 # F**king X11
-alias alacritty="WINIT_UNIX_BACKEND=x11 alacritty"
+# alias alacritty="WINIT_UNIX_BACKEND=x11 alacritty"
 alias obs="XDG_SESSION_TYPE=x11 obs"
 
 # GPG SSH

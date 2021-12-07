@@ -19,7 +19,7 @@ set $up k
 set $right l
 
 # Your preferred terminal emulator
-set $term "WINIT_UNIX_BACKEND=x11 alacritty"
+set $term alacritty
 set $script_path "~/.config/scripts"
 
 set $gnome-schema org.gnome.desktop.interface

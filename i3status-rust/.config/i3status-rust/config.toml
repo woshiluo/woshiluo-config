@@ -14,7 +14,7 @@ buttons = ["play", "next"]
 [[block]]
 block = "maildir"
 interval = 60
-inboxes = ["/home/woshiluo/.mail/woshiluo/Inbox", "/home/woshiluo/.mail/outlook/Inbox"]
+inboxes = ["/home/woshiluo/.mail/woshiluo/Inbox", "/home/woshiluo/.mail/outlook/Inbox", "/home/woshiluo/.mail/qq/Inbox"]
 threshold_warning = 1
 threshold_critical = 10
 display_type = "new"
