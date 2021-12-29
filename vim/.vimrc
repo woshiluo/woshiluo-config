@@ -33,10 +33,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'lervag/vimtex'
 
 " Auto complete
-if expand( '%:e' ) != 'cpp'
-	Plug 'lifepillar/vim-mucomplete'
-	Plug 'dense-analysis/ale'
-endif
+Plug 'lifepillar/vim-mucomplete'
+Plug 'dense-analysis/ale'
 
 " Vue
 Plug 'posva/vim-vue'
@@ -189,19 +187,24 @@ let g:rustfmt_autosave = 1
 " Vim - ale Configure
 "----------------------------------------------------------------
 
-let g:ale_linters = {'rust': ['analyzer']}
+let g:ale_completion_enabled = 1
+let g:ale_linters = {'rust': ['analyzer','rustc'], 'cpp': ['cc', 'clangd']}
+let g:ale_cpp_cc_options = g:compile_options
 let g:airline#extensions#ale#enabled = 1
 set omnifunc=ale#completion#OmniFunc
+
 
 "----------------------------------------------------------------
 " Vim - Mucomplete Configure
 "----------------------------------------------------------------
 
 " set completeopt+=noselect
-set completeopt+=menuone,noselect
+" set completeopt+=menuone,noselect
+set completeopt=menu,menuone,preview,noselect,noinsert
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
+let g:clang_complete_auto = 1
 "let g:mucomplete#minimum_prefix_length = 3
 
 "----------------------------------------------------------------

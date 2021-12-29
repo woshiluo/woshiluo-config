@@ -30,7 +30,7 @@
   editor:
     atomicSoftTabs: false
     fontFamily: "Fira Code"
-    fontSize: 19
+    fontSize: 23
     invisibles: {}
     showInvisibles: true
     softTabs: false
