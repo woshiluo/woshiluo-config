@@ -43,6 +43,7 @@ fi
 
 # Rust 
 export RUSTUP_UPDATE_ROOT=https://mirror.sjtu.edu.cn/rust-static/rustup
+export RUSTUP_DIST_SERVER=https://mirror.sjtu.edu.cn/rust-static
 
 export L_TIME=C
 

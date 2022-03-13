@@ -32,7 +32,7 @@ font pango:Fira Code, Glow Sans SC 10
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # set $menu wofi -d --show run,drun | xargs swaymsg exec --
-set $menu j4-dmenu-desktop --dmenu='bemenu -i --nb "#3f3f3f" --nf "#dcdccc" --fn "pango:DejaVu Sans Mono 12"' --term='termite'
+set $menu sirula
 
 # Currently use systemd to start
 # Input
@@ -71,8 +71,9 @@ output * bg ~/Pictures/Wallpaper/71849322_p0.jpg fill
 # output eDP-1 disable
 # output HDMI-A-1 disable
 # output HDMI-A-1 mode 1920x1080@75Hz
-output * adaptive_sync on
+# output * adaptive_sync on
 output * max_render_time 1
+# output * render_bit_depth 8
 
 input "type:keyboard" {
 	xkb_layout us
@@ -259,9 +260,9 @@ bindsym XF86MonBrightnessUp exec brightnessctl s +5% # increase screen brightnes
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%- # decrease screen brightness
 # Print Screen
 bindsym Print exec --no-startup-id "grimshot save screen - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-bindsym --release Shift+Print exec --no-startup-id "grimshot save area - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-bindsym --release Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-bindsym --release Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym Shift+Print exec --no-startup-id "grimshot save area - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
 # Media player controls
 bindsym --locked XF86AudioPlay exec playerctl play-pause
 bindsym --locked XF86AudioPause exec playerctl play-pause
@@ -290,7 +291,7 @@ bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
 	status_command i3status-rs
-	font pango: Fira Code, Symbols Nerd Fonts, FontAwesome, Noto Color Emjoi, Glow Sans SC 10
+	font pango: Fira Code, Glow Sans SC 10
 	tray_bindsym button2 nop
 	tray_bindsym button3 nop
 	icon_theme Papirus

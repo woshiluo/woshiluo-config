@@ -21,6 +21,7 @@
       "spell-check"
       "vim-mode-plus-ex-mode"
       "atom-file-icons"
+      "bracket-matcher"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -30,7 +31,7 @@
   editor:
     atomicSoftTabs: false
     fontFamily: "Fira Code"
-    fontSize: 23
+    fontSize: 21
     invisibles: {}
     showInvisibles: true
     softTabs: false

@@ -14,8 +14,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Zmod Complie
-module_path+=( "/home/woshiluo/.local/share/zinit/module/Src" )
-zmodload zdharma_continuum/zinit
+# module_path+=( "/home/woshiluo/.local/share/zinit/module/Src" )
+# zmodload zdharma_continuum/zinit
 
 
 # ---------
@@ -38,8 +38,8 @@ source ~/.zshenv
 
 # Load Zinit
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+#autoload -Uz _zinit
+#(( ${+_comps} )) && _comps[zinit]=_zinit
 
 # ---------
 # Zinit Configure
@@ -82,5 +82,4 @@ zinit wait lucid light-mode for \
 zinit wait lucid light-mode for \
 	atinit'eval "$(zoxide init zsh)"' \
 		zdharma-continuum/null
-### End of Zinit's installer chunk
 ### End of Zinit's installer chunk

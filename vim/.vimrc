@@ -188,7 +188,7 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = {'rust': ['analyzer','rustc'], 'cpp': ['cc', 'clangd']}
+let g:ale_linters = {'rust': ['analyzer'], 'cpp': ['cc', 'clangd']}
 let g:ale_cpp_cc_options = g:compile_options
 let g:airline#extensions#ale#enabled = 1
 set omnifunc=ale#completion#OmniFunc
