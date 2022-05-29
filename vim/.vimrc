@@ -45,6 +45,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " SQL 
 Plug 'vim-scripts/dbext.vim'
+ 
+" Plug 'black-desk/fcitx5-ui.nvim'
 
 """  Enhance
 " Autoformat 
@@ -54,8 +56,8 @@ Plug 'vim-scripts/dbext.vim'
 
 " Git support
 Plug 'tpope/vim-fugitive' 
-
-" Script
+" 
+" " Script
 Plug 'lilydjwg/fcitx.vim'
 call plug#end() 
 
@@ -113,7 +115,7 @@ nmap <F3> :e %<.in<CR>
 nmap <F4> :e %<.out<CR>
 nmap <F5> :call Debug()<CR>
 nmap <F9> :NERDTreeToggle<CR>
-nmap <F10> :!gedit %<CR>
+nmap <F10> :!gedit "%"<CR>
 nmap <F12> :call Compile()<CR>
 
 set pastetoggle=<F6>
@@ -188,7 +190,7 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = {'rust': ['analyzer'], 'cpp': ['cc', 'clangd']}
+let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'typescript': [''] }
 let g:ale_cpp_cc_options = g:compile_options
 let g:airline#extensions#ale#enabled = 1
 set omnifunc=ale#completion#OmniFunc
@@ -204,7 +206,7 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 set shortmess+=c   " Shut off completion messages
 set belloff+=ctrlg " If Vim beeps during completion
 let g:mucomplete#enable_auto_at_startup = 1
-let g:clang_complete_auto = 1
+" let g:clang_complete_auto = 1
 "let g:mucomplete#minimum_prefix_length = 3
 
 "----------------------------------------------------------------

@@ -38,8 +38,8 @@ source ~/.zshenv
 
 # Load Zinit
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-#autoload -Uz _zinit
-#(( ${+_comps} )) && _comps[zinit]=_zinit
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
 # ---------
 # Zinit Configure
@@ -67,7 +67,9 @@ zinit wait lucid light-mode for \
 	blockf atpull'zinit creinstall -q .' \
 		zsh-users/zsh-completions \
 	atload"source ~/.fzf.zsh" \
-		Aloxaf/fzf-tab \
+		Aloxaf/fzf-tab
+
+
 
 # OMZ plugins
 zinit wait lucid light-mode for \

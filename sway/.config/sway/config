@@ -47,7 +47,7 @@ set $menu sirula
 
 # Gtk Setting
 exec_always {
-	gsettings set $gnome-schema gtk-theme 'vimix-light-laptop-doder'
+	gsettings set $gnome-schema gtk-theme 'vimix-light-doder'
 	gsettings set $gnome-schema icon-theme 'Papirus'
 	gsettings set $gnome-schema cursor-theme 'Vimix-cursors'
 }

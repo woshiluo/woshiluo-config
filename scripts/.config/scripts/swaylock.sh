@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 #
 # swaylock.sh
 # Copyright (C) 2021 Woshiluo Luo <woshiluo.luo@outlook.com>
@@ -8,7 +8,7 @@
 
 wallpaper="/home/woshiluo/Pictures/Wallpaper/71849322_p0_glur.png"
 
-if [ $1 -eq 1 ]; then
+if [ "$1" = 1 ]; then
 	swayidle -w \
 		timeout 5 'swaymsg "output * dpms off"' \
 		resume 'swaymsg "output * dpms on"' &
