@@ -1,5 +1,8 @@
 escape ^Bb
+
 utf8 on
+defencoding UTF-8
+encoding UTF-8 UTF-8
 
 altscreen on
 defbce on

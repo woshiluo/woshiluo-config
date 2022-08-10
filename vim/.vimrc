@@ -33,11 +33,11 @@ Plug 'rust-lang/rust.vim'
 Plug 'lervag/vimtex'
 
 " Auto complete
-Plug 'lifepillar/vim-mucomplete'
 Plug 'dense-analysis/ale'
 
 " Vue
-Plug 'posva/vim-vue'
+"Plug 'posva/vim-vue'
+Plug 'leafOfTree/vim-vue-plugin'
 
 " Markdown 
 " Markdown Preview
@@ -53,6 +53,7 @@ Plug 'vim-scripts/dbext.vim'
 " Plug 'Chiel92/vim-autoformat' 
 " Align = or <space>
 " Plug 'junegunn/vim-easy-align' 
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
 " Git support
 Plug 'tpope/vim-fugitive' 
@@ -73,6 +74,8 @@ set sts=4
 set sw=4
 set autoindent
 set cindent
+
+set incsearch
 
 set t_Co=256
 
@@ -144,7 +147,7 @@ func! Compile()
 	elseif expand( '%:e' ) == 'rs'
 		exec '!cargo run'
 	else
-		exec '!g++ %<.cpp -o %<.run -O2 ' . g:compile_options . ' && time ./%<.run'
+		exec '!g++ %<.cpp -o %<.run -O2 ' . g:compile_options . ' && time ASAN_OPTIONS=detect_leaks=0 ./%<.run'
 	endif
 endfunc
 
@@ -190,11 +193,21 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'typescript': [''] }
+let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'typescript': ['tsserver'], 'vue': ['volar'] }
 let g:ale_cpp_cc_options = g:compile_options
 let g:airline#extensions#ale#enabled = 1
 set omnifunc=ale#completion#OmniFunc
 
+"----------------------------------------------------------------
+" Vim - clap Configure
+"----------------------------------------------------------------
+let g:clap_theme = 'material_design_dark'
+
+"----------------------------------------------------------------
+" ddc.nvim Configure
+"----------------------------------------------------------------
+
+" call ddc#enable()
 
 "----------------------------------------------------------------
 " Vim - Mucomplete Configure
@@ -202,10 +215,12 @@ set omnifunc=ale#completion#OmniFunc
 
 " set completeopt+=noselect
 " set completeopt+=menuone,noselect
-set completeopt=menu,menuone,preview,noselect,noinsert
-set shortmess+=c   " Shut off completion messages
-set belloff+=ctrlg " If Vim beeps during completion
-let g:mucomplete#enable_auto_at_startup = 1
+" set completeopt=menu,menuone,preview,noselect,noinsert
+" set shortmess+=c   " Shut off completion messages
+" set belloff+=ctrlg " If Vim beeps during completion
+" let g:mucomplete#chains = {}
+" let g:mucomplete#chains.default = ['omni', 'c-n', 'path']
+" let g:mucomplete#enable_auto_at_startup = 1
 " let g:clang_complete_auto = 1
 "let g:mucomplete#minimum_prefix_length = 3
 

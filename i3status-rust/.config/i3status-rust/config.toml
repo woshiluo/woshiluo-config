@@ -21,8 +21,7 @@ display_type = "new"
 
 [[block]]
 block = "custom"
-command = 'echo "树林里分出了两条路，而我，选择了人迹稀少的那条，那决定了一切的不同。 "'
-
+command = "echo \"What we leave behind is not as important as how we've lived.\""
 
 [[block]]
 block = "net"

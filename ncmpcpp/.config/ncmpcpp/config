@@ -4,6 +4,7 @@ mpd_music_dir                         = "~/Music"
 mpd_host                              = "localhost"
 mpd_port                              = "6600"
 mpd_connection_timeout                = 5
+system_encoding = "utf-8"
 
 # 界面:
 user_interface                        = "alternative"
@@ -24,6 +25,7 @@ display_bitrate                       = "yes"
 header_visibility                     = "yes"
 statusbar_visibility                  = "yes"
 progressbar_look                      = "▃▃▃"
+enable_window_title					  = "yes"
 
 # 音乐可视化配置:
 visualizer_data_source                = /tmp/mpd.fifo
