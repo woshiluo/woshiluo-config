@@ -88,6 +88,8 @@ input "type:touchpad" {
 }
 
 
+### Idle Ignore
+
 # xwayland version
 for_window [class="Firefox"] inhibit_idle fullscreen
 for_window [class="firefox"] inhibit_idle fullscreen
@@ -99,7 +101,17 @@ for_window [title="Redmi K30 5G"] inhibit_idle fullscreen
 for_window [app_id="Firefox"] inhibit_idle fullscreen
 for_window [app_id="firefox"] inhibit_idle fullscreen
 
-for_window [app_id="floating"] floating enable
+### Floating
+
+# Calc
+for_window [app_id="org.gnome.(calendar|Calculator|power-statistics|control-center)"] floating enable
+
+# Firefox
+for_window [app_id="firefox" title="Pushbullet"] floating enable
+for_window [app_id="firefox" title="Firefox — Sharing Indicator"] floating enable
+for_window [app_id="firefox" title="Picture-in-Picture"] floating enable
+for_window [app_id="firefox" title="Pushbullet – Mozilla Firefox"] floating enable
+for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
 
 # ------------------------------
 # Key bindings Confingure
