@@ -271,10 +271,10 @@ bindsym --locked XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DE
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% # increase screen brightness
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%- # decrease screen brightness
 # Print Screen
-bindsym Print exec --no-startup-id "grimshot save screen - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-bindsym Shift+Print exec --no-startup-id "grimshot save area - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-bindsym Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
-bindsym Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').png"
+bindsym Print exec --no-startup-id "grimshot save screen - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').webp"
+bindsym Shift+Print exec --no-startup-id "grimshot save area - | $script_path/to-swappy.sh ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').webp"
+bindsym Ctrl+Print exec --no-startup-id "grimshot save screen ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').webp"
+bindsym Ctrl+Shift+Print exec --no-startup-id "grimshot save area ~/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S_%s').webp"
 # Media player controls
 bindsym --locked XF86AudioPlay exec playerctl play-pause
 bindsym --locked XF86AudioPause exec playerctl play-pause
