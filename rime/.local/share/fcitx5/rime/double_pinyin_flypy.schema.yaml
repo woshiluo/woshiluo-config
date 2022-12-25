@@ -11,7 +11,7 @@ schema:
   description: |
     朙月拼音＋小鶴雙拼方案。
   dependencies:
-    - stroke
+    - aurora_pinyin
 
 switches:
   - name: ascii_mode
@@ -43,6 +43,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
+    - table_translator@meow_emoji           # 英文输入
   filters:
     - simplifier
     - uniquifier
@@ -83,9 +84,14 @@ speller:
     - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
     #- abbrev/^(.).+$/$1/
 
+grammar:
+    language: zh-hans-t-essay-bgw
+
 translator:
   dictionary: aurora_pinyin.extended
   prism: double_pinyin_flypy
+  contextual_suggestions: true  # 开启八股文
+  initial_quality: 1.2          # 拼音的权重应该比英文大
   preedit_format:
     - xform/([bpmfdtnljqx])n/$1iao/
     - xform/(\w)g/$1eng/

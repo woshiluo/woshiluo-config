@@ -24,7 +24,7 @@ patch:
     #- simplifier@zh_simp
     - simplifier
     - uniquifier
-    - simplifier@emoji_suggestion # 不需要表情的注释这一行
+    #- simplifier@emoji_suggestion # 不需要表情的注释这一行
     #- charset_filter@gbk
     #- single_char_filter
   engine/processors:
@@ -40,25 +40,21 @@ patch:
     - ascii_segmentor
     - matcher
     - abc_segmentor
-    - affix_segmentor@meow_emoji
     - punct_segmentor
     - fallback_segmentor
 
-  recognizer/patterns/meow_emoji: "yw[a-z]*'?$"
-  abc_segmentor/extra_tags: 
-    - meow_emoji
   meow_emoji:
-    dictionary: meow_emoji
-    enable_completion: false
-    prefix: "yw"
-    tips: "〔颜文字〕"
-    initial_quality: 0.2
+      dictionary: meow_emoji
+      enable_completion: true
+      prefix: "yw"
+      tips: "〔颜文字〕"
+      initial_quality: 1.1
 
   # 不需要表情的注释下面三行
-  emoji_suggestion:
-    opencc_config: emoji.json
-    option_name: emoji_suggestion
-    tips: all
+  # emoji_suggestion:
+  #   opencc_config: emoji.json
+  #   option_name: emoji_suggestion
+  #   tips: all
   punctuator:
     # 如果修改标点上屏情况，建议在此处自定义
     #half_shape:

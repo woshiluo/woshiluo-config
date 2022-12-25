@@ -24,6 +24,6 @@ pacman -S --needed - < pkglist.txt
 
 MPV 的配置文件修改自 <https://bbs.vcb-s.com/thread-2730-1-1.html>  
 
-Rime 的词库部分来自[ Sogou 词库 ](https://pinyin.sogou.com/dict/)和[ thunlp/THUOCL ](https://github.com/thunlp/THUOCL)，其中将 THUOCL 转换至 Rime 的词库格式使用了[ fkxxyz/rime-cloverpinyin ](https://github.com/fkxxyz/rime-cloverpinyin)
+Rime 的词库部分来自[ 雾凇拼音 ](https://github.com/iDvel/rime-ice)，使用了[ 八股文 ](https://github.com/lotem/rime-octagram-data)
 
 剩下的使用[ CC 0 ](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)授权

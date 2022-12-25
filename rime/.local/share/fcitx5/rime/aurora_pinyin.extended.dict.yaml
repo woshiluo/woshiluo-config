@@ -10,18 +10,10 @@ use_preset_vocabulary: true
 
 import_tables:
   - aurora_pinyin
-  - aurora_pinyin.useful
-  - aurora_pinyin.sougou
+  - cn_dicts/base    # 基础词库
+  - cn_dicts/sogou   # 搜狗流行词，与 main 没有重复
+  - cn_dicts/ext     # 扩展词库，与 main sogou 没有重复
+  - cn_dicts/tencent # 腾讯词向量，与 main sogou ext 没有重复，大词库，部署时间较长。
+  - cn_dicts/others  # 一些杂项
   - zhwiki
   - moegirl
-  - THUOCL_animal
-  - THUOCL_caijing
-  - THUOCL_car
-  - THUOCL_chengyu
-  - THUOCL_diming
-  - THUOCL_food
-  - THUOCL_IT
-  - THUOCL_law
-  - THUOCL_lishimingren
-  - THUOCL_medical
-  - THUOCL_poem
