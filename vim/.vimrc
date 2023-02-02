@@ -13,7 +13,7 @@ Plug 'scrooloose/nerdtree'
 
 """ Template
 " 模版
-" Plug 'aperezdc/vim-template'
+Plug 'aperezdc/vim-template'
 
 " Airline
 " 状态栏美化

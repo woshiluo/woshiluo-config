@@ -54,8 +54,8 @@ block = "load"
 interval = 1
 format = "{1m}"
 
-[[block]]
-block = "backlight"
+# [[block]]
+# block = "backlight"
 
 [[block]]
 block = "sound"
