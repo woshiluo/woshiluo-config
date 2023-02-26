@@ -1,5 +1,10 @@
+icons_format = "{icon}"
+
+[theme]
 theme = "solarized-dark"
-icons = "awesome"
+
+[icons]
+icons = "awesome4"
 
 # [[block]]
 # block = "custom"
@@ -8,8 +13,8 @@ icons = "awesome"
 
 [[block]]
 block = "music"
-max_width = 10
-buttons = ["play", "next"]
+format = " $icon {$combo.str(max_w:20) $play $next |}"
+# interface_name_exclude = [".*kdeconnect.*", "mpd"]
 
 [[block]]
 block = "maildir"
@@ -25,34 +30,27 @@ command = "echo \"What we leave behind is not as important as how we've lived.\"
 
 [[block]]
 block = "net"
-format = "{speed_up;K*B} {speed_down;K*B}"
-format_alt = "{ssid} {signal_strength}"
 interval = 1
-hide_missing = true
-hide_inactive = true
+format = " $icon ^icon_net_down $speed_down.eng(prefix:Ki) ^icon_net_up $speed_up.eng(prefix:Ki) "
 
 [[block]]
 block = "memory"
-format_mem = "{mem_used:4*B}/{mem_total:4*B}"
-format_swap = "{swap_used:4*B}/{swap_total:4*B}"
-display_type = "memory"
-icons = true
-clickable = true
-interval = 5
+format = " $icon $mem_used.eng(prefix:Gi)/$mem_total.eng(prefix:Gi) "
+format_alt = " $icon $swap_used.eng(prefix:Gi)/$swap_total.eng(prefix:Gi) "
 warning_mem = 80
 warning_swap = 80
 critical_mem = 95
 critical_swap = 95
+interval = 5
 
 [[block]]
 block = "cpu"
 interval = 1
-format = "{utilization:02} {frequency}"
 
 [[block]]
 block = "load"
 interval = 1
-format = "{1m}"
+format = " $icon $1m.eng(w:3) "
 
 # [[block]]
 # block = "backlight"
@@ -63,15 +61,17 @@ block = "sound"
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage} {time}"
+format = "{percentage} {time} "
 
 [[block]]
 block = "custom"
-on_click = '~/.config/scripts/toggle-idle.sh'
 command = '(systemctl --user is-active swayidle | grep inactive >/dev/null) && echo "" || echo "\uf023"'
 interval = 5
+[[block.click]]
+button = "left"
+cmd = '~/.config/scripts/toggle-idle.sh'
 
 [[block]]
 block = "time"
 interval = 1
-format = "%a %Y/%m/%d %T"
+format.full = " $icon $timestamp.datetime(f:'%a %Y/%m/%d %T') "
