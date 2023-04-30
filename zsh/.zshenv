@@ -36,8 +36,8 @@ fi
 # export TERM=xterm-256color
 
 # Rust 
-export RUSTUP_UPDATE_ROOT=https://mirror.sjtu.edu.cn/rust-static/rustup
-export RUSTUP_DIST_SERVER=https://mirror.sjtu.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
+export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 export L_TIME=C
 

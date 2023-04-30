@@ -13,7 +13,7 @@ icons = "awesome4"
 
 [[block]]
 block = "music"
-format = " $icon {$combo.str(max_w:20) $play $next |}"
+format = " $icon {$combo.str(max_w:20,rot_interval:0.5) $play $next |}"
 # interface_name_exclude = [".*kdeconnect.*", "mpd"]
 
 [[block]]
@@ -35,8 +35,8 @@ format = " $icon ^icon_net_down $speed_down.eng(prefix:Ki) ^icon_net_up $speed_u
 
 [[block]]
 block = "memory"
-format = " $icon $mem_used.eng(prefix:Gi)/$mem_total.eng(prefix:Gi) "
-format_alt = " $icon $swap_used.eng(prefix:Gi)/$swap_total.eng(prefix:Gi) "
+format = " $icon $mem_used.eng(prefix:Gi,w:4)/$mem_total.eng(prefix:Gi,w:4) "
+format_alt = " $icon $swap_used.eng(prefix:Gi,w:4)/$swap_total.eng(prefix:Gi,w:4) "
 warning_mem = 80
 warning_swap = 80
 critical_mem = 95
@@ -45,6 +45,7 @@ interval = 5
 
 [[block]]
 block = "cpu"
+format = " $icon $frequency.eng(w:3) $utilization "
 interval = 1
 
 [[block]]
@@ -61,7 +62,7 @@ block = "sound"
 [[block]]
 block = "battery"
 interval = 10
-format = "{percentage} {time} "
+format = "$icon $percentage $time "
 
 [[block]]
 block = "custom"
