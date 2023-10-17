@@ -45,6 +45,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " SQL 
 Plug 'vim-scripts/dbext.vim'
+
+" Yuck
+Plug 'elkowar/yuck.vim'
  
 " Plug 'black-desk/fcitx5-ui.nvim'
 
@@ -88,6 +91,11 @@ set ttimeoutlen=100
 augroup resCur
 	autocmd!
 	autocmd BufReadPost * call setpos(".", getpos("'\""))
+augroup END
+
+augroup project
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
 
 autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
@@ -144,6 +152,8 @@ func! Compile()
 		exec '!firefox %:p'
 	elseif expand( '%:e' ) == 'tex' 
 		exec '!(tectonic % ) && echo "50\%..." && (tectonic %>/dev/null 2>&1) && echo "100\%...Done" && ( rm -f %<.aux %<.log %<.toc %<.out %<.nav %<.snm) && firefox %<.pdf'
+	elseif expand( '%:e' ) == 'md' 
+		exec '!md2pdf.sh %<.md %<.pdf && firefox %<.pdf'
 	elseif expand( '%:e' ) == 'rs'
 		exec '!cargo run'
 	else
@@ -193,8 +203,10 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'typescript': ['tsserver'], 'vue': ['volar'] }
+let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls']  }
+let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ] }
 let g:ale_cpp_cc_options = g:compile_options
+let g:ale_c_parse_compile_commands = 1
 let g:airline#extensions#ale#enabled = 1
 set omnifunc=ale#completion#OmniFunc
 

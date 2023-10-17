@@ -69,8 +69,6 @@ zinit wait lucid light-mode for \
 	atload"source ~/.fzf.zsh" \
 		Aloxaf/fzf-tab
 
-
-
 # OMZ plugins
 zinit wait lucid light-mode for \
 	OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh \

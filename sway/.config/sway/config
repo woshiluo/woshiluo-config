@@ -281,7 +281,7 @@ bindsym --locked XF86AudioPause exec playerctl play-pause
 bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
 
-bindsym Ctrl+semicolon exec clipman pick -t bemenu
+bindsym Ctrl+semicolon exec cliphist list | bemenu | cliphist decode | wl-copy
 
 # ------------------------------
 # Style Confingure

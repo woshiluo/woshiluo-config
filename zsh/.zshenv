@@ -41,5 +41,8 @@ export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
 
 export L_TIME=C
 
-export PATH=$PATH:~/.yarn/bin:~/.local/bin:~/.cargo/bin:~/.config/scripts
+export PATH=$PATH:~/.yarn/bin:~/.local/bin:~/.cargo/bin:~/.config/scripts:~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/
 export GOPATH=$HOME/.go
+
+export NEMU_HOME=/work/ics2021/nemu
+export AM_HOME=/work/ics2021/abstract-machine
