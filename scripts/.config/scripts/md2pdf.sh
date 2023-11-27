@@ -9,4 +9,4 @@
 origin=$1
 output=$2
 
-pandoc --pdf-engine=tectonic -V CJKmainfont="LXGW WenKai" -V geometry:margin=1in $origin -o $output
+pandoc --pdf-engine=tectonic -V CJKmainfont="LXGW WenKai" -V geometry:margin=1in "$origin" -o "$output"
