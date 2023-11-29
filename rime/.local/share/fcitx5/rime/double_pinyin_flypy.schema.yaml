@@ -43,7 +43,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - table_translator@meow_emoji           # 英文输入
+    - table_translator@meow_emoji
   filters:
     - simplifier
     - uniquifier

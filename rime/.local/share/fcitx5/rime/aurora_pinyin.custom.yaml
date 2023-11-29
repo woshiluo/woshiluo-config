@@ -1,0 +1,8 @@
+patch:
+    grammar:
+        language: zh-hans-t-essay-bgw
+
+    translator:
+        dictionary: aurora_pinyin.extended
+        contextual_suggestions: true  # 开启八股文
+        initial_quality: 1.2          # 拼音的权重应该比英文大

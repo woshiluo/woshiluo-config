@@ -46,7 +46,7 @@ patch:
   meow_emoji:
       dictionary: meow_emoji
       enable_completion: true
-      prefix: "yw"
+      prefix: "`"
       tips: "〔颜文字〕"
       initial_quality: 1.1
 

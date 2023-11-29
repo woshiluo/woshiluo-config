@@ -10,6 +10,8 @@ schema:
   description: |
     为简体中文用户设计的拼音输入方案
     包括《通用规范汉字表》全部8105个汉字及部分未收录汉字/字符
+  dependencies:
+    - stroke
 
 switches:
   - name: ascii_mode
@@ -41,6 +43,7 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
+    - reverse_lookup_translator
     - script_translator
   filters:
     - uniquifier
@@ -78,6 +81,17 @@ translator:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔笔画〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/([nl])v/$1ü/
 
 punctuator:
   import_preset: symbols
