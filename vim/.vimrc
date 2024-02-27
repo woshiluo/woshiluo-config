@@ -7,18 +7,14 @@ call plug#begin('~/.vim/plugged')
 " Plug 'chxuan/vimplus-startify'                 
 
 """ Nerdtree
-" 目录树
 Plug 'scrooloose/nerdtree'
 
 
 """ Template
-" 模版
 Plug 'aperezdc/vim-template'
 
 " Airline
-" 状态栏美化
 Plug 'vim-airline/vim-airline'                 
-" 状态栏美化主题
 Plug 'vim-airline/vim-airline-themes'          
 
 " Plug 'jdkanani/vim-material-theme'
@@ -30,7 +26,9 @@ Plug 'majutsushi/tagbar'
 Plug 'rust-lang/rust.vim'
 
 " Latex
+" Plug 'sirver/ultisnips'
 Plug 'lervag/vimtex'
+" Plug 'sillybun/zyt-snippet'
 
 " Auto complete
 Plug 'dense-analysis/ale'
@@ -103,13 +101,10 @@ autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
 "----------------------------------------------------------------
 " Encoding configure
 "----------------------------------------------------------------
-"Vim 在与屏幕/键盘交互时使用的编码(取决于实际的终端的设定)        
 set encoding=utf-8
 set langmenu=en_US.UTF-8
-" 设置打开文件的编码格式  
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 
 set fileencoding=utf-8
-"设置为双字宽显示
 set ambiwidth=double
 set mouse-=a
 
@@ -131,7 +126,6 @@ nmap <F12> :call Compile()<CR>
 
 set pastetoggle=<F6>
 
-" 设置切换Buffer快捷键
 nmap <C-N> :bn<CR>
 nmap <C-P> :bp<CR>
 
@@ -156,6 +150,10 @@ func! Compile()
 		exec '!md2pdf.sh %<.md %<.pdf && firefox %<.pdf'
 	elseif expand( '%:e' ) == 'rs'
 		exec '!cargo run'
+	elseif expand( '%:e' ) == 'py'
+		exec '!python %<.py'
+	elseif expand( '%:e' ) == 'php'
+		exec '!php %<.php'
 	else
 		exec '!g++ %<.cpp -o %<.run -O2 ' . g:compile_options . ' && time ASAN_OPTIONS=detect_leaks=0 ./%<.run'
 	endif
@@ -203,8 +201,8 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls']  }
-let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ] }
+let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls']  }
+let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'] }
 let g:ale_cpp_cc_options = g:compile_options
 let g:ale_c_parse_compile_commands = 1
 let g:airline#extensions#ale#enabled = 1
@@ -252,8 +250,8 @@ let g:email = "woshiluo.luo@outlook.com"
 "----------------------------------------------------------------
 " Vim - Airline Configure
 "----------------------------------------------------------------
-let g:airline_theme="luna"                   " 主题配色
-" let g:airline_theme="nord"                   " 主题配色
+let g:airline_theme="luna"
+" let g:airline_theme="nord"                   
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 if !exists('g:airline_symbols')
@@ -264,18 +262,14 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
-" 这个是安装字体后 必须设置此项" 
 let g:airline_powerline_fonts = 1   
 
-" 打开tabline功能,方便查看Buffer和切换,省去了minibufexpl插件
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" 置关闭状态显示空白符号计数
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
 
-" 自动退出
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif

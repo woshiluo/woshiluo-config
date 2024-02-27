@@ -70,7 +70,7 @@ type = 'tray'
 all_monitors = true
 type = 'workspaces'
 # favorites = ['1','2','3','4','5','6','7','8','9', '10']
-
+# 
 [[center]]
 show_icon = false
 type = 'focused'

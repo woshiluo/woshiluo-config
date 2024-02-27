@@ -1,0 +1,18 @@
+[colors.primary]
+background = "#000000"
+
+[font]
+size = 13
+
+[font.bold]
+family = "Fira Code"
+
+[font.italic]
+family = "Fira Code"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[window]
+opacity = 0.7

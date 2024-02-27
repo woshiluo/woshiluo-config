@@ -9,9 +9,9 @@
 wallpaper="/home/woshiluo/Pictures/Wallpaper/71849322_p0_glur.png"
 
 if [ "$1" = 1 ]; then
-#	swayidle -w \
-#		timeout 5 'hyprctl dispatch dpms off' \
-#		resume 'hyprctl dispatch dpms on' &
+	swayidle -w \
+		timeout 5 'hyprctl dispatch dpms off' \
+		resume 'hyprctl dispatch dpms on' &
 
 	swaylock -i $wallpaper 
 
