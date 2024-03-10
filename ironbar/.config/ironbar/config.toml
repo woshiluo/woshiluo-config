@@ -44,7 +44,7 @@ type = 'custom'
 
 [[end.bar]]
 type = 'button'
-label = '{{ (systemctl --user is-active swayidle | grep inactive >/dev/null) && echo "" || echo "" }}'
+label = '{{ (systemctl --user is-active hypridle | grep inactive >/dev/null) && echo "" || echo "" }}'
 on_click = '!~/.config/scripts/toggle-idle.sh'
 
 [[end]]
