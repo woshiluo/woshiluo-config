@@ -201,7 +201,7 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['cc', 'clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls']  }
+let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls']  }
 let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'] }
 let g:ale_cpp_cc_options = g:compile_options
 let g:ale_c_parse_compile_commands = 1

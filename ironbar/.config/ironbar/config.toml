@@ -48,6 +48,9 @@ label = '{{ (systemctl --user is-active hypridle | grep inactive >/dev/null) && 
 on_click = '!~/.config/scripts/toggle-idle.sh'
 
 [[end]]
+type = 'volume'
+
+[[end]]
 type = 'upower'
 icon_size = 16
 

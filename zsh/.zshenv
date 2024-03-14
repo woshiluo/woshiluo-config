@@ -48,3 +48,4 @@ export NEMU_HOME=/work/ics2023/nemu
 export AM_HOME=/work/ics2023/abstract-machine
 # export NEMU_HOME=/work/ysyx-workbench/nemu
 # export AM_HOME=/work/ysyx-workbench/abstract-machine
+export NAVY_HOME=/work/ics2023/navy-apps
