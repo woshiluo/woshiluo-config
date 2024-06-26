@@ -17,6 +17,7 @@ fi
 # module_path+=( "/home/woshiluo/.local/share/zinit/module/Src" )
 # zmodload zdharma_continuum/zinit
 
+setopt HIST_IGNORE_SPACE
 
 # ---------
 # Configure
@@ -58,6 +59,9 @@ zinit lucid nocd light-mode for \
 zinit wait lucid light-mode for \
 	OMZ::lib/directories.zsh 
 
+zinit wait lucid light-mode for \
+	atuinsh/atuin
+
 # Compltions & Fzf Configure
 zinit wait lucid light-mode for \
 	atinit"zicompinit; zicdreplay" \
@@ -74,9 +78,10 @@ zinit wait lucid light-mode for \
 	OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh \
 	OMZ::plugins/sudo/sudo.plugin.zsh \
 
+
 # Skim history search
-zinit wait lucid light-mode for \
-	'https://github.com/lotabout/skim/blob/master/shell/key-bindings.zsh'
+# zinit wait lucid light-mode for \
+# 	'https://github.com/lotabout/skim/blob/master/shell/key-bindings.zsh'
 
 # Zoxide
 zinit wait lucid light-mode for \

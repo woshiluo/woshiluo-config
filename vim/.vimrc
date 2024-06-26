@@ -46,6 +46,9 @@ Plug 'vim-scripts/dbext.vim'
 
 " Yuck
 Plug 'elkowar/yuck.vim'
+
+" Typst
+Plug 'kaarmu/typst.vim'
  
 " Plug 'black-desk/fcitx5-ui.nvim'
 
@@ -54,7 +57,7 @@ Plug 'elkowar/yuck.vim'
 " Plug 'Chiel92/vim-autoformat' 
 " Align = or <space>
 " Plug 'junegunn/vim-easy-align' 
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+Plug 'liuchengxu/vim-clap', { 'do': { -> clap#installer#force_download() } }
 
 " Git support
 Plug 'tpope/vim-fugitive' 
@@ -201,8 +204,8 @@ let g:rustfmt_autosave = 1
 "----------------------------------------------------------------
 
 let g:ale_completion_enabled = 1
-let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls']  }
-let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'] }
+let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls'], 'scala': [ 'metals' ]  }
+let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'], 'scala': ['scalafmt'] }
 let g:ale_cpp_cc_options = g:compile_options
 let g:ale_c_parse_compile_commands = 1
 let g:airline#extensions#ale#enabled = 1

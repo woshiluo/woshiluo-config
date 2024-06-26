@@ -44,8 +44,10 @@ export L_TIME=C
 export PATH=$PATH:~/.yarn/bin:~/.local/bin:~/.cargo/bin:~/.config/scripts:~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/
 export GOPATH=$HOME/.go
 
-export NEMU_HOME=/work/ics2023/nemu
-export AM_HOME=/work/ics2023/abstract-machine
-# export NEMU_HOME=/work/ysyx-workbench/nemu
-# export AM_HOME=/work/ysyx-workbench/abstract-machine
-export NAVY_HOME=/work/ics2023/navy-apps
+# export NEMU_HOME=/work/ics2023/nemu
+# export AM_HOME=/work/ics2023/abstract-machine
+# export NAVY_HOME=/work/ics2023/navy-apps
+export NEMU_HOME=/work/ysyx/ysyx-workbench/nemu
+export AM_HOME=/work/ysyx/ysyx-workbench/abstract-machine
+export NPC_HOME=/work/ysyx/ysyx-workbench/npc
+export NVBOARD_HOME=/work/ysyx/ysyx-workbench/nvboard
