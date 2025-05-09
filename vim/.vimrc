@@ -31,7 +31,7 @@ Plug 'lervag/vimtex'
 " Plug 'sillybun/zyt-snippet'
 
 " Auto complete
-Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale', { 'commit': '65b49c1b8172d0ab1b08ffe8fdcabb93fc1328df' }
 
 " Vue
 "Plug 'posva/vim-vue'
@@ -136,7 +136,7 @@ nmap <C-P> :bp<CR>
 " User Function Configure 
 "----------------------------------------------------------
 
-let g:compile_options='-lm -std=c++20 -Wall -Wextra -Wshadow -Dwoshiluo -fsanitize=address'
+let g:compile_options='-lm -std=c++20 -Wall -Wextra -Wshadow -Dwoshiluo -fsanitize=address,undefined'
 " let g:compile_options='-lm -std=c++20 -Wall -Wextra -Dwoshiluo'
 func! Debug()
 	if expand( '%:e' ) == 'cpp' 
@@ -205,10 +205,12 @@ let g:rustfmt_autosave = 1
 
 let g:ale_completion_enabled = 1
 let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls'], 'scala': [ 'metals' ]  }
-let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'], 'scala': ['scalafmt'] }
+let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'], 'scala': ['scalafmt'], 'rust': [ 'rustfmt' ] }
 let g:ale_cpp_cc_options = g:compile_options
 let g:ale_c_parse_compile_commands = 1
+" let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
+let g:ale_rust_analyzer_config = { 'cargo': { 'target': 'riscv64imac-unknown-none-elf' } }
 set omnifunc=ale#completion#OmniFunc
 
 "----------------------------------------------------------------

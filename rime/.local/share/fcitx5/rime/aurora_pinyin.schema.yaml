@@ -81,6 +81,7 @@ translator:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+    - xform/abcd/flag/
 
 reverse_lookup:
   dictionary: stroke

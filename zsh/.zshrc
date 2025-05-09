@@ -1,10 +1,10 @@
-# # Check screen
+# Check screen
 
-if [[ "$USE_SCREEN" == "" && $- == *i* ]]; then
+if [[ "$USE_SESSION_MANAGER" == "" && $- == *i* ]]; then
     if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(emacs|vim)" ]] && [[ ! $TERM == "xterm-256color" ]]; then
-		export USE_SCREEN=1 
-		screen -x autoscreen
-		return 
+		export USE_SESSION_MANAGER=1 
+		zellij a autosession
+#		return 
 	fi
 fi
 

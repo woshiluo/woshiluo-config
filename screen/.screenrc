@@ -6,13 +6,14 @@ encoding UTF-8 UTF-8
 
 altscreen on
 defbce on
-term screen-256color
+term alacritty
 
 startup_message off
 
 hardstatus off
 hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g} ][%= %{= kw}%?%-Lw%?%{r}| %{W}%n*%f%t%?(%u)%?%{r} |%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W} %c:%s %{g}]'
+# hardstatus string '%{= kG}[ %{G}%H %{g} ][%= %{= kw}%?%-Lw%?%{r}| %{W}%n*%f%t%?(%u)%?%{r} |%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W} %c:%s %{g}]'
+hardstatus string '%{= kG}[ wtf ]'
 
 # altscreen on
 maptimeout 100

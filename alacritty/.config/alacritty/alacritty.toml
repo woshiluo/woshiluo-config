@@ -2,7 +2,7 @@
 background = "#000000"
 
 [font]
-size = 14
+size = 18
 
 [font.bold]
 family = "Fira Code"
