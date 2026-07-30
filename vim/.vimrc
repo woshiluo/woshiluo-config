@@ -22,8 +22,8 @@ Plug 'vim-airline/vim-airline-themes'
 """ Language
 
 " Rust
-Plug 'majutsushi/tagbar'
-Plug 'rust-lang/rust.vim'
+" Plug 'majutsushi/tagbar'
+" Plug 'rust-lang/rust.vim'
 
 " Latex
 " Plug 'sirver/ultisnips'
@@ -31,8 +31,10 @@ Plug 'lervag/vimtex'
 " Plug 'sillybun/zyt-snippet'
 
 " Auto complete
-Plug 'dense-analysis/ale', { 'commit': '65b49c1b8172d0ab1b08ffe8fdcabb93fc1328df' }
+" Plug 'dense-analysis/ale', { 'commit': '65b49c1b8172d0ab1b08ffe8fdcabb93fc1328df' }
+" Plug 'dense-analysis/ale'
 
+Plug 'yegappan/lsp'
 " Vue
 "Plug 'posva/vim-vue'
 Plug 'leafOfTree/vim-vue-plugin'
@@ -79,6 +81,8 @@ set sw=4
 set autoindent
 set cindent
 
+set directory^=$HOME/.vim/swapfiles//
+
 set incsearch
 
 set t_Co=256
@@ -108,7 +112,7 @@ set encoding=utf-8
 set langmenu=en_US.UTF-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 
 set fileencoding=utf-8
-set ambiwidth=double
+" set ambiwidth=
 set mouse-=a
 
 "set fdm=indent " 代码折叠
@@ -129,8 +133,8 @@ nmap <F12> :call Compile()<CR>
 
 set pastetoggle=<F6>
 
-nmap <C-N> :bn<CR>
-nmap <C-P> :bp<CR>
+nmap <C-n> :bn<CR>
+nmap <C-p> :bp<CR>
 
 "----------------------------------------------------------
 " User Function Configure 
@@ -200,18 +204,55 @@ autocmd FileType vue syntax sync fromstart
 let g:rustfmt_autosave = 1
 
 "----------------------------------------------------------------
+" Vim - lsp Configure
+"----------------------------------------------------------------
+
+set completeopt=menu,menuone,fuzzy,noselect
+let lspOptions = #{
+			\ autoHighlightDiags: v:true,
+			\ showDiagInPopup: v:true,
+			\ showDiagWithVirtualText: v:false,
+			\ noNewlineInCompletion: v:true,
+			\ completionTextEdit: v:true,
+			\ autoComplete: v:false,
+			\ omniComplete: v:true,
+			\}
+autocmd User LspSetup call LspOptionsSet(lspOptions)
+
+let lspServers = [#{
+			\	name: 'rustanalyzer',
+			\	filetype: ['rust'],
+			\	path: '/opt/homebrew/opt/rustup/bin/rust-analyzer',
+			\	args: [],
+			\	syncInit: v:true,
+			\	initializationOptions: #{
+			\		inlayHints: #{
+			\			typeHints: #{ enable: v:true },
+			\			parameterHints: #{ enable: v:true }
+			\		}
+			\	}
+			\}]
+
+autocmd User LspSetup call LspAddServer(lspServers)
+
+autocmd User LspAttached {
+    autocmd CursorHold <buffer> silent! LspDiag current
+}
+set updatetime=300
+
+"----------------------------------------------------------------
 " Vim - ale Configure
 "----------------------------------------------------------------
 
-let g:ale_completion_enabled = 1
-let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls'], 'scala': [ 'metals' ]  }
-let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'], 'scala': ['scalafmt'], 'rust': [ 'rustfmt' ] }
-let g:ale_cpp_cc_options = g:compile_options
-let g:ale_c_parse_compile_commands = 1
-" let g:ale_fix_on_save = 1
-let g:airline#extensions#ale#enabled = 1
-let g:ale_rust_analyzer_config = { 'cargo': { 'target': 'riscv64imac-unknown-none-elf' } }
-set omnifunc=ale#completion#OmniFunc
+" let g:ale_completion_enabled = 1
+" let g:ale_linters = { 'rust': ['analyzer'], 'cpp': ['clangd'], 'c': [ 'clangd' ], 'typescript': ['tsserver'], 'typescriptreact': ['tsserver'], 'vue': ['volar'], 'java': ['javalsp'], 'go': ['gopls'], 'scala': [ 'metals' ]  }
+" let g:ale_fixers = { 'c': [ 'clang-format' ], 'go': [ 'gofmt' ], 'vue': [ 'prettier' ], 'typescript': ['eslint'], 'scala': ['scalafmt'], 'rust': [ 'rustfmt' ] }
+" let g:ale_cpp_cc_options = g:compile_options
+" let g:ale_c_parse_compile_commands = 1
+" " let g:ale_fix_on_save = 1
+" let g:airline#extensions#ale#enabled = 1
+" " let g:ale_rust_analyzer_config = { 'cargo': { 'target': 'riscv64imac-unknown-none-elf' } }
+" " set omnifunc=ale#completion#OmniFunc
 
 "----------------------------------------------------------------
 " Vim - clap Configure
