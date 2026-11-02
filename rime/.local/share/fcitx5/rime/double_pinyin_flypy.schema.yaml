@@ -19,8 +19,6 @@ switches:
     states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: simplification
-    states: [ 漢字, 汉字 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -43,9 +41,9 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - table_translator@meow_emoji
+    # - table_translator@meow_emoji
   filters:
-    - simplifier
+    # - simplifier
     - uniquifier
 
 speller:
@@ -84,50 +82,26 @@ speller:
     - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
     #- abbrev/^(.).+$/$1/
 
+
 grammar:
-    language: zh-hans-t-essay-bgw
+  language: wanxiang-lts-zh-hans
+  collocation_max_length: 6
+  collocation_min_length: 2
+  collocation_penalty: -14
+  non_collocation_penalty: -6
+  weak_collocation_penalty: -100
+  rear_penalty: -18
 
 translator:
   dictionary: aurora_pinyin.extended
   prism: double_pinyin_flypy
   contextual_suggestions: true  # 开启八股文
+  max_homophones: 8
   initial_quality: 1.2          # 拼音的权重应该比英文大
-  preedit_format:
-    - xform/([bpmfdtnljqx])n/$1iao/
-    - xform/(\w)g/$1eng/
-    - xform/(\w)q/$1iu/
-    - xform/(\w)w/$1ei/
-    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
-    - xform/(\w)t/$1ve/
-    - xform/(\w)y/$1un/
-    - xform/([dtnlgkhvuirzcs])o/$1uo/
-    - xform/(\w)p/$1ie/
-    - xform/([jqx])s/$1iong/
-    - xform/(\w)s/$1ong/
-    - xform/(\w)d/$1ai/
-    - xform/(\w)f/$1en/
-    - xform/(\w)h/$1ang/
-    - xform/(\w)j/$1an/
-    - xform/([gkhvuirzcs])k/$1uai/
-    - xform/(\w)k/$1ing/
-    - xform/([jqxnl])l/$1iang/
-    - xform/(\w)l/$1uang/
-    - xform/(\w)z/$1ou/
-    - xform/([gkhvuirzcs])x/$1ua/
-    - xform/(\w)x/$1ia/
-    - xform/(\w)c/$1ao/
-    - xform/([dtgkhvuirzcs])v/$1ui/
-    - xform/(\w)b/$1in/
-    - xform/(\w)m/$1ian/
-    - xform/([aoe])\1(\w)/$1$2/
-    - "xform/(^|[ '])v/$1zh/"
-    - "xform/(^|[ '])i/$1ch/"
-    - "xform/(^|[ '])u/$1sh/"
-    - xform/([jqxy])v/$1u/
-    - xform/([nl])v/$1ü/
+  preedit_format: {}
 
 punctuator:
-  import_preset: default
+  import_preset: symbols
 
 key_binder:
   import_preset: default

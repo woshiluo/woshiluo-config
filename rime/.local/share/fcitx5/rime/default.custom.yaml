@@ -12,7 +12,6 @@ patch:
   schema_list:
     - {schema: double_pinyin_flypy}
     - {schema: aurora_pinyin}
-    - {schema: meow_emoji}
   "switcher/hotkeys":
     - "Control+grave"
   "switcher/save_options":

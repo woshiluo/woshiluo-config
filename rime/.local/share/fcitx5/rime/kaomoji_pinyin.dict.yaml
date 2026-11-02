@@ -1,0 +1,1610 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Kaomoji dictionary for Rime input method engine
+# 
+# Created with rime_kaomoji_dict generator
+#
+# https://github.com/aoguai/rime_kaomoji_dict
+
+---
+name: kaomoji_pinyin
+version: "2025-04-28"
+sort: by_weight
+use_preset_vocabulary: false
+max_phrase_length: 99
+min_phrase_weight: 1
+...
+
+# Pinyin entries: 1591
+ﾟ( ☉д⊙)	a	0
+Σ<(=⊙▽⊙)"	a	0
+⊙▂⊙	a	0
+⊙０⊙	a	0
+(>_<)	a	0
+w(ﾟДﾟ)w	a a	0
+喂我 σ( ᑒ )	a a	0
+Ｏ(≧口≦)Ｏ	a a a	0
+ლ(•̀ _ •́ ლ)	a xin	0
+w(ﾟДﾟ)w	aa	0
+o(≧口≦)o	aaa	0
+o((>ω< ))o	aaa	0
+Ｏ(≧口≦)Ｏ	aaa	0
+╮(￣▽￣")╭	ai	0
+╮（﹀＿﹀）╭	ai	0
+(´･Д･)」	ai	0
+╮(╯_╰)╭	ai	0
+ヾ(๑╹◡╹)ﾉ"♡	ai ni	0
+(￣y▽,￣)╭ 哎哟哟……	ai yo	0
+安啦~~~ o(*￣▽￣*)ブ	an	0
+安安啦~~~ o(*￣▽￣*)ブ	an an	0
+₍•˽•₎	an jing	0
+(︶.̮︶✽)	an jing	0
+₍•͈˽•͈₎	an jing	0
+| ω・´)	an zhong guan cha	0
+(．． )"~えっと、あのぉ・・・	ano	0
+´◔ ‸◔`	ao	0
+(>▽<)	ao	0
+ヾ(≧O≦)〃嗷~	ao	0
+＼(◎o◎)／	ao	0
+┗|｀O′|┛ 嗷~~	ao	0
+ヽ(･∀･)メ	ao	0
+(눈▂눈)	ao jiao bing zhang	0
+(o|o) 奥特曼……	ao te man	0
+(o|o) 凹凸曼……	ao tu man	0
+┗<(=｀O′=)>┛	ao wu	0
+l(｡-ω-)l	ba ga	0
+(ㄏ￣▽￣)ㄏbyeㄟ(￣▽￣ㄟ)	bai	0
+ｍ(＿　＿)ｍ	bai	0
+ヾ(￣▽￣)Bye~Bye~	bai	0
+(o^0^o)/~~~~~~~バイバ～イ！！	bai	0
+(o_ _)ﾉ	bai bai	0
+(ㄏ￣▽￣)ㄏbyeㄟ(￣▽￣ㄟ)	bai bai	0
+(-人-) [拜佛]	bai fo	0
+(o_ _)ﾉ	bai le	0
+拜托啦……(^人^)	bai tuo	0
+(๑•̀ㅂ•́)و✧	bang	0
+(๑•̀ㅂ•́)و✧	bang bang da	0
+\(￣︶￣*\))抱抱~	bao bao	0
+\(￣︶￣)/ 抱抱~	bao bao	0
+<(=*′д｀)爻(′д｀*=)>	bao bao	0
+＼（￣︶￣）／	bao bao	0
+[抱抱]━((*′ ▽｀)爻(′▽｀*))━!!!	bao bao	0
+\(T︶T*\))抱抱~	bao bao	0
+[抱抱]━((*′д｀)爻(′д｀*))━!!!!	bao bao	0
+<(=′▽')爻 (`▽｀=)>	bao bao	0
+▄︻┻┳═一…… ☆（>○<）	bao tou	0
+o(*≧▽≦)ツ	bao xiao	0
+o<(*≧▽≦)>ツ	bao xiao	0
+ヾ(≧▽≦*)o	bao xiao	0
+ヾ(′▽｀*)ゝ[包在我身上!]	bao zai wo shen shang	0
+超远程BB枪！(＃￣□￣)ｏ―∈‥oo━━━━━━━☆	bb qiang	0
+（；´д｀）ゞ	bei	0
+(ˉ▽ˉ；)[呃~被发现了......]	bei fa xian le	0
+(:з[____]	bei zi	0
+(～￣(OO)￣)ブ	ben	0
+(っ*´Д`)っ	ben dan	0
+ヾ(´∀`o)+	ben ren	0
+o(≧口≦)o	beng kui	0
+(′゜c_，゜` ) [鼻毛]	bi mao	0
+(　ˇωˇ)	bi mu yang shen	0
+╭∩╮(︶︿︶）╭∩╮鄙视你！	bi shi	0
+<(=￢_￢=)>	bi shi	0
+凸(゜皿゜=メ)>	bi shi	0
+<(=￣ii￣=)><(=￣＂￣=)>	bi ti	0
+(￣ ii ￣;) (￣＂￣;)	bi ti	0
+<(=￣ ‘i ￣=)>	bi ti	0
+(￣ ‘i ￣;)	bi ti	0
+(￣ ‘i ￣;)	bi ti chong	0
+<(=⊙x⊙=)>	bi zui	0
+(⊙x⊙;)	bi zui	0
+(눈◇눈)	bian cheng xiao ji le de bing zhang	0
+o(′益`)o [便秘]	bian mi	0
+<(=￣ε(￣＃)☆╰╮o(=￣皿￣///)>	bian ta	0
+[吃我一鞭!]( `０‘)ノ~~~~~~~~~ν	bian zi	0
+§(*￣▽￣*)§[辫子]	bian zi	0
+<(￣3￣)> 表！	biao	0
+(＞﹏＜)	bie	0
+＜（－︿－）＞	bie chao	0
+(＞﹏＜)	bie ju	0
+< ( ￣︶￣ ) ╱ ( o 〒﹏〒 o )	bie ku	0
+______λ......___丬 别走啊～～	bie zou	0
+_____λ......___丬 别走啊～～	bie zou	0
+(*￣︿￣)	bie zui	0
+[瘪嘴](*￣︿￣)	bie zui	0
+눈_눈	bing zhang	0
+(눈_눈)	bing zhang	0
+(눈_눈)	bing zhang yan wen zi	0
+(눈160눈)	bing zhang yi mi liu	0
+<(=o゜▽゜)o☆[BINGO!]	bingo	0
+(o゜▽゜)o☆[BINGO!]	bingo	0
+(*^ ^*)(^ *)	bo	0
+(* ￣3)(ε￣ *)	bo bo	0
+真空波动拳！（ ｀o′）{ ···－＝≡))	bo dong quan	0
+(* ￣3)(ε￣ *) [啵啵]	bobo	0
+(◎_x)	bqlz	0
+( *^-^)ρ(*╯^╰)	bu chi	0
+(＠_＠;)	bu dong	0
+(＠_＠;)? [不懂]	bu dong	0
+<(=＠_＠;=)?>	bu dong	0
+ㄟ<(=▔.▔=)>ㄏ	bu guan wo shi	0
+o(￣┰￣*)ゞ	bu hao yi si	0
+o(￣┰￣*)ゞ	bu hao yi si la	0
+(｡•́︿•̀｡)	bu kai xin	0
+￣へ￣	bu kai xin	0
+(๑´╹‸╹`๑)	bu kai xin	0
+(/▽＼)	bu kan	0
+(/▽＼) 我不看……	bu kan	0
+（＃￣～￣＃）	bu man	0
+[不满](*￣︿￣)	bu man	0
+(*￣︿￣)	bu man	0
+“不明真相的围观群众” 槑槑槑槑呆槑槑槑槑槑槑槑槑……	bu ming zhen xiang	0
+ヾ( ┬o┬)┌θθθθ(;;＿ ＿).o○[555~他不起来……]	bu qi	0
+<(=⊙~⊙)	bu shi	0
+ㄟ( ▔, ▔ )ㄏ [不是我干的]	bu shi wo	0
+ㄟ( ▔, ▔ )ㄏ	bu shi wo	0
+(* ￣︿￣)	bu shuang	0
+₍₍ ◝(　ﾟ∀ ﾟ )◟⁾⁾不送	bu song	0
+ᑭ`д´)ᓀ ∑ᑭ(`ヮ´ )ᑫ	bu ting bu ting	0
+[不屑](￣_,￣ )	bu xie	0
+( ￣ー￣)	bu xie	0
+(￣_,￣ )	bu xie	0
+(+.+)(-.-)(_ _) ..zzZZ もうだめ	bu xing l	0
+°.°·(((p<(≧□≦)>;q)))·°.°。	bu yao	0
+<(=/๑ᆷ๑\)	bu yao	0
+不＞(￣ε￣ =0, ￣3￣)<要	bu yao	0
+>ω<=)>o"	bu yao	0
+°.°·(((p(≧□≦)q)))·°.°。	bu yao	0
+不＞(￣ε￣ = ￣3￣)<要	bu yao a	0
+不＞(￣ε￣ = ￣3￣)&lt;要	bu yao a	0
+ヽ（≧□≦）ノ	bu yao a	0
+(눈▽눈)	bu zheng chang de bing zhang	0
+◐▽◑	bu zhi dao	0
+凸(艹皿艹 )	ca	0
+(ノへ`、)	ca yan lei	0
+(ノへ￣、)[擦眼泪……]	ca yan lei	0
+(ノへ￣、)	ca yan lei	0
+<(=￣︿￣)︵θ︵θ︵θ︵θ︵☆(＞口＜=)>	cai	0
+(o′┏▽┓｀o) [财神爷]	cai shen	0
+<(=o′┏▽┓｀o=)>	cai shen	0
+（*゜ー゜*）	cai zhi dao	0
+（*゜ー゜*）	cai zhi dao a	0
+<(=X﹏X=)>	can le	0
+X﹏X 惨了！	can le	0
+|<(=·_·=)> |·_·=)> |_·=)> |·=)> |>	cang	0
+凸(艹皿艹=)>	cao	0
+凸(艹皿艹 )	cao	0
+( ´・ω)	ce lian sha	0
+(｀・ω)	ce lian sha	0
+<(≧︶)￣▽￣=)>ゞ	ceng	0
+( *￣▽￣)((≧︶≦*)	ceng	0
+( *￣▽￣)((≧︶≦*) [蹭]	ceng	0
+[蹭](*≧︶≦))(￣▽￣* )ゞ	ceng	0
+( *￣▽￣)((≧︶≦*)	ceng yi xia	0
+×	cha	0
+<(ノへ￣、=)>	cha yan lei	0
+<)。(>	cha yao	0
+[叉腰] <)。(>	cha yao	0
+&lt;)。(&gt;	cha yao	0
+o<(=⊙﹏⊙=)>︴o	chan dou	0
+♪q(^_^q=)><(=p^-^)p♪q(^-^q=)><(=p^_^)p♪	chang ge	0
+q(≧▽≦q)	chao xiao	0
+<(=-@y@)	cheng yan jing	0
+ψ(｀∇´)ψ	chi dian	0
+ψ(｀∇´)ψ	chi diao	0
+[吃饭鸟]……(((((ヾ<(　=o·ェ·)=o　┏━┓	chi fan	0
+[吃饭去鸟].....(((((ヾ(　o=0,^·ェ·)o　┏━┓	chi fan	0
+(((((ヾ(　o=^•ェ•)o　┏━┓	chi fan	0
+(*￣ω￣)	chi le	0
+<(。=>︿<)_θ 吃药	chi yao	0
+(。>︿<)_θ[吃药]	chi yao	0
+ε=ε=~\<(= ￣皿￣)/~	chong	0
+冲出！！___*\( ￣皿￣)/#____	chong chu	0
+___*( ￣皿￣)/#____	chong chu	0
+┌|*´∀｀|┘	chou	0
+(￣ε(#￣)☆╰╮o(￣皿￣///)	chou	0
+抽!!(￣ε(#￣)☆╰╮(￣▽￣///)	chou	0
+→)╥﹏╥)	chou lian	0
+(o≖◡≖)	chou mei	0
+抽!!(￣ε(#￣)☆╰╮(￣▽￣///)	chou ni	0
+ヾ(′▽｀*)ゝ[包在我身上!]	chou p	0
+(ノへ￣、)[抽泣]	chou qi	0
+(ノへ￣、)	chou qi	0
+┌|*´∀｀|┘	chou ya	0
+<(=￣c￣)y▂ξ。。。 抽烟	chou yan	0
+（￣ c￣）y▂ξ。。。	chou yan	0
+[EXIT]______λ......_____	chu kou	0
+[EXIT]λ…λλ…λ…λλλ…	chu kou	0
+&lt;( ￣^￣)(θ(θ☆( &gt;_&lt;	chuai	0
+<( ￣^￣)(θ(θ☆( >_<	chuai	0
+ε=0,ε┣G┻F┳ε=0,ヽ(*￣▽￣)ノ┻W┫穿墙过去！	chuan qiang	0
+Σ>―(〃°ω°〃)♡→	chuan xin	0
+⁽ ˙³˙⁾	chui shao zi	0
+(๐॔˃̶ᗜ˂̶๐॓)	chun ku	0
+→)╥﹏╥=)>	chuo	0
+(～￣▽￣)→))*￣▽￣*)o [手指戳戳]	chuo	0
+→)╥﹏╥) [戳]	chuo	0
+o(￣▽￣*)ゞ))￣▽￣*)o [手肘戳戳]	chuo	0
+→)╥﹏╥) [戳]	chuo lian	0
+→)╥﹏╥)	chuo lian	0
+<(=～￣▽￣)→)￣▽￣=)>o	chuo nian	0
+[赐予你力量！]( *￣▽￣)o ─═≡※:☆▆▅▄▃▂＿	ci yu ni li liang	0
+(●─●)	da bai	0
+(′台｀ ) [大鼻子]	da bi zi	0
+(・-・*)	da gai	0
+(_ _)( - . - )(~O~) ……( - . - )	da ha qian	0
+[打呵欠]<( _ _ )><(=- . -=)><(=~ O ~=)>……<(=- . -=)>	da ha qian	0
+[打呵欠](_ _)( - . - )(~O~) ……( - . - )	da he qian	0
+(_ _)( - . - )(~O~) ……( - . - )	da he qian	0
+(。_。)	da ji	0
+━┳━　━┳━	da ku	0
+( ,,´･ω･)ﾉ"(´っω･｀｡)	da ni	0
+ε=怒ε=怒ε=怒ε=( o｀ω′)ノ	da nu	0
+Pia!(ｏ ‵-′)ノ” [臭蚊子!]	da wen zi	0
+<(=＾皿＾=)っ	da xiao	0
+o_O	da xiao yan	0
+(O_o)(o_O)	da yan deng xiao yan	0
+(￣︶￣)↗	da zhang	0
+(￣旦￣；)	dai	0
+━┳━　━┳━	dai	0
+<(=⊙_⊙=)>	dai	0
+(￣△￣；)	dai	0
+呆滞 ━┳━　━┳━	dai zhi	0
+(￣△￣；)	dai zhi	0
+━━(￣ー￣*|||━━	dan ding	0
+淡━━(￣ー￣*|||━━定	dan ding	0
+<(=￣.￣=)>	dan ding	0
+(¯^¯ )	dang ran	0
+当然！<(ˉ^ˉ)>	dang ran	0
+<(ˉ^ˉ)>	dang ran	0
+&lt;(ˉ^ˉ)&gt;	dang ran la	0
+Σ(｀д′*ノ)ノ	dao	0
+Σ(っ °Д °;)っ	dao	0
+//(っ °Д °;)っ	dao	0
+(-_-メ)[刀疤]	dao ba	0
+～(￣▽￣～)(～￣▽￣)～	de se	0
+<(= *︾▽︾)	de se	0
+ʅ（´◔౪◔）ʃ	de se	0
+<(￣︶￣)>	de yi	0
+<(▰˘◡˘▰)>	de yi	0
+&lt;(￣ˇ￣)/	de yi	0
+～(￣▽￣～=)><(=～￣▽￣)～	de yi	0
+v(￣︶￣)y	de yi	0
+(*˘︶˘*)	de yi	0
+<(￣ˇ￣)/	de yi	0
+<(=￣ˇ￣)/	de yi	0
+(*￣０￣)ノ[等等我…我……我…………]	deng deng	0
+(*￣０￣)ノ[等等我…]	deng deng	0
+动感光波！！！( ￣O￣)ノノ……∞∞OOO)))	dggb	0
+(#｀-_ゝ-)	di luo	0
+[低落] (#｀-_ゝ-)	di luo nan	0
+(。_。) [低头]	di tou	0
+(。﹏。) [低头]	di tou	0
+(。﹏。)	di tou	0
+(．_．〃）ゝ…	di tou	0
+（￣ー￣（＿ ＿（￣ー￣（＿ ＿ [点头]	dian tou	0
+（￣ー￣（＿ ＿（￣ー￣（＿ ＿	dian tou	0
+<(=￣ー￣<(＿＿<(=￣ー￣<(＿＿	dian tou	0
+乚 (^ω^ ﾐэ)Э好钩我咬	diao yu	0
+(┬＿┬)↘	die	0
+跌(┬＿┬)↘	die	0
+……]((o_ _)'彡☆	die dao	0
+(┬＿┬)↘	die dao	0
+[啪叽~摔一跟头……]((o_ _)'彡☆	die dao	0
+<(o＿＿)o彡☆	die dao	0
+(๑◔‿◔๑)	ding	0
+<(=﹁"﹁=)>	ding	0
+(｀･ω･)	ding	0
+d=====(￣▽￣*)b	ding	0
+(`・ω・´)	ding	0
+(•̀⌄•́）	ding	0
+d=0,=0,=0,=0,=0,(￣▽￣*)b [顶!]	ding	0
+(・ω・)	ding	0
+动感光波！！！( ￣O￣)ノノ……∞∞OOO)))	dong gan guang bo	0
+三三三三三三三三三4(o|o ) [S奥特曼]	dong gan guang bo	0
+o((⊙﹏⊙))o. [抖]	dou	0
+o((⊙﹏⊙))o.	dou	0
+◑▂◐	dou ji yan	0
+°	du	0
+o(￣ε￣*)	du zui	0
+（○｀ 3′○）	du zui	0
+(￣3￣)	du zui	0
+（○｀ 3′○） [嘟嘴]	du zui	0
+o(￣ε￣*) [嘟嘴]	du zui	0
+o(￣ε￣=)>	du zui	0
+<(=○｀3′○)	du zui	0
+<(=￣ー￣)人(^▽^=)>	dui	0
+＜（＾－＾）＞	dui	0
+（。・＿・。）ﾉ	dui bu qi	0
+（＞人＜；）	dui bu qi	0
+<(＿　＿)>	dui bu qi	0
+对不起~ <(＿　＿)>	dui bu qi	0
+||┣(—_＼) [金盾!]	dun	0
+|∥|∥|_·=)>	duo	0
+┬┴┤_·)	duo	0
+(*ﾟ∇ﾟ)=ﾟωﾟ)*´∀`)*ﾟ∇ﾟ) - 嘿嘿哈！	duo ren	0
+(`ヮ´ )σ`∀´) ﾟ∀ﾟ)σ	duo ren	0
+`ー´) `д´) `д´)	duo ren	0
+( `д´) `д´) `д´) `д´) `д´) `д´) `д´) `д´) `д´)好~~~~　　　再来一个！	duo ren	0
+|･ω･｀)	duo zai qiang hou tou miao	0
+｜−・;）	duo zhe	0
+⊙︿⊙	e	0
+(⊙﹏⊙)	e	0
+<(ˉ▽ˉ；=)>	e	0
+(๑-﹏-๑)	e	0
+o(` · ~ · ′。)o	e	0
+( -д-)	e	0
+(。﹏。*)	e	0
+("▔□▔)	e	0
+这个…… 呃~~ -______-"	e	0
+-________-''	e	0
+(°ー°〃)	e	0
+(⊙﹏⊙)	e e e	0
+-________-''	e e e	0
+-________-''	eee	0
+(⊙﹏⊙)	eee	0
+(´◔౪◔)۶	ei	0
+( ﾟ∀ﾟ)	ei	0
+( ´∀`)	ei	0
+ᕕ( ᐛ )ᕗ	ei hei	0
+ᕕ( ﾟ∀。)ᕗ	ei hei	0
+<(= ‵▽′)ψ	emo	0
+(✩´•௰•`✩)	en	0
+嗯！o(￣︶￣)n	en	0
+嗯~ o(*￣▽￣*)o	en	0
+( ´◔ ‸◔`)	en	0
+ヾ(≧へ≦)〃[嗯!]	en	0
+O(∩_∩)O嗯！	en	0
+＜（＠￣︶￣＠）＞	en en	0
+(♡˙︶˙♡)	en en	0
+（￣ー￣）ノ~~マ☆’.・.・:★	en heng	0
+嗯~ o(*￣▽￣*)o	en na	0
+<(=˚_˚=)>	fa dai	0
+(´･_･`)	fa dai	0
+(ﾟДﾟ*)ﾉ	fan dui	0
+○|￣|_ =0,3	fan gp	0
+ε=ε┣G┻F┳ε=ヽ<(=￣▽￣)ノ┻W┫	fan qiang	0
+( ￣ ￣)σ…( ＿ ＿)ノ｜壁	fan xing	0
+┻━┻︵╰<(=‵Д′=)>╯︵┻━┻	fan zhuo	0
+<(=╯‵Д′)╯""┻━┻☆))>○<)	fan zhuo	0
+翻桌！(╯‵□′)╯︵┻━┻	fan zhuo	0
+<(=┘￣Д￣)┘╧═╧	fan zhuo	0
+<(=╯′皿｀)╯ ┫:·'∵:.┻┻:·'.:┣∵·:. ┳┳☆	fan zhuo	0
+(╯′□｀)╯ ┫:·'∵:.┻┻:·'.:┣∵·:. ┳┳☆	fan zhuo	0
+(╯‵□′)╯""┻━┻☆))>○<)	fan zhuo	0
+┻━┻︵╰(‵□′)╯︵┻━┻	fan zhuo	0
+■	fang kuai	0
+□	fang kuai	0
+○|￣|_ =3	fang pi	0
+||Φ|(|T|Д|T|)|Φ||	fang wo chu qu	0
+[放我出去~~~] ||Φ|(|T|Д|T|)|Φ||	fang wo chu qu	0
+||┣(—_＼=)>	fang yu	0
+防御！(((＼(￣一￣)/)))	fang yu	0
+～o=(`▽｀o=)>~=3=3=3	fei	0
+︿(￣︶￣)︿	fei	0
+︿<(=￣︶￣=)>︿	fei	0
+(ﾉ)`ω´(ヾ)	fei fei	0
+<(=￣)ε(￣=)>	fei pang	0
+[飞吻] (*￣3￣)╭	fei wen	0
+<(=￣3￣)╭❤	fei wen	0
+(*￣3￣)╭	fei wen	0
+₍₍◞( ˙ ꒳ ˙ )◟₎₎ ⁽⁽◝( ˙ ꒳ ˙ )◜⁾⁾	fei ya fei	0
+′	fen	0
+ヾ<(≧奋≦)>〃	fen	0
+ヾ(≧奋≦)〃	fen	0
+分＞(￣▽￣ = ￣︿￣)<裂	fen lie	0
+分＞(￣▽￣ = ￣︿￣)&lt;裂	fen lie	0
+分＞(￣▽￣ =0, ￣︿￣)<裂	fen lie	0
+MIN■■■■■□□MAX<(=╯‵皿′)╯︵┻━┻︵┻━┻︵┻━┻	fen nu	0
+无敌影分身！((≧(≧▽(≧▽≦(≧▽≦)≧▽≦)▽≦)≦)))	fen shen	0
+幻影术！(((￣(￣(￣(￣ー￣)￣)￣)￣)))	fen shen	0
+( ´･･)ﾉ(._.`)	fen shou	0
+ε～(～(～(卍)＼(￣▽￣＼)>	feng mo fa	0
+风魔法！ (／-_-)／ξ ξ ξ ξ ξ ξ (+_+ ／)／～～～	feng mo fa	0
+<(=／-_-)／ξ ξ ξ ξ ξ ξ (+_+ ／)>／	feng mo fa	0
+ε～( ～( ～ ( 卍 )＼(￣▽￣ ＼)[超强风扇吹]	feng shan	0
+French Kiss! (*￣(￣　*)	fk	0
+_(:з」∠)_	fu di	0
+(☆´益`)c	fu e	0
+(￣ˇ￣)v	fu fu	0
+fufu~ ^u^	fu fu	0
+:.;::..;::: .:.;::….;:￣)…:.;:□￣)(￣□￣*)复活!	fu huo	0
+( ＿ ＿)ノ｜壁	fu qiang	0
+<(=￣_￣)σ…<( ＿ ＿)ノ｜	fu qiang	0
+无力扶墙...( ＿ ＿)ノ｜壁	fu qiang	0
+(-@y@) [扶眼镜]	fu yan jing	0
+．<{=．．．．（嘎~嘎~嘎~）	ga ga	0
+．<{=0,．．．．（嘎~嘎~嘎~）	ga ga ga	0
+(￣▽￣)～■干杯□～(￣▽￣)	gan bei	0
+[]~(￣▽￣)~* 干杯！	gan bei	0
+<(=￣▽￣=)>～■☆□～<(=￣▽￣=)>	gan bei	0
+[]~<(=￣▽￣~=)>	gan bei	0
+[]~(￣▽￣)~*	gan bei	0
+(つ ᰩ ᭄ ⊂)	gan bei	0
+感动！o(*≧▽≦*)m	gan don	0
+(*￣▽)u┌┐ ｄ(▽￣*)[高~实在是高!]	gao	0
+(*￣▽)u┌┐ ｄ(▽￣*)	gao	0
+φ(゜▽゜*)♪	gao xing	0
+(′д｀σ)σ [告状]	gao zhuang	0
+o(>O<;; )σ	gao zhuang	0
+( σ'ω')σ	gao zhuang	0
+╰(￣▽￣)╭ 跟你说厚~	gen ni shuo	0
+╰(￣▽￣)╭	gen ni shuo	0
+⊂( ﾟωﾟ)つ	gen wo lai	0
+┳G┻┳F┳┻W┫	gfw	0
+<(￣OO,￣)/[GO!]	go	0
+<(￣︶￣)↗[GO!]	go	0
+<(= ￣O￣=)ノノ……∞∞OOO)))	gong ji	0
+(◆゜∀゜）b	gong xi	0
+Good! o(￣▽￣)ｄ	good	0
+o(￣▽￣)ｄ	good	0
+√	gou	0
+U·ェ·U [狗狗]	gou gou	0
+U·ェ·*U [狗狗]	gou gou	0
+U•ェ•*U	gou gou	0
+＝ ＝＃	gou le	0
+______λ......_____	gu dan	0
+””\\(￣ー￣) (￣ー￣)//””[鼓掌]	gu zhang	0
+[鼓掌]└(￣ ￣└)(┘￣ ￣)┘[鼓掌]	gu zhang	0
+o(*^＠^*)o 乖～	guai	0
+o(*^＠^*)o	guai	0
+o<(=*^＠^*=)>o	guai bao bao	0
+┏┛墓┗┓...(((m -__-)m	gui	0
+┏┛墓┗┓…(=<(=<(=m -__-)m	gui	0
+(￣┰￣*)	gui lian	0
+(￫ܫ￩)	gui lian	0
+┏┛墓┗┓...(((m -__-)m	gui ya	0
+滚来滚去……~(～o￣▽￣)～o 。。。滚来滚去……o～(＿△＿o～) ~。。。	gun	0
+(～o￣▽￣)～o 。。。滚来滚去……o～(＿△＿o～) ~。。。	gun	0
+(～o￣▽￣)～o 。。。	gun lai gun qu	0
+滚来滚去。。<(=～o￣▽￣=)～o 。。滚来滚去。。o～(=＿△＿o～=)>	gun lai gun qu	0
+<(=▼-▼=)>☭[国宝]	guo bao	0
+( ˘•ω•˘ )	ha	0
+(＃°Д°)	ha	0
+O口O!	ha	0
+(,,Ò‿Ó,,)	ha	0
+＞▽＜	ha	0
+(・∀・)	ha	0
+๐<(=๏ᆷ๏=)>๐	ha	0
+<(=╯▽╰=)>	ha	0
+~o(〃'▽'〃)o	ha	0
+ヾ(´∀`o)+	ha	0
+~(￣▽￣)~*	ha	0
+(´・ω・`)	ha	0
+( ￣▽￣)"	ha	0
+<(=OᆸO=)>	ha	0
+Σ(⊙▽⊙"a...	ha	0
+>^.^<	ha ha	0
+(〃'▽'〃)	ha ha	0
+φ(≧ω≦*)♪	ha ha	0
+\(≧▽≦)/	ha ha	0
+ヾ(≧▽≦*)o	ha ha	0
+(￣∇￣)	ha ha	0
+o(*≧▽≦)ツ	ha ha	0
+(゜∀。)	ha ha ha	0
+*´∀`)´∀`)*´∀`)*´∀`)	ha ha ha ha	0
+(=゜ω゜)ノぃょぅ	hai	0
+(｡･∀･)ﾉﾞ	hai	0
+(;_;)/~~~	hai	0
+ヾ(≧∇≦*)ゝ	hai	0
+\(( °∀° ))ﾉ	hai	0
+\(//?//)\	hai xiu	0
+o<(=////▽////=)>o	hai xiu	0
+o(*////▽////*)q	hai xiu	0
+<(▰▰￣▽￣▰▰)>	hai xiu	0
+<(＃￣▽￣＃)>	hai xiu	0
+(*/ω＼*)	hai xiu	0
+(〃∀〃)	hai xiu	0
+(✿◡‿◡)	hai xiu	0
+(′▽`〃)	hai xiu	0
+（＃￣▽￣＃）	hai xiu	0
+(￣▽￣|||)	han	0
+Σ( ° △ °|||)︴	han	0
+(寒￣ii￣)彡…彡…彡	han	0
+(￣_￣|||)	han	0
+|(*′口`)	han	0
+(￣▽￣")	han	0
+(-_-;)	han	0
+= =b	han	0
+|(*′口`)	han si	0
+Σ( ° △ °|||)︴	han si	0
+(lll￢ω￢)	han si	0
+（゜▽＾*））	hao	0
+<(=o゜▽゜)o☆	hao	0
+o(*^▽^*)o [好~~]	hao	0
+＼（⌒∇⌒）／	hao	0
+(^o^)	hao a	0
+ヾ(^▽^*=)>	hao a	0
+(。_。)	hao ba	0
+(・-・*)	hao ba	0
+好吧…… ╮(╯-╰)╭	hao ba	0
+(๑´ڡ`๑)	hao chi	0
+(u‿ฺu✿ฺ)	hao de	0
+（゜▽＾*））	hao de	0
+(u‿ฺu✿ฺ)	hao di	0
+（゜▽＾*））	hao di	0
+^_________________^	hao kai xin	0
+(*^▽^*)	hao kai xin	0
+（*＾-＾*）	hao ke ai	0
+（*＾-＾*）	hao ke ai a	0
+(>＿<)}}	hao leng	0
+≡￣﹏￣≡	hao leng	0
+(￣∇￣;)	hao re	0
+づ♡ど	hao ren ka	0
+(≧∇≦)ﾉ	hao xi huan	0
+(╯▽╰ )好香~~	hao xiang	0
+ヽ(✿ﾟ▽ﾟ)ノ	hao ye	0
+(o゜▽゜)o☆[好主意!]	hao zhu yi	0
+(o゜▽゜)o☆	hao zhu yi	0
+<(=o゜▽゜)o☆	hao zhu yi	0
+(´▽`ʃ♡ƪ)	Happy	0
+(´▽`ʃ♡ƪ)	happy	0
+╭∩╮（￣▽￣）╭∩╮	he he	0
+o(*￣▽￣*)o	he he	0
+<(=￣▽￣"=)>	he he	0
+（￣。。￣）	he ma	0
+<(=o￣3')==@))゜ロ゜((@==(′ε′ o=)>	he ti quan	0
+[喝西北风](　′Д`)彡	he xi bei fang	0
+【】\(·ω·`)o	hei ban	0
+(*ﾟ∀ﾟ*)	hei hei	0
+థ ౪ థ	hei hei	0
+(`ヮ´ )	hei hei	0
+σ`∀´)	hei hei	0
+(●⁰౪⁰●)	hei hei	0
+o(*￣▽￣*)ゞ	hei hei	0
+[黑*客帝国下腰!] ┌(_Д_┌ )┐	hei ke di guo	0
+<(=￣_￣|||)>	hei xian	0
+（￣。。￣）[河马]	hema	0
+(｡ŏ_ŏ)	heng	0
+( －з)	heng	0
+o(￣ヘ￣o＃)	heng	0
+c(　╹^╹)	heng	0
+o(￣ヘ￣o=)>	heng	0
+(ε－ )	heng	0
+(`ε´ )	heng	0
+(；′⌒`)	heng	0
+o(=￣ヘ￣o＃)>	heng	0
+,,Ծ‸Ծ,,	heng	0
+（︶︿︶）	heng	0
+<(=ˉ^ˉ=)>	heng heng	0
+(；′⌒`)	heng heng	0
+(＠￣ー￣＠)	heng heng	0
+o(￣ヘ￣o＃)	heng heng	0
+o(*￣▽￣*)o	hh	0
+(￣▽￣")	hh	0
+^-^	hhh	0
+^O^	hhh	0
+快使用双截棍，┗(｀o′)┓哼┏(｀○′)┛哼┏(｀o′)┓哈┗(｀O′)┛兮！！	hhhh	0
+ヾ(๑╹◡╹)ﾉ"	hi	0
+Hi~ o(*￣▽￣*)ブ	hi	0
+○( ＾皿＾)っHiahiahia…	hia hia	0
+○( ＾皿＾)っHiahiahia....	hia hia	0
+(( へ(へ´∀`)へ	high	0
+<(= `０‘)ノ	ho	0
+(￣y▽￣)╭ Ohohoho.....	ho ho	0
+hoho ^O^	ho ho	0
+^O^	ho ho	0
+C:\windows\system32\drivers\etc	hosts	0
+@(o･ｪ･o)@	hou	0
+@(o･ｪ･)@	hou	0
+@(/o･ｪ･o)@/	hou zi	0
+٩(͡๏̯͡๏)۶	hou zi	0
+ヽ( o･ｪ･)ﾉ&nbsp;	hou zi	0
+@(｡･o･)@	hou zi	0
+http://	http	0
+https://	http	0
+（。－_－。）	hu	0
+(_　_)。゜zｚＺ	hu hu	0
+<(=/￣o￣=)/	hu huan	0
+(/0￣)o [呼唤]	hu huan	0
+.:*･✿*ﾟ✿.｡ﾟﾟ¨ﾟ*✿･*	hua	0
+(❤´艸｀❤)	hua chi	0
+_〆(´Д｀ )	hua quan	0
+～(　TロT)σ	huai ren	0
+[坏人……] ～(　TロT)σ	huai ren	0
+( ﹁ ﹁ ) ~~~→	huai yi	0
+(¬_¬)	huai yi	0
+(→_→)	huai yi	0
+→_→	huai yi	0
+*\ ( ^ v ^ )/*	huan hu	0
+( ＾∀＾）／欢迎＼( ＾∀＾）	huan ying	0
+『家』 ～o(▽｀ o) =3 =3 =3	hui jia	0
+『家』 ～o(▽｀ o) =0,3 =0,3 =0,3	hui jia	0
+＼（＾∀＾）メ（＾∀＾）ノ	hui jian	0
+(@^^)/~~~[挥手帕]	hui shou pa	0
+(ToT)/~~~	hui shou pa	0
+(ToT)/~~~[含泪挥手帕]	hui shou pa	0
+●┻┓⌒ Σ┌┘車└┐=3 =3 =3	huo che	0
+●┻┓⌒ Σ┌┘車└┐=0,3 =0,3 =0,3	huo che	0
+[火箭筒，发射！](*￣皿￣)=Σ口＞=Σ口＞=Σ口＞	huo jian	0
+[火箭筒，发射！](*￣皿￣)=0,Σ口＞=0,Σ口＞=0,Σ口＞	huo jian tong	0
+[火箭筒，发射！]<(=#￣皿￣)=Σ 口＞=Σ口＞=Σ口＞	huo jian tong	0
+ヾ(￣ー￣)X(^▽^)ゞ	huo sheng	0
+[获胜者是……]ヾ(￣ー￣)X(^▽^)ゞ	huo sheng	0
+┗|*｀0′*|┛	ji rou	0
+<(=·＿·)ノ＿·)ノ＿·)ノ＿·)ノ＿·)ノ	ji ti ju shou	0
+(┘￣︶￣)┘└(￣︶￣└)[GiveMeFive!]	ji zhang	0
+<(=〃￣︶￣)人(￣︶￣〃=)>	ji zhang	0
+<(=┘￣︶￣)┘└(￣︶￣└=)>	ji zhang	0
+(*°▽°*)八(*°▽°*)♪	ji zhang	0
+[击掌]( ￣ー￣)人(^▽^ )	ji zhang	0
+(〃￣︶￣)人(￣︶￣〃)[击掌]	ji zhang	0
+( ￣ー￣)人(^▽^ )	ji zhang	0
+无敌肉包拳！(o ￣3)=0,=0,@))゜ロ゜((@=0,=0,(′ε′ )o	jia ji	0
+(o ￣3)==@))゜ロ゜((@==(′ε′ )o	jia ji	0
+(ง •_•)ง	jia you	0
+٩( 'ω' )و	jia you	0
+╭( ･ㅂ･)و ̑̑	jia you	0
+*\(^_^)/*	jia you	0
+<(= o^_^)o~|| 加油 ||~o(^_^o =)>	jia you	0
+加油！(o^^)oo(^^o)	jia you	0
+╭( ･ㅂ･)و	jia you	0
+٩(๑`^´๑)۶	jia you	0
+<(=９￣＾￣)９	jia you	0
+( *・ω・)✄╰ひ╯	jian jj	0
+( *・ω・)✄╰ひ╯	jian jj	0
+(눈0눈)	jiang hua de bing zhang	0
+(￣～￣) 嚼！	jiao	0
+<(=￣～￣=)>	jiao	0
+( `ᵂ´)	jiao ao	0
+(‾◡◝)	jiao ao	0
+接☆龙☆大☆成☆功	jie long	0
+( ͡° ͜ʖ ͡°)	jin chi	0
+&gt;°))))彡	jin yu	0
+Σ(｀д′*ノ)ノ	jing	0
+Σ( ° △ °|||)︴	jing	0
+Σ<(=￣д￣=!)>	jing	0
+Σ<(=っ°Д °)っ	jing	0
+Σ(っ °Д °;)っ	jing	0
+(⊙ˍ⊙)	jing	0
+Σ<(= ° △ °|||)>︴	jing	0
+(|||ﾟдﾟ)	jing dai le	0
+╰(*°▽°*)╯	jing xi	0
+╰(*°‿°*)╯	jing xi	0
+⊙▽⊙	jing xi	0
+Σ(っ °Д °;)っ	jing ya	0
+(((　ﾟдﾟ)))	jing ya	0
+(´ﾟДﾟ`)	jing ya	0
+( ﾟдﾟ)	jing ya	0
+⊙▽⊙	jing ya	0
+( ;ﾟдﾟ)	jing ya	0
+Σ(゜д゜=!)>	jing ya	0
+o<(=╯□╰=)>o	jiong	0
+( ´_ゝ`)	jiong	0
+（´Д`）	jiong	0
+( -'`-; )	jiu jie	0
+o(′益`)o	jiu jie	0
+<(￣ ﹌ ￣)@m 就你！	jiu ni	0
+ヾ(●゜ⅴ゜)ﾉ	jiu shi	0
+(ノﾟ∀ﾟ)ノ	ju gao gao	0
+〈（＿　＿）〉	ju gong	0
+(.・△・）ノ	ju shou	0
+o(*^▽^*)┛	ju shou	0
+_( ﾟДﾟ)ﾉ	ju shou	0
+o(*^▽^*)┛[举手]	ju shou	0
+(￣～～￣) 嚼！	jue	0
+（〃｀ 3′〃）	jue zui	0
+<(=￣︿￣=)>	jue zui	0
+φ(0￣*)啦啦啦_φ(*￣0￣)	k ge	0
+[K歌] ...φ(0￣*)啦啦啦_φ(*￣0￣)>	k ge	0
+φ(0￣*)啦啦啦_φ(*￣0￣)′	ka la ok	0
+[卡拉OK] ...φ(￣0￣*=)>啦啦啦_φ<(=*￣0￣)′	ka la ok	0
+[卡拉OK] ...φ(0￣*)啦啦啦_φ(*￣0￣)′	ka la ok	0
+φ(0￣*)啦啦啦_φ(*￣0￣)′	ka lao k	0
+↙(`ヮ´ )↗ 开摆！	kai bai	0
+\(≧ω≦)/	kai xin	0
+◝(*⁰▿⁰*)◜	kai xin	0
+＜（￣︶￣）／	kai xin	0
+(　‘◟ ‘)✧	kai xin	0
+＜（￣︶￣）＞	kai xin	0
+╰(*´︶`*)╯	kai xin	0
+<(=ｏ^_^)o	kai xing	0
+σ(=⌒ー⌒=)>	kai xing	0
+ಠ_ಠ	kan	0
+<(=೧ᆸ೧=)>	kan bu jian	0
+<(=/0＼=)>	kan bu jian	0
+(＠＾０＾)看好你哦！	kan hao ni o	0
+凸(゜皿゜メ) 靠！	kao	0
+(๑•́ ₃ •̀๑)	ke ai	0
+n(*≧▽≦*)n	ke ai	0
+( ﾟωﾟ)	ke ai	0
+(๑❛ᴗ❛๑)	ke ai	0
+(oﾟωﾟo)	ke ai wei si	0
+(°°)～　(°°)～　(°°)～　(°°)～	ke dou	0
+咳咳＞＜	ke ke	0
+(〃＞目＜)	ke wu	0
+（＝。＝）	ke wu	0
+!(*￣(￣　*)	kiss	0
+French Kiss!(*￣(￣　*)	kiss	0
+┌(。Д。)┐	kong bu	0
+ﾟÅﾟ )	kong bu	0
+ˋ( ° ▽、° ) 口水ing...	kou shui	0
+(￣﹁￣)	kou shui	0
+<(=￣﹃￣=)>	kou shui	0
+ˋ<(=° ▽、°=)>	kou shui	0
+（¯﹃¯）口水ing	kou shui	0
+( ´ρ`)	kou shui	0
+T^T"///	ku	0
+TAT	ku	0
+(*Ծ﹏Ծ)ぐ	ku	0
+( ;`д´; )	ku	0
+(٥﹏٥` )	ku	0
+ಥ_ಥ	ku	0
+( >﹏<。)～呜呜呜……	ku	0
+┭┮﹏┭┮	ku	0
+(´；ω；`)	ku	0
+( ;´д`)	ku	0
+T_T	ku	0
+//( ㄒ o ㄒ )//	ku	0
+ヾ(｡>﹏<｡)ﾉﾞ	ku	0
+Q_Q	ku	0
+π__π	ku	0
+（┬＿┬）	ku	0
+˃̣̣̥᷄⌓˂̣̣̥᷅	ku	0
+好苦~( ＞﹏＜)	ku	0
+︸_︸	ku le	0
+ε(┬┬﹏┬┬)3	ku ming de wa	0
+～＞＿＜～	ku qi	0
+(;´༎ຶД༎ຶ`)	ku si	0
+□_□	kuai ku le	0
+(*^▽^*)	kuai le	0
+(o-ωｑ)).oO 困，揉眼睛……	kun	0
+(￣o￣) . z Z	kun	0
+<(=﹌○﹌=)>	kun	0
+(o-ωｑ)).oO 困	kun a	0
+o<<(≧口≦)>>o	kun ao	0
+[苦恼] ( -'`-; )	kun ao	0
+<(=－︿－=)>	kun ao	0
+(～ o ～)~zZ	kun le	0
+(´ぅω・｀)	kun le	0
+(￣o￣) . z Z	kun le	0
+( -'`-; )	kun nao	0
+( -'`-)	kun nao	0
+(p.-)(p.-)(p.-)	kun si le	0
+(o-ωｑ)).oO 困	kun si le	0
+~\(≧▽≦)/~啦啦啦	la	0
+♪(^∇^*)	la la	0
+♪(^∇^*)	la la la	0
+φ(0￣*)啦啦啦_φ(*￣0￣)&gt;	la la la	0
+φ(0￣*)啦啦啦_φ(*￣0￣)>	la la la	0
+ᕕ( ᐛ )ᕗ	lai	0
+<(*￣ー￣)ゞ来啊~[挑衅]	lai a	0
+(～o￣▽￣)～o ~。。。	lai la	0
+来啦~(～o￣▽￣)～o ~。。。	lai la	0
+o(ﾟ∀ﾟ)o	lai le	0
+[来人呐~](o ;′Д`)ノ゛	lai ren na	0
+<(*￣ー￣)ゞ来呀~[挑衅]	lai ya	0
+||Φ|<|(|T|Д|T|)|>|Φ||	lao fang	0
+m( =∩王∩= )m	lao hu	0
+m( =0,∩王∩=0, )m	lao hu	0
+(๑´ㅂ`๑)	le	0
+φ(≧ω≦*)♪	le	0
+(≧∀≦)ゞ	le he	0
+(≧∀≦)ゞ	le he he	0
+(┳＿┳)...	lei	0
+/(ㄒoㄒ)/~~	lei	0
+(ρ_・).。	lei	0
+<(=┳＿┳=)>	lei	0
+(PД`q。=)>·。'゜	lei ben	0
+(PД`q。)·。'゜冰天雪地掩面泪奔……	lei ben	0
+<(%>_<%)>	lei hua	0
+<(o ;′Д`)ノ	lei liu man mian	0
+テ_デ	lei liu man mian	0
+<(=╥﹏╥=)>	lei mu	0
+{{{(>_<)}}}	leng	0
+（ ￣ー￣）[冷笑]	leng xiao	0
+<(=￣ー￣)	leng xiao	0
+（ ￣ー￣）	leng xiao	0
+┌( ´_ゝ` )┐	leng yan	0
+(°ー°〃)	leng zhu	0
+[楞住](°ー°〃)	leng zhu	0
+’(°ー°〃)	leng zhu	0
+（。＾▽＾）	li hai	0
+(*´д`)	lian hong	0
+(*/ω＼*)[脸红掩面]	lian hong	0
+(*ﾟーﾟ)	lian hong	0
+(*/ω＼*)	lian hong	0
+(*´ω`*)	lian hong	0
+>//////<	lian hong	0
+(o ￣3)==@))゜ロ゜((@==(′ε′ )o	liang mian jia ji	0
+<(=￣^￣<(=￣^￣<(=￣^￣=)>	lie dui	0
+(*￣^￣(*￣^￣(*￣^￣)[列队]	lie dui	0
+(|||ˇヮˇ)	liu han	0
+(|||ﾟДﾟ)	liu han	0
+(|||^ヮ^)	liu han	0
+（┬＿┬）	liu lei	0
+( = 6 ω 6 = )	liu liu	0
+（。人。）	liu yan	0
+(੭ु ›ω‹ )੭ु⁾⁾♡	love	0
+~%?…,# *'☆&℃$︿★?	luan ma	0
+( `д´)	ma ren	0
+=￣ω￣=	mai m	0
+(=ﾟωﾟ)=	mai meng	0
+=￣ω￣=	mai meng	0
+(눈~눈)	mai meng de bing zhang	0
+(๑￫ܫ￩)	mai meng de mao	0
+（´v｀）	man yi	0
+o(*￣︶￣*)o	man zu	0
+o(￣ˇ￣)o	man zu	0
+(๑¯∀¯๑)	man zu	0
+o(=0,·ェ·=0,)m	mao	0
+o( =0,·ω·=0, )m	mao	0
+o(=•ェ•=)m	mao	0
+[毛毛虫](· ·)nnn	mao mao chong	0
+~o( =∩ω∩= )m	mao miao	0
+（ΦωΦ）	mao yan	0
+MIN■■■■■□□MAX	max	0
+（○｀ 3′○）	me me	0
+(╯ε╰)	me me	0
+╮(￣▽￣")╭ 没办法~	mei ban f	0
+╮（╯＿╰）╭	mei ban fa	0
+╮（╯＿╰）╭	mei ban fa le	0
+””(￣ー￣)/””	mei le	0
+( ・ิω・)ノิิิ	mei mao	0
+┐(T.T ) ( T.T) ノ	mei ren	0
+||o(*°ω°*)o|Ю [没人在哦?]	mei ren	0
+Ψ(￣∀￣)Ψ	mei wei	0
+ο(=•ω＜=)ρ⌒☆	mei yan	0
+(;´ヮ`)7	mei you ba	0
+(=^x^=)	meng mao	0
+[咪咪]（。人。）	mi mi	0
+[秘密] (一-一)	mi mi	0
+⁽ ˆ꒳ˆ⁾	mi yan xiao	0
+⁽ ^ᐜ^⁾	mi yan xiao	0
+(　^ω^)	mi yan xiao	0
+(つω｀)～	mian	0
+<(=￣_￣)σ…<( ＿ ＿)ノ｜	mian bi	0
+( ￣ ￣)σ…( ＿ ＿)ノ｜壁	mian bi	0
+喵~o( =∩ω∩= )m	miao	0
+喵~o( =0,∩ω∩=0, )m	miao	0
+~o( =∩ω∩= )m	miao	0
+₍˄·͈༝·͈˄₎◞	miao	0
+≡ω≡	miao	0
+喵~ ＞▽＜	miao	0
+ฅ(^ω^ฅ)	miao	0
+(=^_^=)	miao	0
+ლ—(°◡°)-ლ	miao	0
+=￣ω￣=	miao	0
+₍ ᐢ. ̫ .ᐢ ₎	miao	0
+/( ◕‿‿◕ )\	miao	0
+″	miao o	0
+<(=＞﹏＜=)>	miao wu	0
+≡ω≡	miao wu	0
+<(=ㄒ﹏ㄒ=)>	miao wu	0
+<(=′⌒`=)>	miao wu	0
+<( >﹏<。=)>	miao wu	0
+o( =•ω•= )m	miao xing ren	0
+<(*￣▽￣*)/	mie h ha ha	0
+咩哈哈哈哈……<(*￣▽￣*)/	mie ha ha	0
+&lt;(*￣▽￣*)/	mie ha ha	0
+(/￣ˇ￣)/	mie ha ha	0
+咩哈哈哈哈……<(*￣▽￣*)/	mie hhh	0
+(/￣ˇ￣)/	mie hhh	0
+[蔑视](￣_,￣ )	mie shi	0
+(￣_,￣ )	mie shi	0
+(oﾟvﾟ)ノ	ming bai	0
+ε(┬┬﹏┬┬)3	ming ku	0
+ε(┬┬﹏┬┬)3 命苦...	ming ku	0
+（＾∀＾●）ﾉｼ	ming tian jian	0
+mmm...f('︶︿︶)o	mmm	0
+mmm.....	mmm	0
+[膜拜]＿|￣|○ → ＿|＼○＿ → ＿/＼○＿ → ＿__＿○＿	mo bai	0
+(o´_　_)o)	mo bai	0
+ｍ<(＿　＿)>ｍ	mo bai	0
+<( =￣▽￣)o ─═≡※:☆▆▅▄▃▂＿	mo fa	0
+<(=ノへ￣ =)>	mo lei	0
+[摸摸头](～￣▽￣)ノ	mo mo	0
+<( ￣︶￣)╱(._. )	mo mo	0
+╰(￣ω￣ｏ) [摸摸头]	mo mo	0
+Capricorn	mojiezuo	0
+mua! (*╯3╰)	mua	0
+(*╯3╰)	mua	0
+（づ￣3￣）づ╭❤～	mua	0
+( ・_ゝ・)	n	0
+ヾ(≧へ≦)〃[嗯!]	n	0
+(￣ｰ￣)	n	0
+嗯！o(￣︶￣)n	n	0
+(・ー・)	n	0
+(￣ . ￣)	n	0
+（￣ー￣）ノ~~マ☆’.・.・:★	n heng	0
+￣△￣	na ge	0
+(．． )…	na ge	0
+(///￣皿￣)○～［哪~里跑?!］	na li pao	0
+(///￣皿￣)○～	na li pao	0
+(｡í _ ì｡)	nan guo	0
+o<(=′益`=)>o	nan shou	0
+<(=∥ರ﹏ರ)σ	nan shou	0
+☆{{{Д}}} ☆!! [铃铃铃]	nao zhong	0
+〒▽〒	nei niu man mian	0
+[是不是你?!](σ｀д′)σ	ni	0
+[你你你……] ～(　TロT)σ	ni	0
+Σ( ￣д￣；) 你！！	ni	0
+(・_・)ノいよぅ	ni hao	0
+ヾ(´･ω･｀)ﾉ	ni hao	0
+(￣▽￣)ノ	ni hao	0
+ﾟ ∀ﾟ)ノ	ni hao	0
+(＾o＾)ﾉ	ni hao	0
+(｡･ω･｡)ﾉ	ni hao	0
+ヾ(^▽^*)))	ni hui lai la	0
+ヾ(^▽^*))) 你回来啦~~	ni hui lai la	0
+<(=ﾟ∀ﾟ)σ	ni kan kan ni	0
+[你你你……] ～(　TロT)σ	ni ni ni	0
+゜゜┌┴o゜゜゜゜°[溺水]	ni shui	0
+念力~ ( -人-)···－～＝～≡～≡ ((+o+)))	nian li	0
+<(=-人-)···－～＝～≡～≡ (<(=+o+=)>))	nian li gong ji	0
+(((　<(=-h-=)>　 )))	nian zhou	0
+[念咒]（（（　(-h-)　）））	nian zhou	0
+……(((＼(￣一￣)/)))[念咒]	nian zhou	0
+--(˙<>˙)/--	niao	0
+--(˙&lt;&gt;˙)/--	niao	0
+--\(˙<>˙)/--	niao	0
+~(￣▽￣)~*	nie	0
+<(=‵□′)>───Ｃε=┬﹏┬)>	nie	0
+无敌捏脸功！<( ‵□′)───C＜─___-)||	nie	0
+&lt;( ‵□′)&gt;───Ｃε(┬﹏┬)3	nie er duo	0
+&lt;( ‵□′)───C＜─___-)||	nie lian	0
+<( ‵□′)───C＜─___-)||	nie lian	0
+( ఠൠఠ )ﾉ	niu	0
+捏耳朵！<( ‵□′)>───Ｃε(┬﹏┬)3	niu er duo	0
+<( ‵□′)>───Ｃε(┬﹏┬)3	niu er duo	0
+[你你你……] ～(　TロT)σ	nnn	0
+MIN■■■■■□□MAX(╯‵□′)╯︵┻━┻	nu	0
+(o#゜ 曲゜)o	nu	0
+(#‵′)	nu	0
+ε=怒ε=怒ε=怒ε=怒ε=( o｀ω′)ノ	nu	0
+(｡•ˇ‸ˇ•｡)	nu	0
+ε=0,怒ε=0,怒ε=0,怒ε=0,怒ε=0,( o｀ω′)ノ	nu	0
+ε=怒ε=怒ε=怒ε=怒ε=<(=o｀ω′)/	nu	0
+ε=0,怒ε=0,怒ε=0,怒ε=0,怒ε=0,( o｀ω′)/	nu	0
+( ` ・´)	o	0
+(〓￣(∵エ∵)￣〓)	o	0
+￣o￣	o	0
+ｍ(o・ω・o)ｍ	o	0
+<(='_'=)?>	o	0
+<(=°ο°=)>	o	0
+(⊙o⊙)？	o	0
+<(=＠＾０＾)	o	0
+<(=⊙o⊙=)>	o	0
+_(￣0￣)_[哦~]	o	0
+(　ﾟ∀ﾟ) ﾉ♡	o ye	0
+Oh~ no！！！！	oh no	0
+Oh yeah！\(^&^)/	oh ye	0
+ε(*´･∀･｀)зﾞ	oh yeah	0
+OK	ok	0
+（≧0≦）//（-_-。）・・・	oo	0
+○|￣|_	orz	0
+(＾－＾)V	ou ye	0
+(　ﾟ∀ﾟ) ﾉ♡	oye	0
+(^&^)/	oye	0
+[怕怕]━((*′д｀)爻(′д｀*))━!!!!	pa pa	0
+━((*′д｀)爻(′д｀*))━!!!!	pa pa	0
+(*￣∇￣)ノ	pai	0
+λ…λλ…λ…入λλ…	pai dui	0
+””\\(￣ー￣) (￣ー￣)//””[拍手拍手]	pai shou	0
+””\(￣ー￣) (￣ー￣)//””	pai shou	0
+[拍手]└(￣ ￣└)(┘￣ ￣)┘[拍手]	pai shou	0
+o(*≧▽≦)ツ┏━┓[拍桌狂笑!]	pai zhuo	0
+o(*≧▽≦)ツ┏━┓	pai zhuo	0
+ε = = (づ′▽`)づ	pao	0
+ε =0, =0, (づ′▽`)づ	pao	0
+ε=0,ε=0,ε=0,(~￣▽￣)~	pao	0
+ε=ε=ε=┏<(=゜ロ゜)┛	pao	0
+ヾ(*′▽｀*)ノ彡☆ノヽノヽノヽ	pao	0
+ε=ε=ε=(~￣▽￣)~	pao	0
+乚(`ヮ´ ﾐэ)Э	pao lu	0
+₍₍(ง`ᝫ´ )ว⁾	pao lu	0
+━((*′д｀)爻(′д｀*))━!!!!	papa	0
+ヾ(′▽｀* )ノ~	pdr	0
+炎炎炎＞(~Q~;;)	pen huo	0
+Pia!<(=ｏ ‵-′)ノ☆	pia	0
+(￣ε(#￣)☆╰╮o(￣▽￣///)	pia	0
+☆乀(‵-′ ｏ=)> Pia!	pia	0
+Pia!(ｏ ‵-′)ノ”(ノ﹏<。)	pia	0
+Pia! ☆乀<(=‵-′=)>ノ☆ Pia!	pia	0
+(*"･∀･)ﾉ――◎	pia	0
+..((/- -)/	piao	0
+(～￣▽￣)～	piao	0
+(～o￣3￣)～	piao	0
+..~~((/- -)/	piao guo	0
+..((/- -)/	piao guo	0
+︿(￣︶￣)～	piao piao ran	0
+( ＾o)ρ┳┻┳°σ(o^ ) [乒乓球]	ping pang	0
+︿(￣︶￣)︿	ppr	0
+︿(￣︶￣)︿[飘飘然……]	ppr	0
+(/≧▽≦)/	pu	0
+※=○☆(＿＿*)Ｚｚｚ	qi chuang	0
+( *′д)/o(_ _)ozzZZ…[起床啦!]	qi chuang	0
+(o￣Д￣)＜起床! ※=0,○☆(＿＿*)Ｚｚｚ	qi chuang	0
+(o￣ω￣)○))ｏ(＿＿*)Ｚｚｚ[推推~起床啦!]	qi chuang	0
+[期待] (☆▽☆)	qi dai	0
+(☆▽☆)	qi dai	0
+٩(๑`^´๑)۶	qi lai	0
+<(=-'`-=)>	qi liang	0
+<(=￥▽￥=)>	qian	0
+$_$	qian	0
+▄︻┻┳═一……	qiang	0
+▄︻┻┳═一…… ☆<(=￣□￣=!)>	qiang bi	0
+^_~	qiao pi di zha yan jing	0
+╮(￣▽￣)╭	qie	0
+(ーー゛)	qie	0
+(¬､¬)	qie	0
+(￣_,￣ =)>	qie	0
+(ˉ▽￣～) 切~~	qie	0
+<( ˉ▽￣～)> 切~~	qie	0
+切~~( ﹁ ﹁ ) ~~~	qie	0
+~~( ﹁ ﹁ ) ~~~	qie	0
+￢_,￢	qie	0
+（づ￣3￣）づ╭❤～	qin	0
+◕ˇε ˇ◕	qin	0
+( ˘ ³˘)♥	qin	0
+ლ(｡◕ˇε ˇ◕。ლ)	qin	0
+♪(´ε｀ )	qin	0
+(* ˘ ³˘)♡	qin qin	0
+o(*￣3￣)o	qin qin	0
+[亲亲]o(*￣3￣)o	qin qin	0
+(* ￣)(￣▽￣*)ゞ[亲亲]	qin qin	0
+(っ´Ι`)っ	qin qin ni	0
+( ^ ^) _U~~	qing	0
+(´ｰ∀ｰ`)	qing mie	0
+<(=^_^*(^=)>☆	qing qing	0
+*:.☆\<(=￣▽￣=)>//$:*.°★*~	qing zu	0
+(っ´Ι`)っ	qiu qiu ni	0
+乀(ˉεˉ乀)...去去去~	qu	0
+φ(-ω-*)	qu	0
+(づ￣ 3￣)づ...去去去~	qu	0
+(ーー゛)	qu	0
+φ(-ω-*)	qu ni de	0
+去死！(-__-)=0,@))> o<)	qu s	0
+(ノ‥)ノ‥‥〓〓〓〓☆ピーーーー	qu si	0
+(-__-)=@))> o<)	qu si	0
+(/"≡ _ ≡)/~┴┴	qu si	0
+(-__-)=@))&gt; o&lt;)	qu si	0
+(Д゜(○=0,(゜ 皿゜)=0,○)゜Д゜)	quan	0
+(╬￣皿￣)＝○＃(￣＃)３￣)	quan	0
+炎炎炎＞(~Q~;;)	re	0
+o(-"-;) [我忍!]	ren	0
+o(-"-=)>	ren	0
+（＞人＜；）	ren jia dou shuo dui bu qi le	0
+看我忍者镖！( ‵▽′)ノ'卍卍卍卍卍卍 Σ(゜д゜；)	ren zhe b	0
+ノ￣ー￣)ノ　⌒　>┼○"☆||壁	reng	0
+无敌肉包拳！(o ￣3)=0,=0,@))゜ロ゜((@=0,=0,(′ε′ )o	rou bao quan	0
+<(=o-ωｑ=)>	rou yan jing	0
+(。・・)ノ	ruo	0
+(。・・)ノ	ruo ruo	0
+S小孩! (ｏ ‵-′)ノ”(ノ_<。)	s xiao h	0
+*★,°*:.☆(￣▽￣)/$:*.°★* 。	sa hua	0
+撒花！(￣▽￣)o∠※PAN!=.:*:'☆.:*:'★':*	sa hua	0
+撒花！(￣▽￣)o∠※PAN!=0,.:*:'☆.:*:'★':*	sa hua	0
+撒花！*★,°*:.☆\(￣▽￣)/$:*.°★* 。	sa hua	0
+‧★,:*:‧\(￣▽￣)/‧:*‧°★*	sa hua	0
+*★,°*:.☆\<(=￣▽￣=)>/$:*.°★* 。	sa hua	0
+✿ヽ(°▽°)ノ✿	sa hua	0
+散弹发射！！▄︻┻┳═一∵∴∷∶∵ (∵_,∵)>>>>	san dan	0
+▄︻┻┳═一∵∴∷∶∵&gt;&gt;	san dan	0
+▄︻┻┳═一∵∴∷∶∵ (∵_,∵)>>>>	san dan	0
+*★,°*:.☆(￣▽￣)/$:*.°★* 。	san hua	0
+△	san jiao	0
+▲	san jiao	0
+(屮눈皿눈)	sen qi de bing zhang	0
+杀虫剂！( ▼▼)/鹵〈 巛巛巛 ( ◎_x)/	sha chong	0
+<(=￣▽￣=)>	sha xiao	0
+|(•_•) |•_•) |_•) |•) | )	shan	0
+=└(┐卍^o^)卍	shan	0
+我闪！|(·_·) |·_·) |_·) |·) | )	shan	0
+✧(≖ ◡ ≖✿)	shan	0
+(￣ε(#￣)☆╰╮o(￣皿￣///)	shan er guang	0
+(´∀((☆ミつ	shan er guang	0
+⊂彡☆))д´)	shan er guang	0
+✧(≖ ◡ ≖✿)	shan ren	0
+(*￣▽￣)(￣▽:;.…::;.:.:::;..::;.:...	shan ren	0
+[闪人](*￣▽￣)(￣▽:;.…::;.:.:::;..::;.:...	shan ren	0
+↑	shang	0
+<(=;′⌒`)	shang xin	0
+(；′⌒`)	shang xin	0
+[伤心](；′⌒`)	shang xin	0
+<(!=￣□￣)ｏ―∈‥oo━━━━━━━☆	she ji	0
+[射箭]( ￣ー￣)——)-＝＝＝＝＝＝＝>-->>	she jian	0
+神啊~\(￣0￣)/	she na	0
+~(￣0￣)/	she na	0
+z(-_-z)).....((s-_-)s	she quan	0
+[蛇拳]z(-_-z)).....((s-_-)s	she quan	0
+℃	she shi du	0
+~(￣0￣)/	shen a	0
+( ｀д′)	shen me dong xi	0
+[靠！什么东西？！] ( ｀д′)	shen me dong xi	0
+(‧_‧？)	shen me shi	0
+<(=*^-^)ρ	shen shou	0
+*<|:-)	sheng dan	0
+*&lt;|:-)&nbsp;	sheng dan	0
+&lt;(－︿－)&gt;	sheng qi	0
+(ー`´ー)	sheng qi	0
+（｀へ´）	sheng qi	0
+<(－︿－)>	sheng qi	0
+(￣皿￣)	sheng qi	0
+( `ー´)	sheng qi	0
+ヽ(•̀﹏•́ )ゝ	shi	0
+◟(⁰𠆢⁰∗)	shi	0
+(*´∀`)	shi a	0
+(ﾟｰﾟ)	shi a	0
+ヾ(＠⌒ー⌒＠)ノ	shi a	0
+ﾟ∀ﾟ	shi a	0
+ヾ(＠⌒ー⌒＠)ノ	shi a shi a	0
+[是不是你?!](σ｀д′)σ	shi bu shi ni	0
+(σ｀д′)σ	shi bu shi ni	0
+━━∑(￣□￣*|||━━	shi hua	0
+石━━∑(￣□￣*|||━━化	shi hua	0
+(ˉ▽ˉ；)...[石化ing~]	shi hua	0
+ԅ(¯﹃¯ԅ)	shi huai	0
+[视力表]┫♀旦￣)σ(呃……)	shi li	0
+(｡í _ ì｡)	shi luo	0
+(。_。) [失落]	shi luo	0
+(。_。)	shi luo	0
+( ◞‸◟)	shi luo	0
+⊙▽⊙	shi ma	0
+о∀о	shi ma	0
+(￣m￣）	shi ma	0
+<(=σ'ω')σ	shi ta	0
+<(=σ′д｀)σ	shi ta	0
+[手榴弹!]σ～ (｀′メ	shou liu dan	0
+<(=X﹏X=)>	shou shang	0
+(      。＿ 。） ✎ ＿	shu xie	0
+(′д｀ )…彡…彡	shuai	0
+( へ ﾟ∀ﾟ)べ摔低低	shuai di di	0
+┗<(=｀o′=)>┓哼 ┏<(=｀○′=)>┛哼┏<(=｀o′=)>┓哈┗<(=｀O′=)>┛兮！！	shuang jie gun	0
+┻━┻︵╰(‵□′)╯︵┻━┻	shuang shou xian fan zhuo zi	0
+┴──┴╰<(=￣Д￣=)>╯┴──┴	shuang shou xian zhuo	0
+(′д｀ )…彡…彡[衰]	shui	0
+<(O_　_)0。゜zｚＺ	shui jao	0
+(¦3ꇤ[▓▓]	shui jiao	0
+ZZzz…<(。=-ω-)..ooO((【·:*:~ 夢~:*:·】))	shui jiao	0
+shy~ o(*////▽////*)q	shy	0
+o(*////▽////*)q	shy	0
+┴┴︵╰（‵□′）╯︵┴┴	si ba	0
+´･∀･)乂(･∀･｀	si ba	0
+(:D)┼─┤死亡中	si le	0
+( ′ 3`) sigh~	sigh	0
+▔▽▔	soga	0
+|_・)	suo zai yi jiao	0
+无敌幻影脚！ヽ(ヽ `д′)ヽ`д′)ヽ`д′)┌┛┌┛┌┛★)`з゜)y	t	0
+<( ￣^￣)(θ(θ☆( >_<	t	0
+无影脚！＜( ￣︿￣)︵θ︵θ︵θ︵θ︵☆(＞口＜－)	t	0
+ヾ（≧∇≦）〃	tai bang le	0
+ㄟ(≧◇≦)ㄏ	tai bang le	0
+[太可怕了]ヽ(*。>Д<)o゜	tai ke pa le	0
+ヽ(*。>Д<)o゜	tai ke pa le	0
+ヽ(*。&gt;Д&lt;)o゜	tai ke pa le	0
+无敌弹簧拳！( ‵Д′)=0,○))~~~~~~Ю))>o<)/	tan huang q	0
+⁽´°`⁾	tan qi	0
+┑(￣Д ￣)┍	tan shou	0
+╮(╯-╰)╭	tan shou	0
+╮(￣▽￣")╭	tan shou	0
+╮( ╯ 3 ╰ )╭	tan shou	0
+ㄟ( ▔, ▔ )ㄏ	tan shou	0
+╮(－_－)╭	tan shou	0
+<(=*`▽')u┳━┳ｄ('▽`*=)>	tan tian	0
+ᐕ)⁾⁾	tan tou	0
+_(:驴」∠)_	tang qiang lv	0
+_(:马」∠)_	tang qiang ma	0
+…（⊙＿⊙；）…	tao	0
+ε=0,ε=0,ε=0,ε=0,ヽ(*￣o￣)ノ	tao	0
+ε=0,ε=0,ε=0,┏(゜ロ゜;)┛	tao	0
+ε=0,ε=0,┏( >_<)┛	tao	0
+ε=ε=ε=┏(゜ロ゜;)┛	tao	0
+ヽ(ﾟ∀ﾟ*)ﾉ━━━ｩ♪	tao	0
+( ￣ ▽￣)o╭╯☆#╰( ￣﹏￣)╯	tao a	0
+\("▔□▔)/\("▔□▔)/ [逃命啊~~]	tao m	0
+\("▔□▔)/\("▔□▔)/ [逃命啊~~]	tao ming	0
+～（□`）～	tao pao	0
+＼(゜ロ＼)(／ロ゜)／	tao yan	0
+(ノω<。)ノ))☆.。	tao yan	0
+(ノω<。)ノ))☆.。讨厌啦~	tao yan	0
+(ノω&lt;。)ノ))☆.。	tao yan la	0
+ヽ(ﾟ∀ﾟ*)ﾉ━━━ｩ♪	tao zhi yao yao	0
+[陶醉]( *︾▽︾)	tao zui	0
+( *︾▽︾)	tao zui	0
+( TдT)	tat	0
+(ノへ￣、)[抽泣]	tat	0
+o(TヘTo)	TAT	0
+(ノへ￣、)	tat	0
+o(≧∩≦)o	tat	0
+o(TヘTo)	tat	0
+【TEL】＜铃铃铃~ヾ(￣ ￣*)=0,=0,3=0,3=0,3	tel	0
+☆⌒(*＾-゜)v THX!!	thx	0
+ヽ(ヽ `д′)ヽ`д′)ヽ`д′)┌┛┌┛┌┛★)`з゜)y	ti	0
+<( ￣^￣)(θ(θ☆( >_<	ti	0
+<(=· ·)L☆ ．．．..○ 冂	ti qiu	0
+♪(´∇`*)	tian a	0
+ヾ(　 　)ノ゛天ヾ(　°д)ノ゛旋ヾ(°д°)ノ゛地ヾ(д°　)ノ゛转ヾ(　　)ノ゛	tian xuan di zhuan	0
+ヾ<(　 　)ノ゛天ヾ<(=°д)ノ゛旋ヾ<(=°д°)ノ゛地ヾ(д°=)>ノ゛转ヾ<( 　　)ノ゛	tian xuan di zhuan	0
+[天助我也~] ヾ(*′▽｀*)彡	tian zhu wo ye	0
+( *^-^)ρ(*╯^╰)[不吃!]	tiao shi	0
+¯\_(౦▾౦ ✿)¯\_	tiao wu	0
+<(*￣ー￣)ゞ来啊~[挑衅]	tiao xin	0
+(　ˇωˇ )◕∀◕｡)^ω^)	tie tie	0
+≧︿≦	tong ku	0
+＞﹏＜	tong ku	0
+(。・∀・)ノ	tong yi	0
+|∀` )	tou kan	0
+|дﾟ )	tou kan	0
+|д` )	tou kan	0
+|∀ﾟ	tou kan	0
+|-` )	tou kan	0
+[偷看](/ω·＼*)	tou kan	0
+[偷看](/ω＼*)……… (/ω·＼*)	tou kan	0
+|ー` )	tou kan	0
+(/ω＼*)……… (/ω•＼*)	tou kan	0
+|壁|_☆)	tou kui	0
+┬┴┤_·)	tou kui	0
+┬┴┤_•)	tou kui	0
+[偷拍] Σ[ ◎ ]}ー′）	tou pai	0
+┗( T﹏T )┛[举手投降]	tou xiang	0
+n(→_←)┛	tou xiang	0
+٩͡[๏̯͡๏]۶	tou xiang	0
+┗( T﹏T )┛	tou xiang	0
+٩(͡๏̯͡๏)۶	tou xiang	0
+o( >﹏<。)┛	tou xiang	0
+(￣艸￣)	tou xiao	0
+[吐]( >ρ < ”)	tu	0
+( >ρ < ”)	tu	0
+( &gt;ρ &lt; ”)	tu kou shui	0
+(￣┰￣*)	tu she tou	0
+<(=￣┰￣=)>	tu she tou	0
+(ﾉ*･ω･)ﾉ	tui dao	0
+0＾）吞！	tun	0
+ヽ(゜▽゜　)－C<(/;◇;)/~	tuo zou	0
+ヽ(゜▽゜　)－C<(/;◇;)/~[拖走]	tuo zou	0
+ヽ(゜▽゜　)－C&lt;(/;◇;)/~	tuo zou	0
+❀‿❀	wa	0
+(*ﾟ∇ﾟ)	wa	0
+(｡◕∀◕｡)	wa	0
+(☆＿☆)	wa	0
+(PД`q。)·。'゜	wa	0
+╰(*°▽°*)╯	wa	0
+(*￣rǒ￣)	wa bi shi	0
+[挖鼻屎] (*￣rǒ￣)	wa bi shi	0
+(`ゥ´ )	wa ha ha	0
+<(￣▽￣)/	wa ka ka	0
+<(￣▽￣)/	wa kkk	0
+哇卡卡卡卡卡……o((≧▽≦o) 太好笑了！！	wa kkk	0
+哇咧！Σ(⊙▽⊙"a...	wa lie	0
+( ﾟ∀。)	wai tou sha	0
+0(^o^)~~YA(^0^)~~SU(^○^)~~MI(^_^)	wan an	0
+お(ノ￣0￣)ノや（o￣ ・￣）oす(。＿　＿)。みZZzzzz…	wan an	0
+￣O￣)ノ	wan shang hao	0
+￣O￣)ノ　こんばんは	wan shang hao	0
+！*★,°*:.☆(￣▽￣)/$:*.°★* 。	wan sui	0
+万岁！*★,°*:.☆\(￣▽￣)/$:*.°★* 。	wan sui	0
+→_→	wang you miao	0
+←_←	wang zuo miao	0
+∥WC||_·)╯去下厕厕……	wc	0
+∥wc∥ o(- -o) =0,з =0,з =0,з	wc	0
+喂！(#`O′)	wei	0
+(#`O′)	wei	0
+（｀Δ´）！	wei	0
+( *^-^)ρ(^0^* )	wei chi de	0
+( *^-^)ρ(^0^* )	wei fan	0
+( *^-^)ρ(*╯^╰)[不吃!]	wei fan	0
+[喂饭]( *^-^)ρ(^0^* )	wei fan	0
+(﹁"﹁)	wei guan	0
+(← ← )围观！	wei guan	0
+围观！( → →)	wei guan	0
+ಠ__ಠ	wei nan	0
+╥﹏╥...	wei qu	0
+(o´∀｀)	wei suo	0
+<(=⌒_⌒=)>	wei xiao	0
+(^▽^ )	wei xiao	0
+(￣︶￣)	wei xiao	0
+◕‿◕	wei xiao	0
+(*￣;(￣ *)	wen bie	0
+[吻别](*￣;(￣ *)	wen bie	0
+(*゜ロ゜)ノ	wo	0
+[呃~我……]σ(-_-メ)	wo	0
+σ（⌒ー⌒）	wo	0
+[我？]σ(· ·?)	wo	0
+v(｡･ω･｡)	wo	0
+(。﹏。*) 我错了……	wo cuo le	0
+(。﹏。*)	wo cuo le	0
+( ›´ω`‹ )	wo cuo le	0
+(ﾟДﾟ*)ﾉ	wo fan dui	0
+||ヽ(*￣▽￣*)ノミ|Ю[我回来啦~]	wo hui lai la	0
+||ヽ(*￣▽￣*)ノミ|Ю	wo hui lai la	0
+(～o￣▽￣)～o ~。。。	wo lai le	0
+我来了~(～￣▽￣)～	wo lai le	0
+~(～￣▽￣)～	wo lai le	0
+(ーー゛)	wo lei ge qu	0
+@/"	wo niu	0
+o(￣ヘ￣o＃) 握拳！	wo q	0
+o(￣ヘ￣o＃)	wo qu	0
+o(￣ヘ￣o＃) 握拳！	wo quan	0
+o(￣ヘ￣o* )[握拳!]	wo quan	0
+(≧∀≦*)ﾉ	wo shou	0
+wow~ ⊙o⊙	wow	0
+⊙﹏⊙	wu	0
+(,,•́ . •̀,,)	wu	0
+(｡•ㅅ•｡)♡	wu	0
+( T___T )	wu	0
+(๑′°︿°๑)	wu	0
+↑↑↓↓←→←→ＢＡ…┗<(=-o-)┛无敌！	wu di	0
+↑↑↓↓←→←→ＢＡ...┗( -o-)┛	wu di	0
+↑↑↓↓←→←→ＢＡ...┗( -o-)┛无敌！	wu di	0
+（o´・ェ・｀o）	wu gu	0
+╯_╰	wu jing da cai	0
+つ﹏⊂	wu lian	0
+(*/ω＼*)	wu lian	0
+ﾟ(つд`ﾟ)	wu lian	0
+(つд⊂)	wu lian	0
+( ﾉд`ﾟ)	wu lian	0
+(* /ω＼*)	wu lian	0
+╮<(=╯-╰=)>╭	wu nai	0
+╯▂╰	wu nai	0
+╯︿╰	wu nai	0
+╮(╯▽╰)╭	wu nai	0
+[无奈]╮(╯-╰)╭	wu nai	0
+(☆-ｖ-)	wu shi	0
+┭┮﹏┭┮	wu wu wu	0
+(－∀＝)	wu yan	0
+（＊￣（エ）￣）	wu yan	0
+( ´ー`)	wu yu	0
+无影脚！＜( ￣︿￣)︵θ︵θ︵θ︵θ︵☆(＞口＜－)	wyj	0
+[喝西北风](　′Д`)彡	xi bei feng	0
+<(=❤w❤=)>	xi huan	0
+(≧∇≦)ﾉ	xi huan	0
+<(=￣ˇ￣=)>	xi xi	0
+(*Φ皿Φ*)	xia	0
+↓	xia	0
+(☄⊙ω⊙)☄	xia	0
+(°ー°〃=)>	xia mi	0
+(:.;ﾟ;益;ﾟ;益;ﾟ;ﾟ;益;ﾟ;益;ﾟ;.)	xia si la	0
+[黑*客帝国下腰!] ┌(_Д_┌ )┐	xia yao	0
+（╯‵□′）╯︵┴─┴	xian zhuo	0
+（╯－＿－）╯╧╧	xian zhuo	0
+(／‵Д′)／~ ╧╧	xian zhuo	0
+<(=┘￣Д￣)┘╧═╧	xian zhuo	0
+(╯▽╰ ) 好香~~	xiang	0
+[享受](╯▽╰ )	xiang shou	0
+＾▼＾	xiao	0
+……o((≧▽≦o) 太好笑了！！	xiao	0
+＞▽＜	xiao	0
+(´･◡･｀)	xiao	0
+（*∩_∩*）	xiao	0
+≧▽≦	xiao	0
+(^﹏^)"	xiao	0
+<(≧▽≦)>	xiao	0
+ヽ(￣︿￣　)—C&lt;(/;◇;)/	xiao hei wu	0
+【小黑屋】ヽ(￣︿￣　)—C<(/;◇;)/	xiao hei wu	0
+ヽ(￣︿￣　)—C<(/;◇;)/	xiao hei wu	0
+ζ°)))彡	xiao jin yu	0
+<(=·ェ·=)>	xiao mao	0
+<(=-"-=)>	xiao se	0
+（*・・*）	xiao sheng	0
+[消失](*￣□￣)(￣□:;.…::;.:.:::;..::;.:...	xiao shi	0
+ㄟ( ▔, ▔ )ㄏ	xiao xin	0
+[小新]<(￣︶￣)↗	xiao xin	0
+(°)#))&lt;&lt;	xiao yu	0
+谢啦!!☆⌒(*＾-゜)v	xie	0
+[邪恶]( ‵▽′)ψ	xie e	0
+( ‵▽′)ψ	xie e	0
+谢啦!!☆⌒<(=*＾-＾)v	xie la	0
+谢啦!!☆⌒(*＾-゜)v	xie xie	0
+谢啦!!☆⌒(*＾-゜)v	xie xie la	0
+✎～～～✐	xie xie xie	0
+(￣.￣)+	xie y	0
+(﹁"﹁)	xie y	0
+( ﹁ ﹁ ) ~→	xie y	0
+( ﹁ ﹁ ) ~→	xie yan	0
+(﹁"﹁)	xie yan	0
+( ´_ゝ`)✎	xie zi	0
+<(=＃_＃)ψ	xie zi	0
+ψ(。。 )	xie zi	0
+<(゜゜ )>心(。。)>神<(゜゜ )>不(。。)>宁"...	xin shen bu ning	0
+(゜゜ )心(。。)神(゜゜ )不(。。)宁"...	xin shen bu ning	0
+( ╯▽╰)[欣慰]	xin wei	0
+( ╯▽╰)	xin wei	0
+(p≧w≦q)	xing fen	0
+φ(≧ω≦*)♪	xing fen de chang ge	0
+o(*￣▽￣*)o	xing fu	0
+ε=(￣。￣;A 呼~幸好幸好……	xing hao	0
+ε=0,(￣。￣;A 呼~幸好幸好……	xing hao	0
+★	xing xing	0
+☆	xing xing	0
+(☆ｗ☆)	xingxingyan	0
+(*￣(エ)￣)	xiong	0
+(+(工)+╬)	xiong	0
+U•ェ•*U	xiong	0
+<(=⓿_⓿=)>	xiong mao yan	0
+◕ฺ‿◕ฺ✿ฺ)	xiu	0
+p(#￣▽￣#)o	xiu	0
+(◕ฺ‿◕ฺ✿ฺ)	xiu	0
+o(*////▽////*)q	xiu	0
+d(∀｀d*)─(*b´∀)b	xiu	0
+(눈益눈)	xu li zhong de bing zhang	0
+<(=◎ロ◎=)>	xuan yun	0
+( ﾟᯅ 。)	xuan zhuan	0
+╳╳○○	xxoo	0
+<(=～￣▽￣)～	y	0
+^_^)y	y	0
+(*￣︶￣)y	y	0
+<(=^_^)y	y	0
+(*￣▽￣)y	y	0
+٩(●˙▿˙●)۶	ya	0
+（*≧ｍ≦*）	ya	0
+(≧∀≦*)ﾉ	ya da	0
+σ　σ	yan jing	0
+(-@y@)	yan jing	0
+(-@y@) [扶眼镜]	yan jing	0
+(*/ω＼*)[脸红掩面]	yan mian	0
+(*/ω＼*)	yan mian	0
+<(=*/ω＼*=)>	yan mian	0
+━┳━　━┳━	yan shen	0
+<(=￣﹌￣=)>	yang tou	0
+ヾ(´ε`ヾ)	yao bao bao	0
+( ˘•ω•˘ )ง⁽˙³˙⁾	yao ming yu guo jing ming	0
+<(=￣ε￣ = ￣3￣=)>	yao tou	0
+<(=o#゜ 曲゜)o	yao ya qie chi	0
+(＾－＾)V	ye	0
+^_^)y	ye	0
+ヽ(✿ﾟ▽ﾟ)ノ	ye	0
+✌(◔౪◔)✌	ye	0
+∩__∩y耶~~^^	ye	0
+(*￣︶￣)y	ye	0
+(*￣▽￣)y	ye	0
+( *⊙~⊙)	ye si	0
+[噎死] ( *⊙~⊙)	ye si	0
+[噎住] ( *⊙~⊙)	ye zhu	0
+Yes,sir! <(￣O￣)/	yes sir	0
+|ω･`)	yi	0
+(・∀・(・∀・(・∀・*)	yi	0
+ヽ(￣ω￣(￣ω￣〃)ゝ	yi qi	0
+╭(′▽`)╭(′▽`)╯	yi qi	0
+(°°)～　(°°)～　(°°)～　(°°)～	yi qun ke dou	0
+◎−◎？	yi wen	0
+<(=￣□￣)<(=￣□:;.…::;.:.:::;..::;.:...	yin shen	0
+忍术~隐！（￣人￣）（￣人:.;:…（￣...:.;::..;::: .:;.…::;.:..:;.:...	yin shen	0
+隐身！(*￣□￣)(￣□:;.…::;.:.:::;..::;.:...	yin shen	0
+((<(≧<(≧▽<(≧▽≦<(≧▽≦)>≧▽≦)>▽≦)>≦)>))	ying fen shen	0
+(￣ム￣) [鹰钩鼻]	ying gou bi	0
+(´-ω-`)	ying ying	0
+/(ㄒoㄒ)/~~	ying ying ying	0
+(┳＿┳)...	ying ying ying	0
+<(= ￣y▽￣)╭	yo	0
+<(づ￣　³￣)>づ	yo	0
+(＾Ｕ＾)ノ~ＹＯ	yo	0
+(￣(エ)￣)ノ よー	yo	0
+哟西！（９￣＾￣）９	yo xi	0
+ーー（＾Ｕ＾）ノーーＹＯ	you	0
+→	you	0
+(o゜▽゜)o☆	you le	0
+(o゜▽゜)o☆[有了!]	you le	0
+━━┳　━━┳	you pie	0
+||o(*°▽°*)o|Ю [有人吗?]	you ren ma	0
+(:◎)≡	you yu	0
+&lt;・ )))&gt;&lt;&lt;	yu	0
+&lt;゜)))彡	yu	0
+<。 )#)))≦	yu	0
+&lt;*)) &gt;&gt;=&lt;	yu	0
+&lt;+ ))&gt;&lt;&lt;	yu	0
+>°)))>彡	yu	0
+くコ:彡	yu	0
+( `д´) 预备备！笑！	yu bei	0
+<*)>> >=<	yu gu tou	0
+●	yuan	0
+○	yuan	0
+('-'*)	yuan lai	0
+o(一︿一+)o 怨.念....	yuan nian	0
+o(一︿一+)o	yuan nian	0
+晕！@o@"	yun	0
+(((φ(◎ロ◎;)φ)))	yun	0
+@_@	yun	0
+[运动]╔囧╗╔囧╝╚囧╝╚囧╗	yun dong	0
+( E___E )	yun le	0
+(((φ(◎ロ◎;)φ)))	yun yun yun	0
+(*^-ﾟ)	zai jian	0
+(。・_・)/~~~	zai jian	0
+(。・_・)/~~~またね～	zai jian	0
+┏(＾0＾)┛	zai jian	0
+ヾﾉ｡ÒㅅÓ)ﾉｼ	zai jian	0
+ヾ(*^▽^*)ノ"☆Bye ☆Bye	zai jian	0
+(ﾟ∇^*)	zai jian	0
+(。・_・)/~~~	zai jian la	0
+m9( `д´)	zai le ni	0
+( ' = ' )それは・・・・・ 考える　（＝＿＝）う～ん	zai xiang	0
+(((o(*ﾟ▽ﾟ*)o)))	zan	0
+o(*'▽'*)/	zan cheng	0
+٩(๑`^´๑)۶	zao	0
+早安~~~ o(*￣▽￣*)ブ	zao an	0
+(朝´∀｀)｛♪Good Morning♪｝(´∀｀朝)	zao an	0
+[早点回来哦~](～￣(OO)￣)ブ	zao dian hui lai	0
+[早点回来哦~](～￣(OO)￣)ブ	zao dian hui lai o	0
+X﹏X 糟糕！	zao gao	0
+X﹏X	zao gao	0
+X﹏X	zao gao le	0
+(*´∀`)ノ	zao shang hao	0
+(( ((((((( ρ . - ) おはよう～	zao shang hao	0
+(　´∀｀)・ω・) ゜Д゜)・∀・)￣ー￣)	zen me	0
+(╯‵□′)╯炸弹！•••*～●	zha dan	0
+(╯‵□′)╯炸弹！···*～●	zha dan	0
+<(=╯‵□′)╯炸弹！···*～●	zha dan	0
+*(｡◕‿-｡)"❤	zha ya	0
+ο(=·ω＜=)ρ⌒☆[媚眼]	zha yan	0
+ο(=0,·ω＜=0,)ρ⌒☆[媚眼]	zha yan	0
+ˋ( ° ▽、° ) (o(￣▽￣///(斩!!)	zhan	0
+ˋ( ° ▽、° ) (o(￣▽￣///(斩!!)	zhan le	0
+(￣︶￣)↗	zhang	0
+涨(￣︶￣)↗	zhang	0
+( `_っ´)	zhang bi zi	0
+Σ[ ◎ ]}	zhao xiang	0
+σ(-_-メ=)>	zhe	0
+((*・∀・）ゞ→→	zhe	0
+(σ-σ)	zhe yang a	0
+━━┳━━゛_゛━━┳━━	zhe yang a	0
+(=′ー`)	zhe yang me	0
+o(〃'▽'〃)o	zhen da	0
+[真哒?!] o(〃'▽'〃)o	zhen da	0
+(o&gt;ε(o&gt;ｕ(≧∩≦)	zhen fen	0
+(o>ε(o>ｕ(≧∩≦)	zhen fen	0
+(o>ε(o>ｕ(≧∩≦) [振奋]	zhen fen	0
+o(^▽^)o	zhen hao	0
+(○´･д･)ﾉ	zhen jing	0
+(*^▽^*)	zhen kai xin	0
+真空波动拳！（ ｀o′）{ ···－＝≡))	zhen kong bo dong quan	0
+<(=o_ _)o→<(=o―_―)o→<(=９￣ー￣)９[振作!]	zhen zuo	0
+━━(o_ _)o━━(o―_―)o━━(９￣ー￣)９[振作!]	zhen zuo	0
+(′┏▽┓`●)	zheng yi	0
+[就是他!] (＠｀д′)	zhi	0
+[就你好了~] (＠゜▽゜)	zhi	0
+&lt;(￣ ﹌ ￣)@m	zhi	0
+<(=﹁"﹁=)σ	zhi	0
+<(￣ ﹌ ￣)@m	zhi	0
+(﹁ ﹁ )σ[那边那个]	zhi	0
+[交通志愿老大妈指挥ing...] (ｏ^~^)尸"	zhi hui jiao tong	0
+ﾟ∀ﾟ)σ	zhi ni	0
+(σﾟдﾟ)σ	zhi ni	0
+(ﾉ#)`д´)σ	zhi ni	0
+[两罐纸星星](*ˉ﹃ˉ)_☆☆	zhi xing xing	0
+( ゜，_ゝ゜) [痣长毛]	zhi zhang mao	0
+(,, Ծ ‸ Ծ,, )	zhou mei	0
+[皱眉](-"-)	zhou mei	0
+_(:3」∠)_	zhou mei	0
+(ー`´ー)	zhou mei	0
+( ´д`)	zhou mei	0
+^(*￣(oo)￣)^	zhu	0
+^(oo)^ =(oo)=""" ~(oo)~	zhu	0
+[猪]^(*￣(oo)￣)^	zhu	0
+W(￣_￣)W	zhu a	0
+o<(=°ω°=)>0	zhu mao	0
+W(￣_￣)W	zhua	0
+[抓狂]o(>@<)o	zhua kuang	0
+[抓狂]"o((>ω< ))o"	zhua kuang	0
+ლ(❤◡❤ლ)	zhua zi	0
+(　↺ω↺)	zhuan quan	0
+┳G┻F┳W┫☆(ノ﹏<。)	zhuang qiang	0
+* (￣▽￣)" ╮	zhuang sha	0
+（～￣▽￣～）	zhuang sha	0
+o(°▽、°o)....+((￣﹏￣m )~ 你给我回来！	zhui	0
+o(°▽、°o)....+((￣﹏￣m )	zhui sha	0
+--＝＝≡≡〈〈《( /￣皿￣)=0,Ｏ));>o<）/	zhui sha	0
+--＝＝≡≡〈〈《( /￣皿￣)=Ｏ));>o<）/	zhui sha	0
+(◡ᴗ◡✿)	zi lian	0
+*(੭*ˊᵕˋ)੭*ଘ	zi pai	0
+…〒_〒…‵ｏ′-一┳═┻︻▄	zi sha	0
+…〒_〒…‵ｏ′-一┳═┻︻▄［畏罪自杀…］	zi sha	0
+ヾ(′▽｀=)>ゝ	zi xin	0
+( ノ・ω・)ノ	zou	0
+（￣︶￣）↗	zou	0
+<(╬￣皿￣)=○＃)３￣)>	zou	0
+( ﾟдﾟ)つBye	zou la	0
+( ☉_☉)≡☞o────★°	zou ni	0
+O-(///￣皿￣)☞ ─═≡☆゜★█▇▆▅▄▃▂＿	zou ni	0
+ᕕ( ˙꒳​˙)ᕗ	zou zhe	0
+٩( 'ω' )و	zou zhe	0
+ᕕ( 'ω')ᕗ	zou zhe	0
+[足球] ( · ·)L☆ ．．．..○ 冂	zu qiu	0
+(*ﾟｰﾟ)	zui jiao	0
+[醉拳]ヨロ (*~▽~)ノ ヨロ ヽ(~▽~*）ヨロ (*~▽~)―〇 ☆ バシ ))>口<)	zui quan	0
+(`ᝫ´ )	zun ming	0
+←	zuo	0
+ZZzz…(。-ω-)..ooO((【•:*:~夢~:*:•】))	zuo meng	0
+ZZzz…(。-ω-)..ooO(•:*:~:*:•)	zuo meng	0
+ZZzz…(。-ω-)..ooO((【·:*:~夢~:*:·】))	zuo meng	0
+┳━━　┳━━	zuo pie	0
+<(Д゜(○=<(=゜ 皿゜=)>=○)゜Д゜)>	zuo you kai gong	0
