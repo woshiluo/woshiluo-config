@@ -51,7 +51,7 @@ on_click = '!~/.config/scripts/toggle-idle.sh'
 type = 'volume'
 
 [[end]]
-type = 'upower'
+type = 'battery'
 icon_size = 16
 
 # [[end]]

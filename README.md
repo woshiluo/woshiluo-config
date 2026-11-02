@@ -24,6 +24,6 @@ pacman -S --needed - < pkglist.txt
 
 MPV 的配置文件修改自 <https://bbs.vcb-s.com/thread-2730-1-1.html>  
 
-Rime 的词库部分来自[ 雾凇拼音 ](https://github.com/iDvel/rime-ice)，使用了[ 八股文 ](https://github.com/lotem/rime-octagram-data)
+Rime 的词库部分来自[ 雾凇拼音 ](https://github.com/iDvel/rime-ice)和[ 白霜拼音 ](https://github.com/gaboolic/rime-frost)，使用了[ 万象 ](https://github.com/amzxyz/rime-wanxiang)作为语法包。
 
 剩下的使用[ CC 0 ](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)授权

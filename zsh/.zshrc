@@ -1,7 +1,7 @@
 # Check screen
 
 if [[ "$USE_SESSION_MANAGER" == "" && $- == *i* ]]; then
-    if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(emacs|vim)" ]] && [[ ! $TERM == "xterm-256color" ]]; then
+    if [[ ! "$(</proc/$PPID/cmdline)" =~ "/usr/bin/(emacs|vim)" ]] && [[ ! $TERM == "xterm-256color" ]] && [[ ! $container == "systemd-nspawn" ]]; then
 		export USE_SESSION_MANAGER=1 
 		zellij a autosession
 #		return 
@@ -31,6 +31,7 @@ select-word-style bash
 source ~/.config/zsh/rsync.zsh
 source ~/.config/zsh/proxy.zsh
 source ~/.config/zsh/backup.zsh
+source ~/.config/zsh/secret.zsh
 source ~/.zshenv
 
 # ---------
@@ -66,7 +67,7 @@ zinit wait lucid light-mode for \
 zinit wait lucid light-mode for \
 	atinit"zicompinit; zicdreplay" \
 		zdharma-continuum/fast-syntax-highlighting \
-	atload"_zsh_autosuggest_start" \
+	atload"bindkey ' ' autosuggest-accept; _zsh_autosuggest_start" \
 		zsh-users/zsh-autosuggestions \
 	blockf atpull'zinit creinstall -q .' \
 		zsh-users/zsh-completions \
@@ -87,4 +88,10 @@ zinit wait lucid light-mode for \
 zinit wait lucid light-mode for \
 	atinit'eval "$(zoxide init zsh)"' \
 		zdharma-continuum/null
+
+# NVM
+zinit wait lucid light-mode for \
+	atinit'source /usr/share/nvm/init-nvm.sh' \
+		zdharma-continuum/null
 ### End of Zinit's installer chunk
+

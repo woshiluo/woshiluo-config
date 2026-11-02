@@ -222,7 +222,7 @@ autocmd User LspSetup call LspOptionsSet(lspOptions)
 let lspServers = [#{
 			\	name: 'rustanalyzer',
 			\	filetype: ['rust'],
-			\	path: '/opt/homebrew/opt/rustup/bin/rust-analyzer',
+			\	path: 'rust-analyzer',
 			\	args: [],
 			\	syncInit: v:true,
 			\	initializationOptions: #{
@@ -231,7 +231,21 @@ let lspServers = [#{
 			\			parameterHints: #{ enable: v:true }
 			\		}
 			\	}
-			\}]
+			\},
+			\#{
+			\	name: 'clangd',
+			\	filetype: ['cpp'],
+			\	path: 'clangd',
+			\	args: [],
+			\	syncInit: v:true,
+			\	initializationOptions: #{
+			\		inlayHints: #{
+			\			typeHints: #{ enable: v:true },
+			\			parameterHints: #{ enable: v:true }
+			\		}
+			\	}
+			\}
+			\]
 
 autocmd User LspSetup call LspAddServer(lspServers)
 
